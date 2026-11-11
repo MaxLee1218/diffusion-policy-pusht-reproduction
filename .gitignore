@@ -4,6 +4,7 @@
 !/experiments/README.md
 /results/*
 !/results/README.md
+!/results/rtx4060-validation.json
 __pycache__/
 .pytest_cache/
 *.ckpt

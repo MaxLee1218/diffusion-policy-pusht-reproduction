@@ -94,6 +94,57 @@ docker run --rm --gpus all --shm-size=2g --user "$(id -u):$(id -g)" \
   ./scripts/train.sh experiments/rtx4060-seed42 training.seed=42
 ```
 
+### WSL 2 validation without Docker
+
+The RTX 4060 Laptop profile was validated on WSL 2 with an 8 GiB GPU, Python 3.11.18, PyTorch 2.4.1+cu121, and torchvision 0.19.1+cu121 on 2026-11-11. The official replay contains 206 episodes and 25,650 steps and passed the archive checksum check. Measurements and short training metrics are in [`results/rtx4060-validation.json`](results/rtx4060-validation.json).
+
+With Python 3.11, `curl`, `unzip`, and the runtime libraries listed in the Dockerfile available, prepare a local environment:
+
+```bash
+git submodule update --init
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install pip==24.0 setuptools==65.5.0 wheel==0.38.4
+python -m pip install -r requirements.txt
+python -m pip install -r requirements-torch.txt --index-url https://download.pytorch.org/whl/cu121
+python -m pip install --no-build-isolation gym==0.21.0
+python -m pip install --no-deps robomimic==0.2.0
+./scripts/prepare_data.sh
+
+export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2
+PUSHT_REPLAY_PATH=data/pusht/pusht_cchi_v7_replay.zarr python -m pytest -q
+python smoke_test.py --config-name rtx4060_laptop --steps 3 --batch-size 8 \
+  --seed 42 --output results/gpu-smoke-rtx4060-b8.json
+```
+
+All seven tests passed using the official replay. The three-step GPU smoke test used FP32, AdamW, and EMA with batch size 8. It measured 0.682 GiB peak PyTorch allocated memory, 0.686 GiB peak reserved memory, and 0.0669 seconds median iteration time after the first iteration. These memory and timing numbers cover training steps with the batch already fetched; they exclude rollout, validation, and checkpoint saving.
+
+The following short run retains the 4060 model, batch size 8, EMA, and 100 inference steps. It executes two epochs of 20 training batches and four validation batches each, with four 32-step test episodes per epoch, diffusion sampling, video recording, and checkpoint saving:
+
+```bash
+PUSHT_CONFIG=rtx4060_laptop ./scripts/train.sh experiments/rtx4060-short-seed42 \
+  training.seed=42 training.num_epochs=2 \
+  training.max_train_steps=20 training.max_val_steps=4 \
+  training.lr_warmup_steps=5 training.rollout_every=1 \
+  training.val_every=1 training.sample_every=1 training.checkpoint_every=1 \
+  dataloader.num_workers=2 val_dataloader.num_workers=2 \
+  task.env_runner.n_train=0 task.env_runner.n_train_vis=0 \
+  task.env_runner.n_test=4 task.env_runner.n_test_vis=1 \
+  task.env_runner.max_steps=32
+./scripts/evaluate.sh experiments/rtx4060-short-seed42/checkpoints/latest.ckpt \
+  results/rtx4060-short-seed42-eval --device cuda:0
+```
+
+The short run finished in 25.536 seconds, with finite training and validation losses in both epochs. The saved EMA checkpoint was loaded independently for GPU evaluation, and its video decoded successfully. This validates the local workflow; a 300-epoch run and the full 50-seed benchmark have not been run.
+
+To start a fresh 300-epoch experiment in the activated environment, use:
+
+```bash
+OMP_NUM_THREADS=2 PUSHT_CONFIG=rtx4060_laptop \
+  ./scripts/train.sh experiments/rtx4060-seed42 training.seed=42 \
+  dataloader.num_workers=2 val_dataloader.num_workers=2
+```
+
 ## Baseline training and resume
 
 Run these commands in the CUDA environment when ready to start a full experiment. Keep the project directory bind-mounted to retain output across container restarts.

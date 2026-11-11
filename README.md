@@ -69,6 +69,31 @@ docker run --rm --gpus all --shm-size=2g -v "$PWD:/work" pusht:cuda \
 
 The GPU smoke command runs the full published model with FP32, AdamW, and EMA. It records each synchronized iteration time, median steady iteration time, and peak PyTorch allocated and reserved VRAM. Timing includes host-to-device transfer and training, with the batch already fetched. It skips validation, rollout, and checkpoint creation. Batch-size-2 memory measurements apply to that test.
 
+## RTX 4060 Laptop experiment
+
+The `rtx4060_laptop` profile uses CUDA, 300 epochs, U-Net widths `[128, 256, 512]`, and a training and validation batch size of 8. It runs rollouts in groups of four environments while keeping the baseline episode counts. The CUDA smoke command checks the training step at batch size 8 and records peak memory. It skips validation and rollout, so those stages have separate memory requirements.
+
+Run on the laptop in Linux x86_64 with NVIDIA Docker support. On Windows, use a GPU-enabled WSL 2 setup and run these commands from its Linux shell.
+
+```bash
+nvidia-smi
+docker build --platform linux/amd64 --target cuda -t pusht:cuda .
+docker run --rm --gpus all --shm-size=2g --user "$(id -u):$(id -g)" \
+  -v "$PWD:/work" pusht:cuda bash -euc '
+    ./scripts/prepare_data.sh
+    python smoke_test.py --config-name rtx4060_laptop --steps 3 --batch-size 8 \
+      --seed 42 --output results/gpu-smoke-rtx4060-b8.json
+  '
+```
+
+After reviewing the smoke result, start the 300-epoch experiment with:
+
+```bash
+docker run --rm --gpus all --shm-size=2g --user "$(id -u):$(id -g)" \
+  -e PUSHT_CONFIG=rtx4060_laptop -v "$PWD:/work" pusht:cuda \
+  ./scripts/train.sh experiments/rtx4060-seed42 training.seed=42
+```
+
 ## Baseline training and resume
 
 Run these commands in the CUDA environment when ready to start a full experiment. Keep the project directory bind-mounted to retain output across container restarts.

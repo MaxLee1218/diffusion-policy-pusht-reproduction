@@ -1,4 +1,4 @@
-"""Measure a few full-model PushT training iterations on a local CUDA GPU."""
+"""Measure a few PushT training iterations on a local CUDA GPU."""
 
 import argparse
 import copy
@@ -13,7 +13,6 @@ from pathlib import Path
 import hydra
 import numpy as np
 import torch
-from omegaconf import OmegaConf
 from torch.utils.data import DataLoader
 
 ROOT = Path(__file__).resolve().parent
@@ -44,6 +43,7 @@ def check_cuda(device):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config-name", choices=("baseline", "rtx4060_laptop"), default="baseline")
     parser.add_argument("--steps", type=int, choices=(2, 3), default=3)
     parser.add_argument("--batch-size", type=int, choices=range(1, 9), default=2)
     parser.add_argument("--seed", type=int, default=42)
@@ -60,7 +60,8 @@ def main():
         parser.error("Initialize upstream with git submodule update --init.")
     sys.path.insert(0, str(upstream))
 
-    config = OmegaConf.load(ROOT / "configs" / "baseline.yaml")
+    with hydra.initialize_config_dir(config_dir=str(ROOT / "configs"), version_base=None):
+        config = hydra.compose(config_name=args.config_name)
     replay = ROOT / config.task.dataset.zarr_path
     if not replay.is_dir():
         parser.error("Run ./scripts/prepare_data.sh first.")
@@ -110,6 +111,7 @@ def main():
 
     gib = 1024 ** 3
     report.update(
+        config_name=args.config_name,
         seed=args.seed,
         batch_size=args.batch_size,
         steps=args.steps,

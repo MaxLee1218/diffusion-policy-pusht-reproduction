@@ -1,0 +1,22 @@
+defaults:
+  - baseline
+  - _self_
+
+exp_name: rtx4060_laptop
+
+dataloader:
+  batch_size: 8
+
+val_dataloader:
+  batch_size: 8
+
+policy:
+  down_dims: [128, 256, 512]
+
+training:
+  device: cuda:0
+  num_epochs: 300
+
+task:
+  env_runner:
+    n_envs: 4

@@ -108,11 +108,11 @@
     "all_experiments_count": 33,
     "all_experiments_total_bytes": 1166853
   },
-  "checkpoint_release": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/tag/rtx4060-seed42-2026-11-12",
   "limitations": [
     "One training seed; checkpoints selected using the same 50 test initial conditions.",
     "Reduced U-Net widths [128, 256, 512] and batch size 8; not the full published baseline.",
     "Training interrupted during zero-based epoch 232. Unsaved weights after epoch 200 are unavailable.",
     "No independent full-length reevaluation of the best checkpoint was run."
-  ]
+  ],
+  "checkpoint_distribution": "local_only_not_uploaded_per_user_request"
 }

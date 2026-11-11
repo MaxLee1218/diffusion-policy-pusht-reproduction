@@ -25,7 +25,7 @@ Each episode score is its maximum `clip(goal_overlap_fraction / 0.95, 0, 1)` ove
 - [Full console output](console.log), [final status](status.json), [stop request](stop-request.json), and [background launcher](launch.py). Exit code 143 reflects the requested termination, not an unhandled training failure.
 - [GPU smoke results](../local-validation/gpu-smoke-rtx4060-b8.json), [dependency versions](../local-validation/installed-packages.txt), and [official-replay pytest log](../local-validation/pytest.log).
 - [Short-run summary](../local-validation/summary.json), [short-run effective configuration](../../experiments/rtx4060-short-seed42/.hydra/config.yaml), [short training log](../local-validation/short-train.log), and [independent short-checkpoint evaluation](../rtx4060-short-seed42-eval/eval_log.json).
-- [File manifest with SHA-256 checksums](manifest.json), [video metadata](videos.json), and [checkpoint download manifest](checkpoints.json).
+- [File manifest with SHA-256 checksums](manifest.json), [video metadata](videos.json), and [local checkpoint inventory](checkpoints.json).
 
 ## Recorded videos
 
@@ -49,30 +49,12 @@ The remaining three clips come from short training and its independent checkpoin
 | rtx4060-short-seed42, epoch 1 | [z94kuoal.mp4](../../experiments/rtx4060-short-seed42/media/z94kuoal.mp4) | 3.2 s |
 | rtx4060-short-seed42-eval, epoch 1 | [kmtyusby.mp4](../../results/rtx4060-short-seed42-eval/media/kmtyusby.mp4) | 3.2 s |
 
-## Model checkpoints
+## Local model checkpoints
 
-All **nine** saved model/optimizer/EMA checkpoints are published in the [experiment release](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/tag/rtx4060-seed42-2026-11-12). They total 4,908,166,758 bytes; individual files are about 520 MiB and are excluded from ordinary Git history. The release contains both `latest` files and every saved top-k checkpoint from the longer and short runs.
-
-| Run | Saved epoch | Checkpoint asset |
-| --- | ---: | --- |
-| rtx4060-seed42 | 0 | [top-k](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0000-score-0.138.ckpt) |
-| rtx4060-seed42 | 50 | [top-k](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0050-score-0.733.ckpt) |
-| rtx4060-seed42 | 100 | [best](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0100-score-0.791.ckpt) |
-| rtx4060-seed42 | 150 | [top-k](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0150-score-0.776.ckpt) |
-| rtx4060-seed42 | 200 | [top-k](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0200-score-0.777.ckpt) |
-| rtx4060-seed42 | 200 | [latest](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-latest.ckpt) |
-| rtx4060-short-seed42 | 0 | [top-k](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-epoch-0000-score-0.093.ckpt) |
-| rtx4060-short-seed42 | 1 | [top-k](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-epoch-0001-score-0.099.ckpt) |
-| rtx4060-short-seed42 | 1 | [latest](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-latest.ckpt) |
-
-Download every checkpoint and verify all nine hashes:
+All **nine** saved model/optimizer/EMA checkpoints remain on the training machine and are **not uploaded to GitHub**, as requested. Their total size is 4,908,166,758 bytes. The [checkpoint inventory](checkpoints.json) records original local paths, epochs, sizes, and SHA-256 hashes; [checksums](checkpoints.sha256) can be verified from the repository root on that machine:
 
 ```bash
-gh release download rtx4060-seed42-2026-11-12 \
-  --repo MaxLee1218/diffusion-policy-pusht-reproduction \
-  --pattern '*.ckpt' --pattern 'checkpoints.sha256' --dir downloaded-checkpoints
-cd downloaded-checkpoints
-sha256sum -c checkpoints.sha256
+sha256sum -c results/rtx4060-seed42/checkpoints.sha256
 ```
 
-The serialized checkpoint configuration retains the original experiment paths. `latest` from the longer run contains epoch-200 state; it does not include the unsaved progress up to epoch 232. The project README describes the upstream resume counter and RNG limitations.
+The best longer-run checkpoint is `experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt`. The longer-run `latest.ckpt` contains epoch-200 state; it does not include the unsaved progress up to epoch 232. Checkpoint files are excluded by `.gitignore` and are absent from a fresh clone. The project README describes the upstream resume counter and RNG limitations.

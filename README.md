@@ -157,7 +157,7 @@ The seed-42 experiment completed 232 epochs and was stopped by request during ze
 | 150 | 0.7756 |
 | 200 | 0.7772 |
 
-The [experiment archive](results/rtx4060-seed42/README.md) contains the full training logs, effective configurations, per-epoch metrics, per-test-episode scores, stop status, and an index of all **33 videos**: 30 from the longer run and three from short training and independent evaluation. All videos are committed to this repository. Nine model/optimizer/EMA checkpoints are available as [GitHub Release assets](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/tag/rtx4060-seed42-2026-11-12), with download links and SHA-256 checksums in the archive.
+The [experiment archive](results/rtx4060-seed42/README.md) contains the full training logs, effective configurations, per-epoch metrics, per-test-episode scores, stop status, and an index of all **33 videos**: 30 from the longer run and three from short training and independent evaluation. All videos are committed to this repository. The nine model/optimizer/EMA checkpoints are retained locally and were not published, as requested; the archive records their metadata and SHA-256 checksums.
 
 ## Baseline training and resume
 

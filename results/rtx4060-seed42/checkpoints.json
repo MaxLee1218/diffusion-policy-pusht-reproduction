@@ -1,95 +1,77 @@
 {
-  "release_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/tag/rtx4060-seed42-2026-11-12",
   "checkpoints": [
     {
       "run": "rtx4060-seed42",
       "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0000-test_mean_score=0.138.ckpt",
       "epoch": 0,
       "score_in_filename_rounded": 0.138,
-      "asset_name": "rtx4060-seed42-epoch-0000-score-0.138.ckpt",
       "size_bytes": 545351862,
-      "sha256": "64de7aa8ef32def3a295f6cb21e65a2062a183a33dc5ccb1e91773caa63ea112",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0000-score-0.138.ckpt"
+      "sha256": "64de7aa8ef32def3a295f6cb21e65a2062a183a33dc5ccb1e91773caa63ea112"
     },
     {
       "run": "rtx4060-seed42",
       "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0050-test_mean_score=0.733.ckpt",
       "epoch": 50,
       "score_in_filename_rounded": 0.733,
-      "asset_name": "rtx4060-seed42-epoch-0050-score-0.733.ckpt",
       "size_bytes": 545351862,
-      "sha256": "4dc31a0d365ca1fa9cc6948735f4dff43a8de5c158862cf52ebc0e7922dbc3ed",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0050-score-0.733.ckpt"
+      "sha256": "4dc31a0d365ca1fa9cc6948735f4dff43a8de5c158862cf52ebc0e7922dbc3ed"
     },
     {
       "run": "rtx4060-seed42",
       "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt",
       "epoch": 100,
       "score_in_filename_rounded": 0.791,
-      "asset_name": "rtx4060-seed42-epoch-0100-score-0.791.ckpt",
       "size_bytes": 545351862,
-      "sha256": "cef9de62122d0f9f4edad85e3f42404b2a2323aac001d72fbd0fad55f81feee0",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0100-score-0.791.ckpt"
+      "sha256": "cef9de62122d0f9f4edad85e3f42404b2a2323aac001d72fbd0fad55f81feee0"
     },
     {
       "run": "rtx4060-seed42",
       "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0150-test_mean_score=0.776.ckpt",
       "epoch": 150,
       "score_in_filename_rounded": 0.776,
-      "asset_name": "rtx4060-seed42-epoch-0150-score-0.776.ckpt",
       "size_bytes": 545351862,
-      "sha256": "0d7afbe35305dd9354f5336cda0f42dee2ac9fd72648e41becc8cfb675e7e8f1",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0150-score-0.776.ckpt"
+      "sha256": "0d7afbe35305dd9354f5336cda0f42dee2ac9fd72648e41becc8cfb675e7e8f1"
     },
     {
       "run": "rtx4060-seed42",
       "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0200-test_mean_score=0.777.ckpt",
       "epoch": 200,
       "score_in_filename_rounded": 0.777,
-      "asset_name": "rtx4060-seed42-epoch-0200-score-0.777.ckpt",
       "size_bytes": 545351862,
-      "sha256": "3b586a459769c17fe04bc07b3bb7aafa0c74ff5bbdd6d0ca1c1f40ba795bff45",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0200-score-0.777.ckpt"
+      "sha256": "3b586a459769c17fe04bc07b3bb7aafa0c74ff5bbdd6d0ca1c1f40ba795bff45"
     },
     {
       "run": "rtx4060-seed42",
       "local_path": "experiments/rtx4060-seed42/checkpoints/latest.ckpt",
       "epoch": 200,
       "score_in_filename_rounded": null,
-      "asset_name": "rtx4060-seed42-latest.ckpt",
       "size_bytes": 545351862,
-      "sha256": "8f1090e4a4e3fc351c2743599f251c92968fa95c915ce7c9c9771bdc1a23e9fd",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-latest.ckpt"
+      "sha256": "8f1090e4a4e3fc351c2743599f251c92968fa95c915ce7c9c9771bdc1a23e9fd"
     },
     {
       "run": "rtx4060-short-seed42",
       "local_path": "experiments/rtx4060-short-seed42/checkpoints/epoch=0000-test_mean_score=0.093.ckpt",
       "epoch": 0,
       "score_in_filename_rounded": 0.093,
-      "asset_name": "rtx4060-short-seed42-epoch-0000-score-0.093.ckpt",
       "size_bytes": 545351862,
-      "sha256": "2b294ae7c58ca14c6e75be6ba7db99e710cb3339428a5f772dc320583c243e79",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-epoch-0000-score-0.093.ckpt"
+      "sha256": "2b294ae7c58ca14c6e75be6ba7db99e710cb3339428a5f772dc320583c243e79"
     },
     {
       "run": "rtx4060-short-seed42",
       "local_path": "experiments/rtx4060-short-seed42/checkpoints/epoch=0001-test_mean_score=0.099.ckpt",
       "epoch": 1,
       "score_in_filename_rounded": 0.099,
-      "asset_name": "rtx4060-short-seed42-epoch-0001-score-0.099.ckpt",
       "size_bytes": 545351862,
-      "sha256": "2d74bb1cea2a92786630477cd9805256543c4985e45d7dc4640b7f41c16f8cb5",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-epoch-0001-score-0.099.ckpt"
+      "sha256": "2d74bb1cea2a92786630477cd9805256543c4985e45d7dc4640b7f41c16f8cb5"
     },
     {
       "run": "rtx4060-short-seed42",
       "local_path": "experiments/rtx4060-short-seed42/checkpoints/latest.ckpt",
       "epoch": 1,
       "score_in_filename_rounded": null,
-      "asset_name": "rtx4060-short-seed42-latest.ckpt",
       "size_bytes": 545351862,
-      "sha256": "2d74bb1cea2a92786630477cd9805256543c4985e45d7dc4640b7f41c16f8cb5",
-      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-latest.ckpt"
+      "sha256": "2d74bb1cea2a92786630477cd9805256543c4985e45d7dc4640b7f41c16f8cb5"
     }
-  ]
+  ],
+  "distribution": "local_only_not_uploaded_per_user_request"
 }

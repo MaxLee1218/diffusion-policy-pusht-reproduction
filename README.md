@@ -35,9 +35,23 @@ python -m pytest -q
 ./scripts/evaluate.sh experiments/smoke-local/checkpoints/latest.ckpt results/smoke-local
 ```
 
-The pinned build tools handle the legacy Gym package metadata. The separate robomimic install skips its EGL probe, which the Pygame/Pymunk PushT environment never uses. Pytest uses synthetic demonstrations. The smoke and evaluation launchers use the real dataset. Data preparation verifies the official archive's SHA-256. Pass an archive path to use an existing download.
+The pinned build tools handle the legacy Gym package metadata. The separate robomimic install skips its EGL probe, which the Pygame/Pymunk PushT environment never uses. Pytest uses synthetic demonstrations by default. To run the same assertions with the official replay after preparing data, use the command below. The smoke and evaluation launchers use the real dataset. Data preparation verifies the official archive's SHA-256. Pass an archive path to use an existing download.
+
+```bash
+PUSHT_REPLAY_PATH=data/pusht/pusht_cchi_v7_replay.zarr python -m pytest -q
+```
 
 The GitHub Actions CPU workflow builds the Linux CPU image and runs the same tests, data preparation, training smoke and checkpoint evaluation.
+
+Build the Linux x86_64 CPU image locally with the same pinned dependencies. On Apple Silicon, this was validated with Colima, Rosetta, and 8 GiB of VM memory. The official replay exceeded the 4 GiB VM limit under QEMU.
+
+```bash
+docker build --platform linux/amd64 --target cpu -t pusht:cpu .
+docker run --rm --platform linux/amd64 --shm-size=1g \
+  -e OMP_NUM_THREADS=2 \
+  -e PUSHT_REPLAY_PATH=/work/data/pusht/pusht_cchi_v7_replay.zarr \
+  -v "$PWD/data:/work/data:ro" pusht:cpu python -m pytest -q
+```
 
 ## Linux NVIDIA GPU validation
 

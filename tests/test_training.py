@@ -11,11 +11,10 @@ def test_optimizer_updates_policy_on_finite_loss(policy, batch, smoke_config):
     assert loss.ndim == 0
     assert torch.isfinite(loss)
     loss.backward()
-    assert all(
-        torch.isfinite(parameter.grad).all()
-        for parameter in parameters
-        if parameter.grad is not None
-    )
+    gradients = [parameter.grad for parameter in parameters if parameter.grad is not None]
+    assert gradients
+    assert all(torch.isfinite(gradient).all() for gradient in gradients)
+    assert any(torch.count_nonzero(gradient) for gradient in gradients)
     optimizer.step()
     assert any(
         not torch.equal(parameter.detach(), initial)

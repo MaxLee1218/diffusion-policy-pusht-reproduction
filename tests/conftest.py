@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import hydra
@@ -16,6 +17,10 @@ def smoke_config():
 
 @pytest.fixture(scope="session")
 def dataset(smoke_config, tmp_path_factory):
+    official_replay = os.environ.get("PUSHT_REPLAY_PATH")
+    if official_replay:
+        return hydra.utils.instantiate(smoke_config.task.dataset, zarr_path=official_replay)
+
     rng = np.random.default_rng(42)
     path = tmp_path_factory.mktemp("push-t") / "replay.zarr"
     replay = zarr.open_group(str(path), mode="w")

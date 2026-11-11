@@ -1,0 +1,17 @@
+Collecting gym==0.21.0
+  Downloading gym-0.21.0.tar.gz (1.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 19.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: numpy>=1.18.0 in ./.venv/lib/python3.11/site-packages (from gym==0.21.0) (1.26.4)
+Collecting cloudpickle>=1.2.0 (from gym==0.21.0)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Building wheels for collected packages: gym
+  Building wheel for gym (setup.py): started
+  Building wheel for gym (setup.py): finished with status 'done'
+  Created wheel for gym: filename=gym-0.21.0-py3-none-any.whl size=1616797 sha256=e097305a5a9ce77fdc18d711cf2987de40cc754eb1d3f5df31136f640ee777b4
+  Stored in directory: /home/mingx/projects/diffusion-policy-pusht-reproduction/data/tools/pip-cache/wheels/d9/98/e6/0699972fb5749befdec731c2f3058fd853150326a4b94e2cc2
+Successfully built gym
+Installing collected packages: cloudpickle, gym
+Successfully installed cloudpickle-3.1.2 gym-0.21.0

@@ -1,0 +1,27 @@
+{
+  "state": "stopped",
+  "started_at": "2026-11-11T10:35:07.066283+00:00",
+  "supervisor_pid": 5681,
+  "training_launcher_pid": 5682,
+  "command": [
+    "./scripts/train.sh",
+    "experiments/rtx4060-seed42",
+    "training.seed=42",
+    "dataloader.num_workers=2",
+    "val_dataloader.num_workers=2"
+  ],
+  "profile": "rtx4060_laptop",
+  "epochs": 300,
+  "seed": 42,
+  "run_dir": "experiments/rtx4060-seed42",
+  "console_log": "results/rtx4060-seed42/console.log",
+  "exit_code": 143,
+  "finished_at": "2026-11-11T19:20:04.802700+00:00",
+  "stop_reason": "user_request",
+  "stopped_at": "2026-11-11T19:20:23.516037+00:00",
+  "last_logged_epoch": 232,
+  "last_logged_global_step": 312436,
+  "latest_saved_epoch": 200,
+  "best_saved_epoch": 100,
+  "best_checkpoint": "experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt"
+}

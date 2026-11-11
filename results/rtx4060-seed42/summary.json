@@ -1,0 +1,118 @@
+{
+  "run": "rtx4060-seed42",
+  "training_seed": 42,
+  "profile": "rtx4060_laptop",
+  "upstream_commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+  "source_commit_at_launch": "318c05c",
+  "planned_epochs": 300,
+  "completed_epochs": 232,
+  "last_logged_epoch_zero_based": 232,
+  "last_logged_global_step": 312436,
+  "logged_training_batches": 312437,
+  "started_at": "2026-11-11T10:35:07.066283+00:00",
+  "finished_at": "2026-11-11T19:20:04.802700+00:00",
+  "recorded_wall_clock_seconds": 31497.736417,
+  "stop_reason": "user_request",
+  "best_saved_epoch": 100,
+  "best_test_mean_score": 0.7912955265289718,
+  "latest_saved_epoch": 200,
+  "rollout_evaluations": [
+    {
+      "epoch": 0,
+      "test_mean_score": 0.13847852677908834,
+      "train_mean_score": 0.2615824782800861,
+      "train_loss": 0.19509558371177232,
+      "val_loss": 0.07676191627979279,
+      "test_episodes": 50,
+      "test_score_equal_one_count": 0,
+      "test_score_below_half_count": 49
+    },
+    {
+      "epoch": 50,
+      "test_mean_score": 0.7330188637875953,
+      "train_mean_score": 0.7857170987692464,
+      "train_loss": 0.028186778008026655,
+      "val_loss": 0.04640975221991539,
+      "test_episodes": 50,
+      "test_score_equal_one_count": 4,
+      "test_score_below_half_count": 4
+    },
+    {
+      "epoch": 100,
+      "test_mean_score": 0.7912955265289718,
+      "train_mean_score": 0.5946338373387046,
+      "train_loss": 0.01946769264308072,
+      "val_loss": 0.054651398211717606,
+      "test_episodes": 50,
+      "test_score_equal_one_count": 11,
+      "test_score_below_half_count": 4
+    },
+    {
+      "epoch": 150,
+      "test_mean_score": 0.7755799489826734,
+      "train_mean_score": 0.831123540067345,
+      "train_loss": 0.012395749582138502,
+      "val_loss": 0.07266438752412796,
+      "test_episodes": 50,
+      "test_score_equal_one_count": 9,
+      "test_score_below_half_count": 3
+    },
+    {
+      "epoch": 200,
+      "test_mean_score": 0.7771660987202543,
+      "train_mean_score": 0.8032369322385245,
+      "train_loss": 0.009595836576052312,
+      "val_loss": 0.10145370662212372,
+      "test_episodes": 50,
+      "test_score_equal_one_count": 17,
+      "test_score_below_half_count": 5
+    }
+  ],
+  "metric_definition": "Mean across 50 test episodes of each episode maximum clip(target_overlap_fraction / 0.95, 0, 1). This is not a binary success rate.",
+  "evaluation": {
+    "test_seeds": [
+      100000,
+      100049
+    ],
+    "test_episodes": 50,
+    "train_episodes": 6,
+    "parallel_environments": 4,
+    "max_episode_steps": 300,
+    "ema": true,
+    "diffusion_inference_steps": 100
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "total_vram_gib": 7.99560546875,
+    "torch": "2.4.1+cu121",
+    "cuda_runtime": "12.1",
+    "compute_capability": [
+      8,
+      9
+    ],
+    "architectures": [
+      "sm_50",
+      "sm_60",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ],
+    "python": "3.11.18",
+    "torchvision": "0.19.1+cu121"
+  },
+  "videos": {
+    "formal_run_count": 30,
+    "formal_run_total_bytes": 1142030,
+    "all_experiments_count": 33,
+    "all_experiments_total_bytes": 1166853
+  },
+  "checkpoint_release": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/tag/rtx4060-seed42-2026-11-12",
+  "limitations": [
+    "One training seed; checkpoints selected using the same 50 test initial conditions.",
+    "Reduced U-Net widths [128, 256, 512] and batch size 8; not the full published baseline.",
+    "Training interrupted during zero-based epoch 232. Unsaved weights after epoch 200 are unavailable.",
+    "No independent full-length reevaluation of the best checkpoint was run."
+  ]
+}

@@ -1,0 +1,3 @@
+# Preserve captured terminal output, including carriage returns and padding.
+results/local-validation/*.log -text -whitespace
+results/rtx4060-seed42/*.log -text -whitespace

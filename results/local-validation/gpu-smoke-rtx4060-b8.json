@@ -1,0 +1,34 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compute_capability": "8.9",
+  "torch": "2.4.1+cu121",
+  "torch_cuda": "12.1",
+  "torch_architectures": [
+    "sm_50",
+    "sm_60",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90"
+  ],
+  "config_name": "rtx4060_laptop",
+  "seed": 42,
+  "batch_size": 8,
+  "steps": 3,
+  "model_parameters": 28462528,
+  "loss": [
+    0.9777204990386963,
+    1.3716548681259155,
+    1.194112777709961
+  ],
+  "iteration_seconds": [
+    0.9162565159999758,
+    0.05863799100006872,
+    0.0751568259997839
+  ],
+  "median_iteration_seconds": 0.06689740849992631,
+  "peak_allocated_gib": 0.6815385818481445,
+  "peak_reserved_gib": 0.685546875,
+  "gpu_total_gib": 7.99560546875
+}

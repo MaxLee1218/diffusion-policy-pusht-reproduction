@@ -1,0 +1,13 @@
+Collecting robomimic==0.2.0
+  Downloading robomimic-0.2.0.tar.gz (192 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 192.9/192.9 kB 4.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: robomimic
+  Building wheel for robomimic (setup.py): started
+  Building wheel for robomimic (setup.py): finished with status 'done'
+  Created wheel for robomimic: filename=robomimic-0.2.0-py3-none-any.whl size=223237 sha256=ead5597d277aad75c2bd741757c816fcc2f15e80a480ba8a366f962958655bc7
+  Stored in directory: /home/mingx/projects/diffusion-policy-pusht-reproduction/data/tools/pip-cache/wheels/72/24/cb/5d6150ab34f5cd6d37b20202e80461812dd0ee64a507c08d75
+Successfully built robomimic
+Installing collected packages: robomimic
+Successfully installed robomimic-0.2.0

@@ -135,7 +135,7 @@ PUSHT_CONFIG=rtx4060_laptop ./scripts/train.sh experiments/rtx4060-short-seed42 
   results/rtx4060-short-seed42-eval --device cuda:0
 ```
 
-The short run finished in 25.536 seconds, with finite training and validation losses in both epochs. The saved EMA checkpoint was loaded independently for GPU evaluation, and its video decoded successfully. This validates the local workflow; a 300-epoch run and the full 50-seed benchmark have not been run.
+The short run finished in 25.536 seconds, with finite training and validation losses in both epochs. The saved EMA checkpoint was loaded independently for GPU evaluation, and its video decoded successfully. This validates the local workflow. The subsequent longer experiment and its 50-seed evaluations are archived below.
 
 To start a fresh 300-epoch experiment in the activated environment, use:
 
@@ -144,6 +144,20 @@ OMP_NUM_THREADS=2 PUSHT_CONFIG=rtx4060_laptop \
   ./scripts/train.sh experiments/rtx4060-seed42 training.seed=42 \
   dataloader.num_workers=2 val_dataloader.num_workers=2
 ```
+
+### Recorded RTX 4060 training result
+
+The seed-42 experiment completed 232 epochs and was stopped by request during zero-based epoch 232, before reaching the planned 300 epochs. The best saved EMA checkpoint, at epoch 100, achieved a mean score of **0.7913** over 50 test initial conditions. This metric averages the maximum normalized coverage score in each episode; it is not a binary success rate. The experiment used the reduced 4060 model and one training seed.
+
+| Saved epoch | Test mean score |
+| --- | ---: |
+| 0 | 0.1385 |
+| 50 | 0.7330 |
+| 100 | **0.7913** |
+| 150 | 0.7756 |
+| 200 | 0.7772 |
+
+The [experiment archive](results/rtx4060-seed42/README.md) contains the full training logs, effective configurations, per-epoch metrics, per-test-episode scores, stop status, and an index of all **33 videos**: 30 from the longer run and three from short training and independent evaluation. All videos are committed to this repository. Nine model/optimizer/EMA checkpoints are available as [GitHub Release assets](https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/tag/rtx4060-seed42-2026-11-12), with download links and SHA-256 checksums in the archive.
 
 ## Baseline training and resume
 

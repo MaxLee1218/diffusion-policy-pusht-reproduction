@@ -1,0 +1,15 @@
+{
+  "action": "stop",
+  "requested_by": "user",
+  "signal": "SIGTERM",
+  "training_pid": 5688,
+  "worker_pids": [
+    5723,
+    5724,
+    5725,
+    5726,
+    84055,
+    84056
+  ],
+  "reason": "Detached job ignores SIGINT"
+}

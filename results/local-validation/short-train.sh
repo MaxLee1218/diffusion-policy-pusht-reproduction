@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/../.."
+source .venv/bin/activate
+export PUSHT_CONFIG=rtx4060_laptop
+export OMP_NUM_THREADS=2
+export OPENBLAS_NUM_THREADS=2
+
+time ./scripts/train.sh experiments/rtx4060-short-seed42 \
+  training.seed=42 \
+  training.num_epochs=2 \
+  training.max_train_steps=20 \
+  training.max_val_steps=4 \
+  training.lr_warmup_steps=5 \
+  training.rollout_every=1 \
+  training.val_every=1 \
+  training.sample_every=1 \
+  training.checkpoint_every=1 \
+  dataloader.num_workers=2 \
+  val_dataloader.num_workers=2 \
+  task.env_runner.n_train=0 \
+  task.env_runner.n_train_vis=0 \
+  task.env_runner.n_test=4 \
+  task.env_runner.n_test_vis=1 \
+  task.env_runner.max_steps=32

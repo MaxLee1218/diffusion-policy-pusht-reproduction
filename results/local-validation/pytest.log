@@ -1,0 +1,40 @@
+.......                                                                  [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/wandb/analytics/sentry.py:90
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+    self.hub = sentry_sdk.Hub(client)
+
+.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:90
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:90: DeprecationWarning: invalid escape sequence '\s'
+    relative_imports = re.findall("^\s*import\s+\.(\S+)\s*$", content, flags=re.MULTILINE)
+
+.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:92
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:92: DeprecationWarning: invalid escape sequence '\s'
+    relative_imports += re.findall("^\s*from\s+\.(\S+)\s+import", content, flags=re.MULTILINE)
+
+.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:134
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:134: DeprecationWarning: invalid escape sequence '\s'
+    imports = re.findall("^\s*import\s+(\S+)\s*$", content, flags=re.MULTILINE)
+
+.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:136
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/diffusers/dynamic_modules_utils.py:136: DeprecationWarning: invalid escape sequence '\s'
+    imports += re.findall("^\s*from\s+(\S+)\s+import", content, flags=re.MULTILINE)
+
+tests/test_checkpoint.py::test_checkpoint_restores_policy_optimizer_and_progress
+tests/test_diffusion.py::test_scheduler_noise_matches_closed_form
+tests/test_model.py::test_unet_predicts_noise_with_the_action_shape
+tests/test_model.py::test_policy_samples_finite_actions_within_the_workspace
+tests/test_training.py::test_optimizer_updates_policy_on_finite_loss
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+    warnings.warn(
+
+tests/test_checkpoint.py::test_checkpoint_restores_policy_optimizer_and_progress
+tests/test_diffusion.py::test_scheduler_noise_matches_closed_form
+tests/test_model.py::test_unet_predicts_noise_with_the_action_shape
+tests/test_model.py::test_policy_samples_finite_actions_within_the_workspace
+tests/test_training.py::test_optimizer_updates_policy_on_finite_loss
+  /home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+    warnings.warn(msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+7 passed, 15 warnings in 8.05s

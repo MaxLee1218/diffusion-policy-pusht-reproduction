@@ -1,0 +1,438 @@
+{
+  "files": [
+    {
+      "path": "experiments/rtx4060-seed42/.hydra/config.yaml",
+      "size_bytes": 3745,
+      "sha256": "d9bab47fc6caa9045a34af654719cc5ae7a3e615aa0bafd603d9537712731011"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/.hydra/hydra.yaml",
+      "size_bytes": 3834,
+      "sha256": "21853bce441aea4f81d9e454702096765ad27ef8a2c98b8c49414b1d1114e72c"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/.hydra/overrides.yaml",
+      "size_bytes": 125,
+      "sha256": "e0e66b28d6c2a3f6ab2a80ac485de469fa70fadc277f18a925952f3aa615d613"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/logs.json.txt",
+      "size_bytes": 31922235,
+      "sha256": "a79a066c6cebf875267b803e72627f1ab9c238424beffe6c2bee028a531e95ed"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/1jybsvfg.mp4",
+      "size_bytes": 34614,
+      "sha256": "8e488f14648898ccc93382560a8c2e1762cda7caafd6b99dcc06fee5045546ca"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/2a9n32b2.mp4",
+      "size_bytes": 39147,
+      "sha256": "eb0f06da7bcee73a3f3a9a9f0e7a3d766f722f536ecf26d6e68f3a348102d824"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/3g3nmand.mp4",
+      "size_bytes": 42147,
+      "sha256": "b80cdb2caff7e5438e7c15286fc4a98ad2d14175956ecc9cdb52bc30e860ff7b"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/4wn2kjv6.mp4",
+      "size_bytes": 42938,
+      "sha256": "5e2a158c5e225a136e10905c53c0dfbcbcfb92b8762e7fcdd0edb3a7abf9a7e7"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/540omh6i.mp4",
+      "size_bytes": 40897,
+      "sha256": "d8eff67509f0470fe32e78cf2ea64850af408188c77fe13f393ea8aaa96eab77"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/5bsaje8w.mp4",
+      "size_bytes": 33437,
+      "sha256": "23179f84b8ed80a60ed233c83acb05238974c66b24edfc5afe7d00e97d5d9a1e"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/62ljwnhq.mp4",
+      "size_bytes": 37967,
+      "sha256": "b6d69fb3b1221db8f30f3d26209d1750f8b3abc1698e520a46cae318e8806d4a"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/9a7mrvqu.mp4",
+      "size_bytes": 29753,
+      "sha256": "29376da2d19373ddef186062c14626b381a11b27c9eff98e85a88721eac6fe6b"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/a77n4iag.mp4",
+      "size_bytes": 25490,
+      "sha256": "2f3e5e1cc8f8f9c8db1c56a5b8eaaa13e27ed99832566f17a35d51c3ad39718f"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/awg5fqw1.mp4",
+      "size_bytes": 44919,
+      "sha256": "07b3d7acb0d32d82ff156281184d3b3a16b4d2a2d47a639112a9e49a04677e9f"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/bdzw1cij.mp4",
+      "size_bytes": 46692,
+      "sha256": "8a79cbb8839ada90b78acf5d3e3a872ad939bdaa7f6d04a8c9d66155d1bdceb5"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/bipknppy.mp4",
+      "size_bytes": 38641,
+      "sha256": "56778221734731b7fa8de8834e2dc959d992b3aba73aec04a6bff76b621e857e"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/cey90t6g.mp4",
+      "size_bytes": 43599,
+      "sha256": "e446e2a23c8b1f2b0c4ca1bc8e0a308a1881e5c7b64f645d2448b59c4fc72a44"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/d0iwvkso.mp4",
+      "size_bytes": 45669,
+      "sha256": "91ab1a9731a85cd747c96241b2a2a57052c598f5d2cc7ce2ea84664babd78ceb"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/dglnhgpn.mp4",
+      "size_bytes": 36258,
+      "sha256": "e6d423a8584e959ff3f7b1eacad0f66e18efe2625dc1219c930642855862b598"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/errtjb9p.mp4",
+      "size_bytes": 48468,
+      "sha256": "8e358023db0fb2eece6f4636834afc7412007ed2be1ef6211c14f4a09e418936"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/f4qmlyss.mp4",
+      "size_bytes": 36697,
+      "sha256": "03d5eca5f155d0a60af1198e50c5aa9c02992aaad4975512c4a0d692bae2b065"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/glmh34ph.mp4",
+      "size_bytes": 41269,
+      "sha256": "b728684dabd426b95ee915fb9f47d97fb5f3b990326a8ee14e0565f462094cbc"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/h59zdwgq.mp4",
+      "size_bytes": 33321,
+      "sha256": "446b1cf8cb5b535c78d69b748e370ede3e1cfe83f660f0ea57c4d7ccdb6b619c"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/hw4myo62.mp4",
+      "size_bytes": 42834,
+      "sha256": "8dfb053e8f2a57cd8c2bcb6e392cb3d3bca9c9650a6ea8e19e10d6fc231643e6"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/i2icm6pq.mp4",
+      "size_bytes": 39934,
+      "sha256": "2d7ac08957a900f4ab347874a2615287168c04e8162392c20a6ed12a049fa86b"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/iesfq51s.mp4",
+      "size_bytes": 41970,
+      "sha256": "918f8e3eed28394e01dd1753435dc31a50670f5315b85d00fdc9b6ced8601cd0"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/log1ycur.mp4",
+      "size_bytes": 41927,
+      "sha256": "92a6ea3606632698d0e1cf1855daf6e62fa8ad94cdd7fb12c1f5534e83ba4c75"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/lrnohlrm.mp4",
+      "size_bytes": 40469,
+      "sha256": "4f025806d6ea6ed028b8596e8c4839a7899a460a2ea145ae8824527e70527b51"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/mm14bn5m.mp4",
+      "size_bytes": 45682,
+      "sha256": "c7e52c02bcf9a032f5711517d15ed58f5b43c781da24d7241468643533f0c83f"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/mvu3sswu.mp4",
+      "size_bytes": 41174,
+      "sha256": "c6776a1de9c415cc3b326c6475d2bb80571972239ffcee879f66445a95daf7cc"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/p9r5oa7h.mp4",
+      "size_bytes": 35368,
+      "sha256": "9c9e5ef9249e9d974ccfe43280d1bf59ddc816161bf542fa5d74645209f9064c"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/t27h7ne1.mp4",
+      "size_bytes": 30983,
+      "sha256": "a0db98fd379aab3ed13c7b7fb52a724878929dddaa66ef4787b727dde780075c"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/tb9cm1b0.mp4",
+      "size_bytes": 16529,
+      "sha256": "6723ce0bc7b00c0685e3a2a8a313d06dd9c95e2b40543e65508e478a12557639"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/media/ufj1mrw0.mp4",
+      "size_bytes": 23237,
+      "sha256": "27eac3921788a11ddfb81c6aea71696dd04cf6299c8b1c8e0993ac4107fa989e"
+    },
+    {
+      "path": "experiments/rtx4060-seed42/train.log",
+      "size_bytes": 122,
+      "sha256": "6ab3a8dddd14951bbc9ca33882bae5efff125b66f14ea589627e563067f74737"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/.hydra/config.yaml",
+      "size_bytes": 3732,
+      "sha256": "859518eb1658b7ed0a69c91f69edb7d170e714e1bbea130b8235b04bbe20c4a8"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/.hydra/hydra.yaml",
+      "size_bytes": 4608,
+      "sha256": "e04c6431aaa52764b69138d6d02fb7b370113c88a3ebd89e9ea94ba7c4fd2c70"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/.hydra/overrides.yaml",
+      "size_bytes": 490,
+      "sha256": "88e9c143e3ac065562adb4dc1ae577bbc3108418e76af275089e8563bbea1404"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/logs.json.txt",
+      "size_bytes": 4462,
+      "sha256": "86769221bbe8bc0f58352fe29e2533664b6353648c954ce81947e0ec82fc9914"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/media/0nfowcxr.mp4",
+      "size_bytes": 8604,
+      "sha256": "4db06d398d9d939f527dbaaaf5cdefb1ec42a18ad1142fb0172cf8a9a83f4574"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/media/z94kuoal.mp4",
+      "size_bytes": 7410,
+      "sha256": "a6cd5cb1c56f7a29033149b0ba9b82879add4d7b15b5bb284da9c465c661bd76"
+    },
+    {
+      "path": "experiments/rtx4060-short-seed42/train.log",
+      "size_bytes": 122,
+      "sha256": "775f7d135f98d16b056ed2e93716e6a6cdbcd87b86833ee0271fd30a1fde5afc"
+    },
+    {
+      "path": "results/local-validation/dependency-install.log",
+      "size_bytes": 4128,
+      "sha256": "c275702f703e84e478919f53cdddeef59b75abee690463337767c735fd345367"
+    },
+    {
+      "path": "results/local-validation/environment.json",
+      "size_bytes": 297,
+      "sha256": "98b96dd9cfd1b831e48543561bccf8c37246d9fea2cebcc5cf8cc072d92f8c75"
+    },
+    {
+      "path": "results/local-validation/evaluate.log",
+      "size_bytes": 1218,
+      "sha256": "1bc048825c8f0aaab12d73d4189684ab697caddb77925f98b4d6b68d5dd907ba"
+    },
+    {
+      "path": "results/local-validation/gpu-smoke-rtx4060-b8.json",
+      "size_bytes": 721,
+      "sha256": "d0aec74ac45bf8a7a994d24737d1d08c40618533b4eedb10c8d4fc10779a5616"
+    },
+    {
+      "path": "results/local-validation/gpu-smoke.log",
+      "size_bytes": 1644,
+      "sha256": "e4965f61a060d0aae0252d76dc8161bd2269f3168c01020428b2cc3d3abd933c"
+    },
+    {
+      "path": "results/local-validation/gym-install.log",
+      "size_bytes": 1201,
+      "sha256": "26873515cb86d7daef4fd970513a81d65447e029fd8b6b278c8b3f9f98145274"
+    },
+    {
+      "path": "results/local-validation/installed-packages.txt",
+      "size_bytes": 1822,
+      "sha256": "1b3b0cb24d318df4fa40a22d37e4ee14020c66b52ad093ded520db56f735bf06"
+    },
+    {
+      "path": "results/local-validation/pytest.log",
+      "size_bytes": 3486,
+      "sha256": "e6121fe4c2b3a26d77a7c75ee039de0e5175cf244f85c1c22a2434345b622d85"
+    },
+    {
+      "path": "results/local-validation/robomimic-install.log",
+      "size_bytes": 941,
+      "sha256": "2011836e2534aaac1e77207d79ca7908f0a9025aea1336091aa6e2456a746c53"
+    },
+    {
+      "path": "results/local-validation/short-train.log",
+      "size_bytes": 2351,
+      "sha256": "2f1ba8222be37e646e8b6f7b55b9e89ecd1b5cb04c2cf5b034d84ebe28003f89"
+    },
+    {
+      "path": "results/local-validation/short-train.sh",
+      "size_bytes": 713,
+      "sha256": "c201ca8178285cc96790428a98412648cef4aa1c17ad6fe37143d16eb1465b8a"
+    },
+    {
+      "path": "results/local-validation/summary.json",
+      "size_bytes": 3698,
+      "sha256": "07d2c2646b8da6e1725950b67ec4a5925a1a2d6f5638f0637d07587572832886"
+    },
+    {
+      "path": "results/rtx4060-seed42/README.md",
+      "size_bytes": 9228,
+      "sha256": "266f49dd5de79f073f350f5bd5507bd50c3f7f0e6aad999dd6d9215d1a0dee97"
+    },
+    {
+      "path": "results/rtx4060-seed42/checkpoints.json",
+      "size_bytes": 5172,
+      "sha256": "b4c0522692ed76a04ab313d9f1a85026aff55279ec36c7418d077c5a634e67f7"
+    },
+    {
+      "path": "results/rtx4060-seed42/checkpoints.sha256",
+      "size_bytes": 967,
+      "sha256": "8dc3a0bb2ea1f27b5a105d02ae8f8175d66f821c5888185b9d415e69e2b60c46"
+    },
+    {
+      "path": "results/rtx4060-seed42/console.log",
+      "size_bytes": 2169593,
+      "sha256": "972c2877deeda3f289c3e9d70ecf8e215b3d7f4ab63a04ed4df23c1785fce313"
+    },
+    {
+      "path": "results/rtx4060-seed42/epoch_metrics.csv",
+      "size_bytes": 18689,
+      "sha256": "de979ce4f59814d58a8d4c9e42f21c8f1b70b26adc37826bb6d0fee2627828de"
+    },
+    {
+      "path": "results/rtx4060-seed42/launch.py",
+      "size_bytes": 2026,
+      "sha256": "1b37394ab2de629888f97f71e926ff26cb377592b7048c234b6cbec5bb341d6c"
+    },
+    {
+      "path": "results/rtx4060-seed42/status.json",
+      "size_bytes": 847,
+      "sha256": "739df57c5ddd3206455a050be0f0e87324e5c905266aa8bd0ac9eab76b20693f"
+    },
+    {
+      "path": "results/rtx4060-seed42/stop-request.json",
+      "size_bytes": 224,
+      "sha256": "65ff4c5e751a7673d7d78fa335342c4fe661e3a5370861a3c815d3280f96524a"
+    },
+    {
+      "path": "results/rtx4060-seed42/summary.json",
+      "size_bytes": 3720,
+      "sha256": "e68fb53f8601b7a3cc4ae17faca1e1077608b6231f2eec76833a308811592b93"
+    },
+    {
+      "path": "results/rtx4060-seed42/supervisor.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/rtx4060-seed42/test_episode_scores.csv",
+      "size_bytes": 7913,
+      "sha256": "2d8c2e36104d512d7ab7d6a69f5bfda4ea3089bdef64c517b42850c0f7e5b1f8"
+    },
+    {
+      "path": "results/rtx4060-seed42/videos.json",
+      "size_bytes": 14403,
+      "sha256": "234f7a2b90e0d2f396a7cf9adea93114f474a6ebe4d98c5a4a26799acecd6444"
+    },
+    {
+      "path": "results/rtx4060-short-seed42-eval/eval_log.json",
+      "size_bytes": 305,
+      "sha256": "0313fe18aa7fc46348d0635de40b468ab77bd3c283739a9cc2fbc98cab45560b"
+    },
+    {
+      "path": "results/rtx4060-short-seed42-eval/media/kmtyusby.mp4",
+      "size_bytes": 8809,
+      "sha256": "e90eaf87ebd438dbbeeb01852c9aa3dddc7d811921010c5fa61d4d3a39422ce1"
+    }
+  ],
+  "file_count": 68,
+  "total_bytes": 35365635,
+  "checkpoint_assets": [
+    {
+      "run": "rtx4060-seed42",
+      "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0000-test_mean_score=0.138.ckpt",
+      "epoch": 0,
+      "score_in_filename_rounded": 0.138,
+      "asset_name": "rtx4060-seed42-epoch-0000-score-0.138.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "64de7aa8ef32def3a295f6cb21e65a2062a183a33dc5ccb1e91773caa63ea112",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0000-score-0.138.ckpt"
+    },
+    {
+      "run": "rtx4060-seed42",
+      "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0050-test_mean_score=0.733.ckpt",
+      "epoch": 50,
+      "score_in_filename_rounded": 0.733,
+      "asset_name": "rtx4060-seed42-epoch-0050-score-0.733.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "4dc31a0d365ca1fa9cc6948735f4dff43a8de5c158862cf52ebc0e7922dbc3ed",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0050-score-0.733.ckpt"
+    },
+    {
+      "run": "rtx4060-seed42",
+      "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt",
+      "epoch": 100,
+      "score_in_filename_rounded": 0.791,
+      "asset_name": "rtx4060-seed42-epoch-0100-score-0.791.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "cef9de62122d0f9f4edad85e3f42404b2a2323aac001d72fbd0fad55f81feee0",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0100-score-0.791.ckpt"
+    },
+    {
+      "run": "rtx4060-seed42",
+      "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0150-test_mean_score=0.776.ckpt",
+      "epoch": 150,
+      "score_in_filename_rounded": 0.776,
+      "asset_name": "rtx4060-seed42-epoch-0150-score-0.776.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "0d7afbe35305dd9354f5336cda0f42dee2ac9fd72648e41becc8cfb675e7e8f1",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0150-score-0.776.ckpt"
+    },
+    {
+      "run": "rtx4060-seed42",
+      "local_path": "experiments/rtx4060-seed42/checkpoints/epoch=0200-test_mean_score=0.777.ckpt",
+      "epoch": 200,
+      "score_in_filename_rounded": 0.777,
+      "asset_name": "rtx4060-seed42-epoch-0200-score-0.777.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "3b586a459769c17fe04bc07b3bb7aafa0c74ff5bbdd6d0ca1c1f40ba795bff45",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-epoch-0200-score-0.777.ckpt"
+    },
+    {
+      "run": "rtx4060-seed42",
+      "local_path": "experiments/rtx4060-seed42/checkpoints/latest.ckpt",
+      "epoch": 200,
+      "score_in_filename_rounded": null,
+      "asset_name": "rtx4060-seed42-latest.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "8f1090e4a4e3fc351c2743599f251c92968fa95c915ce7c9c9771bdc1a23e9fd",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-seed42-latest.ckpt"
+    },
+    {
+      "run": "rtx4060-short-seed42",
+      "local_path": "experiments/rtx4060-short-seed42/checkpoints/epoch=0000-test_mean_score=0.093.ckpt",
+      "epoch": 0,
+      "score_in_filename_rounded": 0.093,
+      "asset_name": "rtx4060-short-seed42-epoch-0000-score-0.093.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "2b294ae7c58ca14c6e75be6ba7db99e710cb3339428a5f772dc320583c243e79",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-epoch-0000-score-0.093.ckpt"
+    },
+    {
+      "run": "rtx4060-short-seed42",
+      "local_path": "experiments/rtx4060-short-seed42/checkpoints/epoch=0001-test_mean_score=0.099.ckpt",
+      "epoch": 1,
+      "score_in_filename_rounded": 0.099,
+      "asset_name": "rtx4060-short-seed42-epoch-0001-score-0.099.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "2d74bb1cea2a92786630477cd9805256543c4985e45d7dc4640b7f41c16f8cb5",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-epoch-0001-score-0.099.ckpt"
+    },
+    {
+      "run": "rtx4060-short-seed42",
+      "local_path": "experiments/rtx4060-short-seed42/checkpoints/latest.ckpt",
+      "epoch": 1,
+      "score_in_filename_rounded": null,
+      "asset_name": "rtx4060-short-seed42-latest.ckpt",
+      "size_bytes": 545351862,
+      "sha256": "2d74bb1cea2a92786630477cd9805256543c4985e45d7dc4640b7f41c16f8cb5",
+      "download_url": "https://github.com/MaxLee1218/diffusion-policy-pusht-reproduction/releases/download/rtx4060-seed42-2026-11-12/rtx4060-short-seed42-latest.ckpt"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "total_vram_gib": 7.99560546875,
+  "torch": "2.4.1+cu121",
+  "cuda_runtime": "12.1",
+  "compute_capability": [
+    8,
+    9
+  ],
+  "architectures": [
+    "sm_50",
+    "sm_60",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90"
+  ]
+}

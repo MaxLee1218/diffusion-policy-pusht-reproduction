@@ -1,0 +1,129 @@
+{
+  "upstream_commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+  "python_environment": ".venv",
+  "dataset": {
+    "path": "data/pusht/pusht_cchi_v7_replay.zarr",
+    "archive_sha256": "63d52a114a3f010861f0181309d165b7d69133ccae426ece2fc94caed147bdf9",
+    "episodes": 206,
+    "steps": 25650
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "total_vram_gib": 7.99560546875,
+    "torch": "2.4.1+cu121",
+    "cuda_runtime": "12.1",
+    "compute_capability": [
+      8,
+      9
+    ],
+    "architectures": [
+      "sm_50",
+      "sm_60",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ]
+  },
+  "pytest": {
+    "passed": 7,
+    "dataset": "official",
+    "log": "results/local-validation/pytest.log"
+  },
+  "gpu_smoke": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "compute_capability": "8.9",
+    "torch": "2.4.1+cu121",
+    "torch_cuda": "12.1",
+    "torch_architectures": [
+      "sm_50",
+      "sm_60",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ],
+    "config_name": "rtx4060_laptop",
+    "seed": 42,
+    "batch_size": 8,
+    "steps": 3,
+    "model_parameters": 28462528,
+    "loss": [
+      0.9777204990386963,
+      1.3716548681259155,
+      1.194112777709961
+    ],
+    "iteration_seconds": [
+      0.9162565159999758,
+      0.05863799100006872,
+      0.0751568259997839
+    ],
+    "median_iteration_seconds": 0.06689740849992631,
+    "peak_allocated_gib": 0.6815385818481445,
+    "peak_reserved_gib": 0.685546875,
+    "gpu_total_gib": 7.99560546875
+  },
+  "short_training": {
+    "config": "rtx4060_laptop",
+    "epochs": 2,
+    "batches_per_epoch": 20,
+    "training_batches": 40,
+    "batch_size": 8,
+    "validation_batches_per_epoch": 4,
+    "ema": true,
+    "diffusion_inference_steps": 100,
+    "rollout_episodes_per_epoch": 4,
+    "rollout_max_steps": 32,
+    "dataloader_workers": 2,
+    "elapsed_seconds": 25.536,
+    "epoch_metrics": [
+      {
+        "train_loss": 1.0343758851289748,
+        "global_step": 19,
+        "epoch": 0,
+        "lr": 9.999225334321441e-05,
+        "test/sim_max_reward_100000": 0.0,
+        "test/sim_max_reward_100001": 0.19138867713589927,
+        "test/sim_max_reward_100002": 0.0,
+        "test/sim_max_reward_100003": 0.17881819568268698,
+        "test/mean_score": 0.09255171820464655,
+        "val_loss": 0.8418755531311035,
+        "train_action_mse_error": 52342.3671875
+      },
+      {
+        "train_loss": 0.6029397085309028,
+        "global_step": 40,
+        "epoch": 1,
+        "lr": 9.995782859779692e-05,
+        "test/sim_max_reward_100000": 0.0,
+        "test/sim_max_reward_100001": 0.17785419038837724,
+        "test/sim_max_reward_100002": 0.0,
+        "test/sim_max_reward_100003": 0.21707654177325753,
+        "test/mean_score": 0.09873268304040869,
+        "val_loss": 0.3436071276664734,
+        "train_action_mse_error": 36626.3125
+      }
+    ],
+    "checkpoint": "experiments/rtx4060-short-seed42/checkpoints/latest.ckpt",
+    "command_script": "results/local-validation/short-train.sh"
+  },
+  "checkpoint_evaluation": {
+    "metrics": {
+      "test/mean_score": 0.1738533144405973,
+      "test/sim_max_reward_100000": 0.15227617421593037,
+      "test/sim_max_reward_100001": 0.17785419038837724,
+      "test/sim_max_reward_100002": 0.18646469747539451,
+      "test/sim_max_reward_100003": 0.17881819568268698,
+      "test/sim_video_100000": "media/kmtyusby.mp4"
+    },
+    "videos": [
+      {
+        "path": "results/rtx4060-short-seed42-eval/media/kmtyusby.mp4",
+        "decoded_frames": 32
+      }
+    ]
+  },
+  "scope": "Functional validation only; no full 300-epoch training or 50-seed benchmark was run."
+}

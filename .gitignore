@@ -2,9 +2,16 @@
 /data/
 /experiments/*
 !/experiments/README.md
+!/experiments/rtx4060-seed42/
+!/experiments/rtx4060-short-seed42/
+/experiments/*/checkpoints/
+/experiments/*/wandb/
 /results/*
 !/results/README.md
 !/results/rtx4060-validation.json
+!/results/rtx4060-seed42/
+!/results/local-validation/
+!/results/rtx4060-short-seed42-eval/
 __pycache__/
 .pytest_cache/
 *.ckpt

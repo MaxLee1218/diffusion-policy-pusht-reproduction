@@ -1,0 +1,5 @@
+- training.seed=42
+- dataloader.num_workers=2
+- val_dataloader.num_workers=2
+- training.resume=false
+- logging.mode=disabled

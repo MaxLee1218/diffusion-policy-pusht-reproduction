@@ -1,0 +1,47 @@
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['agent_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.726541e+07
+Vision params: 1.119709e+07
+{
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compute_capability": "8.9",
+  "torch": "2.4.1+cu121",
+  "torch_cuda": "12.1",
+  "torch_architectures": [
+    "sm_50",
+    "sm_60",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90"
+  ],
+  "config_name": "rtx4060_laptop",
+  "seed": 42,
+  "batch_size": 8,
+  "steps": 3,
+  "model_parameters": 28462528,
+  "loss": [
+    0.9777204990386963,
+    1.3716548681259155,
+    1.194112777709961
+  ],
+  "iteration_seconds": [
+    0.9162565159999758,
+    0.05863799100006872,
+    0.0751568259997839
+  ],
+  "median_iteration_seconds": 0.06689740849992631,
+  "peak_allocated_gib": 0.6815385818481445,
+  "peak_reserved_gib": 0.685546875,
+  "gpu_total_gib": 7.99560546875
+}

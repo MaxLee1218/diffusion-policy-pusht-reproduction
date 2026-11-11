@@ -1,0 +1,38 @@
+defaults:
+  - baseline
+  - _self_
+
+exp_name: smoke
+policy:
+  down_dims: [32, 64, 128]
+  diffusion_step_embed_dim: 32
+  num_inference_steps: 2
+dataloader:
+  batch_size: 2
+  num_workers: 0
+  pin_memory: false
+val_dataloader:
+  batch_size: 2
+  num_workers: 0
+  pin_memory: false
+training:
+  device: cpu
+  num_epochs: 1
+  max_train_steps: 2
+  max_val_steps: 1
+  lr_warmup_steps: 0
+  use_ema: false
+  resume: false
+task:
+  dataset:
+    max_train_episodes: 2
+  env_runner:
+    n_envs: 1
+    n_train: 0
+    n_train_vis: 0
+    n_test: 1
+    n_test_vis: 0
+    max_steps: 8
+checkpoint:
+  topk:
+    k: 0

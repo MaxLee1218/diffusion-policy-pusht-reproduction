@@ -1,0 +1,25 @@
+name: CPU validation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - run: docker build --target cpu -t pusht:cpu .
+      - run: |
+          docker run --rm --shm-size=1g pusht:cpu bash -euc '
+            python -m pytest -q
+            ./scripts/prepare_data.sh
+            ./scripts/smoke_test.sh experiments/ci-smoke
+            ./scripts/evaluate.sh experiments/ci-smoke/checkpoints/latest.ckpt results/ci-smoke
+          '

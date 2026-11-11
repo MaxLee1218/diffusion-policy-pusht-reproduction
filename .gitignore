@@ -1,0 +1,10 @@
+/.venv/
+/data/
+/experiments/*
+!/experiments/README.md
+/results/*
+!/results/README.md
+__pycache__/
+.pytest_cache/
+*.ckpt
+.DS_Store

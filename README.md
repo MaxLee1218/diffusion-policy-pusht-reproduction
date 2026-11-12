@@ -185,6 +185,8 @@ checkpoint='experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.
 
 After fixing the protocol, repeat with a fresh output directory, `--test-start-seed 300000 --n-test 50`, and the same settings. These ranges are separate from the archived checkpoint-selection seeds (100000–100049). The evaluator uses the checkpoint's weights, observation history, prediction horizon and diffusion inference steps. Only the number of actions executed before replanning changes. Each condition runs with batch size one and resets the model sampling seed per episode. Pair rows by `test_seed`; a given initial condition uses the same sampling seed across all settings.
 
+The [completed independent 50-seed evaluation](results/README.md#independent-50-seed-action-execution-length-evaluation) archives all 400 episodes, eight condition summaries, 16 videos, and validation records. The development sample's highest mean score at 8 actions did not persist on the independent seeds.
+
 With `--disturbance-step`, the sweep adds a disturbed trial for every clean trial. The perturbation applies a fixed +X velocity impulse to the T block before the specified one-based control step. The trigger follows simulator steps across chunk boundaries. A trial that ends before that step contributes to overall success and has no post-disturbance result. Report the exposed count with the post-disturbance success rate and compare the overall results on all paired seeds. A fixed trigger can fall at different positions within different action chunks.
 
 The output directory contains:

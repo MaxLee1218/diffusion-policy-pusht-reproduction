@@ -1,0 +1,214 @@
+{
+  "validated_at": "2026-11-12T18:54:22.569946+00:00",
+  "git_commit_at_validation": "eaa00dd51694f7e68108eb25507f65c6b7262fe7",
+  "git_commit_at_launch": "eaa00dd51694f7e68108eb25507f65c6b7262fe7",
+  "passed": true,
+  "episode_count": 400,
+  "summary_count": 8,
+  "paired_seeds_per_condition": [
+    300000,
+    300001,
+    300002,
+    300003,
+    300004,
+    300005,
+    300006,
+    300007,
+    300008,
+    300009,
+    300010,
+    300011,
+    300012,
+    300013,
+    300014,
+    300015,
+    300016,
+    300017,
+    300018,
+    300019,
+    300020,
+    300021,
+    300022,
+    300023,
+    300024,
+    300025,
+    300026,
+    300027,
+    300028,
+    300029,
+    300030,
+    300031,
+    300032,
+    300033,
+    300034,
+    300035,
+    300036,
+    300037,
+    300038,
+    300039,
+    300040,
+    300041,
+    300042,
+    300043,
+    300044,
+    300045,
+    300046,
+    300047,
+    300048,
+    300049
+  ],
+  "paired_sampling_seeds_per_condition": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+  ],
+  "disturbance_exposed_count": 199,
+  "unexposed_disturbed_episodes": [
+    {
+      "action_steps": 8,
+      "test_seed": 300040,
+      "control_steps": 48,
+      "success": true
+    }
+  ],
+  "checkpoint_sha256_verified": "cef9de62122d0f9f4edad85e3f42404b2a2323aac001d72fbd0fad55f81feee0",
+  "checks": [
+    "unique episode keys and paired seeds",
+    "score, success threshold, step counts and inference timing",
+    "all summary columns recomputed",
+    "disturbance exposure and recovery fields",
+    "all video frames decoded at 96x96 with one frame per control step",
+    "local checkpoint SHA-256 matches protocol",
+    "completed run status with exit code zero"
+  ],
+  "video_count": 16,
+  "videos": [
+    {
+      "path": "videos/clean/h02-seed300000.mp4",
+      "frames": 300,
+      "bytes": 44918
+    },
+    {
+      "path": "videos/clean/h02-seed300001.mp4",
+      "frames": 300,
+      "bytes": 44005
+    },
+    {
+      "path": "videos/clean/h04-seed300000.mp4",
+      "frames": 300,
+      "bytes": 36980
+    },
+    {
+      "path": "videos/clean/h04-seed300001.mp4",
+      "frames": 300,
+      "bytes": 40286
+    },
+    {
+      "path": "videos/clean/h08-seed300000.mp4",
+      "frames": 300,
+      "bytes": 44588
+    },
+    {
+      "path": "videos/clean/h08-seed300001.mp4",
+      "frames": 300,
+      "bytes": 45906
+    },
+    {
+      "path": "videos/clean/h12-seed300000.mp4",
+      "frames": 300,
+      "bytes": 43698
+    },
+    {
+      "path": "videos/clean/h12-seed300001.mp4",
+      "frames": 300,
+      "bytes": 39863
+    },
+    {
+      "path": "videos/disturbed/h02-seed300000.mp4",
+      "frames": 300,
+      "bytes": 43007
+    },
+    {
+      "path": "videos/disturbed/h02-seed300001.mp4",
+      "frames": 300,
+      "bytes": 43946
+    },
+    {
+      "path": "videos/disturbed/h04-seed300000.mp4",
+      "frames": 300,
+      "bytes": 41257
+    },
+    {
+      "path": "videos/disturbed/h04-seed300001.mp4",
+      "frames": 300,
+      "bytes": 44768
+    },
+    {
+      "path": "videos/disturbed/h08-seed300000.mp4",
+      "frames": 300,
+      "bytes": 41717
+    },
+    {
+      "path": "videos/disturbed/h08-seed300001.mp4",
+      "frames": 300,
+      "bytes": 48564
+    },
+    {
+      "path": "videos/disturbed/h12-seed300000.mp4",
+      "frames": 300,
+      "bytes": 37662
+    },
+    {
+      "path": "videos/disturbed/h12-seed300001.mp4",
+      "frames": 300,
+      "bytes": 40974
+    }
+  ]
+}

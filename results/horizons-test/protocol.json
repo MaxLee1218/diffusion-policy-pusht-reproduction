@@ -1,0 +1,32 @@
+{
+  "checkpoint": "experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt",
+  "output_dir": "results/horizons-test",
+  "device": "cuda:0",
+  "action_steps": [
+    2,
+    4,
+    8,
+    12
+  ],
+  "test_start_seed": 300000,
+  "n_test": 50,
+  "sampling_seed": 42,
+  "max_steps": 300,
+  "record_first": 2,
+  "disturbance_step": 50,
+  "disturbance_delta_v": 120.0,
+  "checkpoint_sha256": "cef9de62122d0f9f4edad85e3f42404b2a2323aac001d72fbd0fad55f81feee0",
+  "training_seed": 42,
+  "weights": "ema_model",
+  "observation_steps": 2,
+  "prediction_steps": 16,
+  "diffusion_inference_steps": 100,
+  "legacy_test": true,
+  "render_size": 96,
+  "torch_version": "2.4.1+cu121",
+  "torch_num_threads": 2,
+  "scenarios": [
+    "clean",
+    "disturbed"
+  ]
+}

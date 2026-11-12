@@ -41,4 +41,27 @@ Mean cumulative policy inference time per clean episode was approximately 129, 7
 - [Clean videos](horizons-dev/videos/clean/) and [disturbed videos](horizons-dev/videos/disturbed/): seeds 200000 and 200001 are recorded for every execution length; filenames include the length and seed.
 - [Artifact manifest and SHA-256 checksums](horizons-dev/manifest.json). Checkpoint weights remain local.
 
-The [study command](../README.md#action-execution-length-study) reproduces this protocol with a fresh output directory and the local checkpoint. Environment seeds are a fixed reproducible list, with sampling seeds `42–46` reset per episode and shared across conditions for each environment seed. The planned independent evaluation uses fixed environment seeds `300000–300049` and sampling seeds `42–91`; it has not been run in this archive.
+The [study command](../README.md#action-execution-length-study) reproduces this protocol with a fresh output directory and the local checkpoint. Environment seeds are a fixed reproducible list, with sampling seeds `42–46` reset per episode and shared across conditions for each environment seed.
+
+## Independent 50-seed action execution length evaluation
+
+The independent evaluation ran from 2026-11-12 17:29 to 2026-11-13 00:18 China Standard Time (UTC+8), finishing with exit code 0 after 6 h 48 min. It used the same epoch-100 EMA checkpoint and development protocol, with fresh environment seeds `300000–300049` and sampling seeds `42–91` paired across all eight conditions: **400 episodes** in total. These environment seeds are separate from both checkpoint selection and development.
+
+| Actions executed before replanning | Clean mean score | Clean successes | Disturbed mean score | Disturbed successes | Paired mean score change |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 2 | 0.7718 | 7/50 (14%) | 0.7841 | 8/50 (16%) | +0.0124 |
+| 4 | 0.7624 | 10/50 (20%) | 0.7863 | 12/50 (24%) | +0.0240 |
+| 8 | 0.7378 | 10/50 (20%) | 0.7164 | 10/50 (20%) | -0.0214 |
+| 12 | 0.8079 | 5/50 (10%) | 0.7822 | 12/50 (24%) | -0.0257 |
+
+The development sample's highest mean score at 8 actions did not persist on the independent seeds. On clean trials, 12 actions had the highest mean peak score but the lowest success rate. With disturbance, 4 and 12 actions tied for the highest overall success count. These are descriptive results for one training seed and checkpoint; they do not establish a statistically reliable ranking or a benefit from disturbance. Mean score measures peak clipped normalized coverage over the entire episode, while success requires raw coverage strictly above 0.95.
+
+Of the 200 trials assigned to the disturbed condition, 199 received the impulse. The 8-action trial for seed `300040` succeeded at step 48, before the step-50 trigger. Its overall result remains included, but it has no post-disturbance result. Consequently, the 8-action post-disturbance success rate is **9/49 (18.37%)**, versus the overall **10/50 (20%)**. All 50 trials received the impulse at each other execution length.
+
+Mean cumulative policy inference time per clean episode was approximately 127, 61, 32, and 22 seconds for 2, 4, 8, and 12 actions. Physics pauses during inference in this synchronous simulation, so these timings do not measure the effects of real-time inference delay.
+
+- [Protocol and checkpoint SHA-256](horizons-test/protocol.json), [400 per-episode results](horizons-test/episodes.csv), and [eight-condition summary](horizons-test/summary.csv).
+- [Completed run status](horizons-test-control/status.json), [console log](horizons-test-control/console.log), [launcher](horizons-test-control/launch.py), and [terminal monitor](horizons-test-control/monitor.py). Recorded process IDs refer to the original run.
+- [Validation record](horizons-test/validation.json): seed pairing, episode counts, metric and summary consistency, disturbance exposure, checkpoint checksum, and full decoding of all 16 videos.
+- [Clean videos](horizons-test/videos/clean/) and [disturbed videos](horizons-test/videos/disturbed/): seeds `300000` and `300001` for every execution length.
+- [Artifact manifest and SHA-256 checksums](horizons-test/manifest.json). Model checkpoints remain local.

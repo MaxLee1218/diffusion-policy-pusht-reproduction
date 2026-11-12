@@ -1,0 +1,51 @@
+{
+  "state": "completed",
+  "started_at": "2026-11-12T09:29:45.074103+00:00",
+  "supervisor_pid": 16181,
+  "command": [
+    "./scripts/evaluate.sh",
+    "horizons",
+    "experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt",
+    "results/horizons-test",
+    "--device",
+    "cuda:0",
+    "--action-steps",
+    "2",
+    "4",
+    "8",
+    "12",
+    "--test-start-seed",
+    "300000",
+    "--n-test",
+    "50",
+    "--sampling-seed",
+    "42",
+    "--max-steps",
+    "300",
+    "--disturbance-step",
+    "50",
+    "--disturbance-delta-v",
+    "120",
+    "--record-first",
+    "2"
+  ],
+  "git_commit": "eaa00dd51694f7e68108eb25507f65c6b7262fe7",
+  "output_dir": "results/horizons-test",
+  "console_log": "results/horizons-test-control/console.log",
+  "expected_episodes": 400,
+  "expected_conditions": 8,
+  "environment_seeds": [
+    300000,
+    300049
+  ],
+  "sampling_seeds": [
+    42,
+    91
+  ],
+  "tmux_socket": "pusht-experiments",
+  "tmux_session": "pusht-horizons-test",
+  "monitor_session": "pusht-horizons-monitor",
+  "evaluation_pid": 16186,
+  "exit_code": 0,
+  "finished_at": "2026-11-12T16:18:10.872716+00:00"
+}

@@ -4,7 +4,17 @@
 
 In PushT, a policy uses images and the pusher's position to move a T-shaped block into a target pose. It predicts a sequence of actions, executes the first few, then observes the scene again and replans. **How does the number of actions executed between replans affect task success, peak goal overlap, and inference cost?** This study holds one trained policy fixed and tests four execution lengths, with and without a timed disturbance, across the same 50 initial conditions (400 evaluation rollouts).
 
-[Results](#held-out-results) · [Protocol](#experimental-design) · [Raw data](results/horizons-test/episodes.csv) · [Rollout videos](results/horizons-test/videos/) · [Reproduction guide](docs/reproduction.md)
+[Real-robot progress](#real-robot-reproduction-in-progress) · [Simulation results](#held-out-results) · [Protocol](#experimental-design) · [Raw data](results/horizons-test/episodes.csv) · [Rollout videos](results/horizons-test/videos/) · [Reproduction guide](docs/reproduction.md)
+
+## Real-robot reproduction in progress
+
+I am extending this Diffusion Policy reproduction to a physical robot. In the current pilot, I use keyboard teleoperation on a reBot B601-DM arm to collect demonstrations of picking up a chess piece and placing it on a marked target. The LeRobot recordings capture RGB observations, measured joint and gripper positions, and commanded positions. The next milestones are training on these demonstrations and evaluating the policy in closed loop on the robot.
+
+| Initial position | During transfer | At the target |
+| :---: | :---: | :---: |
+| ![A chess piece between the open gripper and the blue target](docs/assets/hardware/b601-frame-000.png) | ![The robot gripper holds the chess piece beside the target during transfer](docs/assets/hardware/b601-frame-309.png) | ![The chess piece is aligned with the blue target at the end of the recording](docs/assets/hardware/b601-frame-649.png) |
+
+*Camera frames 0, 309, and 649 from one teleoperated demonstration. The results below are from the PushT simulation.*
 
 ## Held-out results
 

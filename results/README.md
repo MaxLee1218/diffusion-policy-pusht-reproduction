@@ -20,3 +20,25 @@ Regenerate the figure and tables from the repository root in the activated envir
 python -m pip install -r requirements-analysis.txt
 python scripts/analyze_baseline.py
 ```
+
+## Action execution length development sweep
+
+The development sweep completed on 2026-11-12 with five environment seeds (`200000–200004`), four action execution lengths, and paired clean/disturbed conditions: **40 episodes** in total. It used the epoch-100 EMA checkpoint, two observation steps, a 16-step prediction horizon, 100 diffusion inference steps, and a 300-control-step episode limit. The disturbed condition applies a +X velocity impulse of 120 simulation units/s before control step 50. All 20 disturbed episodes reached that step and received the impulse.
+
+| Actions executed before replanning | Clean mean score | Clean successes | Disturbed mean score | Disturbed successes | Paired mean score change |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 2 | 0.9079 | 1/5 | 0.6426 | 1/5 | -0.2653 |
+| 4 | 0.8533 | 0/5 | 0.7690 | 1/5 | -0.0843 |
+| 8 | 0.9397 | 1/5 | 0.9885 | 2/5 | +0.0489 |
+| 12 | 0.7809 | 0/5 | 0.7793 | 2/5 | -0.0016 |
+
+The mean score averages each episode's maximum clipped normalized coverage; success requires raw coverage strictly above 0.95. Peak scores span the entire episode, including time before the disturbance. The 8-action setting has the highest mean score in both conditions in this development sample. Five seeds and one trained checkpoint do not establish a general ranking or a benefit from disturbance. The two largest paired score drops in the 2-action setting occurred on seeds 200003 and 200004. High peak scores can coexist with later deterioration: the disturbed 8-action episode for seed 200004 reached 94.718% raw coverage but ended at 49.339%.
+
+Mean cumulative policy inference time per clean episode was approximately 129, 74, 34, and 24 seconds for execution lengths 2, 4, 8, and 12. This is synchronous simulation: physics does not advance during inference, so these rollouts do not measure the effect of real-time inference delay. Post-disturbance time to success is averaged only over successful exposed episodes, which are different subsets across execution lengths.
+
+- [Protocol and checkpoint SHA-256](horizons-dev/protocol.json), [40 per-episode results](horizons-dev/episodes.csv), [eight-condition summary](horizons-dev/summary.csv), and [console log](horizons-dev/console.log).
+- [Validation record](horizons-dev/validation.json): seed pairing, episode counts, score/success consistency, summary values, disturbance exposure, and complete decoding of all 16 videos. Each video has 96 x 96 resolution and one frame per executed control step.
+- [Clean videos](horizons-dev/videos/clean/) and [disturbed videos](horizons-dev/videos/disturbed/): seeds 200000 and 200001 are recorded for every execution length; filenames include the length and seed.
+- [Artifact manifest and SHA-256 checksums](horizons-dev/manifest.json). Checkpoint weights remain local.
+
+The [study command](../README.md#action-execution-length-study) reproduces this protocol with a fresh output directory and the local checkpoint. Environment seeds are a fixed reproducible list, with sampling seeds `42–46` reset per episode and shared across conditions for each environment seed. The planned independent evaluation uses fixed environment seeds `300000–300049` and sampling seeds `42–91`; it has not been run in this archive.

@@ -12,6 +12,7 @@
 !/results/rtx4060-seed42/
 !/results/local-validation/
 !/results/rtx4060-short-seed42-eval/
+!/results/horizons-dev/
 __pycache__/
 .pytest_cache/
 *.ckpt

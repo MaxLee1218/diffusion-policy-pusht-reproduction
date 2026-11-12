@@ -1,0 +1,112 @@
+{
+  "hash_algorithm": "sha256",
+  "file_count": 21,
+  "total_bytes": 593082,
+  "files": [
+    {
+      "path": "console.log",
+      "bytes": 5264,
+      "sha256": "555a36c5a157b07f8d912d740c64efcc8afe1511a79c4565447c5c8146b92a13"
+    },
+    {
+      "path": "episodes.csv",
+      "bytes": 6196,
+      "sha256": "baf3b7201519a3eaf0940834073cddb105c5c53db4215cdc7cb8d07b4d2a3613"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 763,
+      "sha256": "05b3312e43ee11f2d9c991e7e782e47e0955311479ae8279604a7b55fa6fbd08"
+    },
+    {
+      "path": "summary.csv",
+      "bytes": 1352,
+      "sha256": "d144644e3f72e3c1e4609e3f593094c65ec1fd93aae6aa9950699abaab6cb876"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 2048,
+      "sha256": "6b01b0328e958d5a15ccc3812c8f711d68c8e7e2039613715a5e8d4a290978a3"
+    },
+    {
+      "path": "videos/clean/h02-seed200000.mp4",
+      "bytes": 39305,
+      "sha256": "1dbb5df6d109ece6d26a8a430abcc908a76b9452ba11bfe5d26b99a182addc11"
+    },
+    {
+      "path": "videos/clean/h02-seed200001.mp4",
+      "bytes": 22893,
+      "sha256": "e9db3022db86bbb6016df6c16746342fcf9fde242c4278c698dab40b22aabfc7"
+    },
+    {
+      "path": "videos/clean/h04-seed200000.mp4",
+      "bytes": 41041,
+      "sha256": "5ceda65fa94e333d6c9ae3cf1b9228f6fb7a077ab598c30b99cf5e641e91385a"
+    },
+    {
+      "path": "videos/clean/h04-seed200001.mp4",
+      "bytes": 44019,
+      "sha256": "3c97e339f235ee55e076948d2fb947da17f3e94b73dc954f74705f2cc6b8bcef"
+    },
+    {
+      "path": "videos/clean/h08-seed200000.mp4",
+      "bytes": 25398,
+      "sha256": "12c05acb37595e6e8af2b6a1bef7f6c8c88120dafa6d378bd935971072227058"
+    },
+    {
+      "path": "videos/clean/h08-seed200001.mp4",
+      "bytes": 41611,
+      "sha256": "fd20b6d5ade3e951c3b9cb8711ac377e874a2b7ebbaa04861d0169410ba4b68e"
+    },
+    {
+      "path": "videos/clean/h12-seed200000.mp4",
+      "bytes": 43652,
+      "sha256": "ba8304d5781a93bf5f8522d73187eee596615056ceacb84bbbc676464d838344"
+    },
+    {
+      "path": "videos/clean/h12-seed200001.mp4",
+      "bytes": 42031,
+      "sha256": "abcb28f797c5479055e7d01451494a6de84cc6f33be3ba876d5c2ed962bfb01a"
+    },
+    {
+      "path": "videos/disturbed/h02-seed200000.mp4",
+      "bytes": 45161,
+      "sha256": "53f73a2c5f0cd97117fb10278924a61df1ada1cf89bae00b898ee0f20a0a98ec"
+    },
+    {
+      "path": "videos/disturbed/h02-seed200001.mp4",
+      "bytes": 29546,
+      "sha256": "317e28fde8d0215b992741cb211c8e90df1301e4e22eac9b431555a2e6a37ac7"
+    },
+    {
+      "path": "videos/disturbed/h04-seed200000.mp4",
+      "bytes": 41347,
+      "sha256": "19f810ddbc66e13dcc24063545d0d7aa9a3c456bb1d095e4965709b8ee2324d4"
+    },
+    {
+      "path": "videos/disturbed/h04-seed200001.mp4",
+      "bytes": 27948,
+      "sha256": "9a58465c4f9797f21f8f8b3ffb4e2a7fc6e46af83be4efc26c79d2b9510e1b1e"
+    },
+    {
+      "path": "videos/disturbed/h08-seed200000.mp4",
+      "bytes": 37363,
+      "sha256": "5125c81a0913934c85fa9db77cc6ddf22aab2aa4867ad1fa7ec3ceec9b3adbf1"
+    },
+    {
+      "path": "videos/disturbed/h08-seed200001.mp4",
+      "bytes": 43183,
+      "sha256": "6c2b5bbab85716834c6d5c6b2c479ae4155776297939296425cd8c7468834921"
+    },
+    {
+      "path": "videos/disturbed/h12-seed200000.mp4",
+      "bytes": 28884,
+      "sha256": "c0459c33528f960dc07bee99c213c15b73eb95362d3e6584b919e663909294cb"
+    },
+    {
+      "path": "videos/disturbed/h12-seed200001.mp4",
+      "bytes": 24077,
+      "sha256": "eb441c80b04232fbed346cddb23b2869254efe1eb75fa2a0ea6b29f126fc5e26"
+    }
+  ]
+}

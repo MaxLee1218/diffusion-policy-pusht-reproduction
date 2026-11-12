@@ -1,0 +1,98 @@
+{
+  "validated_at": "2026-11-12T09:10:32.587494+00:00",
+  "git_commit": "dd2ebb671771a4bc010863778dc445ce7d36827d",
+  "passed": true,
+  "episode_count": 40,
+  "summary_count": 8,
+  "paired_seeds_per_condition": [
+    200000,
+    200001,
+    200002,
+    200003,
+    200004
+  ],
+  "disturbance_exposed_count": 20,
+  "video_count": 16,
+  "videos": [
+    {
+      "path": "videos/clean/h02-seed200000.mp4",
+      "frames": 300,
+      "bytes": 39305
+    },
+    {
+      "path": "videos/clean/h02-seed200001.mp4",
+      "frames": 150,
+      "bytes": 22893
+    },
+    {
+      "path": "videos/clean/h04-seed200000.mp4",
+      "frames": 300,
+      "bytes": 41041
+    },
+    {
+      "path": "videos/clean/h04-seed200001.mp4",
+      "frames": 300,
+      "bytes": 44019
+    },
+    {
+      "path": "videos/clean/h08-seed200000.mp4",
+      "frames": 185,
+      "bytes": 25398
+    },
+    {
+      "path": "videos/clean/h08-seed200001.mp4",
+      "frames": 300,
+      "bytes": 41611
+    },
+    {
+      "path": "videos/clean/h12-seed200000.mp4",
+      "frames": 300,
+      "bytes": 43652
+    },
+    {
+      "path": "videos/clean/h12-seed200001.mp4",
+      "frames": 300,
+      "bytes": 42031
+    },
+    {
+      "path": "videos/disturbed/h02-seed200000.mp4",
+      "frames": 300,
+      "bytes": 45161
+    },
+    {
+      "path": "videos/disturbed/h02-seed200001.mp4",
+      "frames": 194,
+      "bytes": 29546
+    },
+    {
+      "path": "videos/disturbed/h04-seed200000.mp4",
+      "frames": 300,
+      "bytes": 41347
+    },
+    {
+      "path": "videos/disturbed/h04-seed200001.mp4",
+      "frames": 190,
+      "bytes": 27948
+    },
+    {
+      "path": "videos/disturbed/h08-seed200000.mp4",
+      "frames": 271,
+      "bytes": 37363
+    },
+    {
+      "path": "videos/disturbed/h08-seed200001.mp4",
+      "frames": 300,
+      "bytes": 43183
+    },
+    {
+      "path": "videos/disturbed/h12-seed200000.mp4",
+      "frames": 197,
+      "bytes": 28884
+    },
+    {
+      "path": "videos/disturbed/h12-seed200001.mp4",
+      "frames": 164,
+      "bytes": 24077
+    }
+  ]
+}

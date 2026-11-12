@@ -10,6 +10,17 @@ import torch
 import wandb
 
 
+def load_policy(checkpoint, device):
+    payload = torch.load(
+        checkpoint, map_location="cpu", pickle_module=dill, weights_only=False
+    )
+    config = payload["cfg"]
+    policy = hydra.utils.instantiate(config.policy)
+    weights = "ema_model" if config.training.use_ema else "model"
+    policy.load_state_dict(payload["state_dicts"][weights])
+    return config, policy.to(device).eval()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("checkpoint", type=Path)
@@ -19,14 +30,7 @@ def main():
     if args.output_dir.exists():
         parser.error(f"Output directory already exists: {args.output_dir}")
 
-    payload = torch.load(
-        args.checkpoint, map_location="cpu", pickle_module=dill, weights_only=False
-    )
-    config = payload["cfg"]
-    policy = hydra.utils.instantiate(config.policy)
-    weights = "ema_model" if config.training.use_ema else "model"
-    policy.load_state_dict(payload["state_dicts"][weights])
-    policy.to(args.device).eval()
+    config, policy = load_policy(args.checkpoint, args.device)
 
     args.output_dir.mkdir(parents=True)
     runner = hydra.utils.instantiate(config.task.env_runner, output_dir=str(args.output_dir))

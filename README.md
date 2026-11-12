@@ -171,3 +171,27 @@ Run these commands in the CUDA environment when ready to start a full experiment
 Use a new directory for every fresh run. With the same profile, seed, device and overrides, use `./scripts/train.sh experiments/baseline-42 --resume training.seed=42 training.device=cuda:0` to load `checkpoints/latest.ckpt` in place and append to the training metrics log. The upstream workspace restores model, EMA, optimizer, and counters, reconstructs the scheduler from the stored step, and treats `training.num_epochs` as the number of epochs for this invocation. Set the remaining budget explicitly when resuming. The checkpoint captures counters before the end-of-epoch increment, so the saved epoch number repeats. The upstream checkpoint does not save RNG, dataloader or top-k manager state. This makes resume a continuation with restored weights and counters, without bitwise equivalence to uninterrupted training. Use only trusted checkpoints because the upstream format uses pickle.
 
 Evaluation reads the rollout profile and seed from the checkpoint and writes to a fresh results directory. For a smoke checkpoint, this evaluates one short episode. A baseline checkpoint evaluates the 50 published test seeds.
+
+## Action execution length study
+
+The [baseline analysis](results/README.md#rtx-4060-baseline-analysis) plots the archived training run and pairs the five recorded evaluations by initial condition. This simulation study can run independently of robot bring-up. To compare execution lengths, use one trusted checkpoint on the machine that holds the weights. The following command runs a development sweep with five initial conditions:
+
+```bash
+checkpoint='experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt'
+./scripts/evaluate.sh horizons "$checkpoint" results/horizons-dev \
+  --device cuda:0 --action-steps 2 4 8 12 --test-start-seed 200000 --n-test 5 \
+  --disturbance-step 50 --disturbance-delta-v 120 --record-first 2
+```
+
+After fixing the protocol, repeat with a fresh output directory, `--test-start-seed 300000 --n-test 50`, and the same settings. These ranges are separate from the archived checkpoint-selection seeds (100000–100049). The evaluator uses the checkpoint's weights, observation history, prediction horizon and diffusion inference steps. Only the number of actions executed before replanning changes. Each condition runs with batch size one and resets the model sampling seed per episode. Pair rows by `test_seed`; a given initial condition uses the same sampling seed across all settings.
+
+With `--disturbance-step`, the sweep adds a disturbed trial for every clean trial. The perturbation applies a fixed +X velocity impulse to the T block before the specified one-based control step. The trigger follows simulator steps across chunk boundaries. A trial that ends before that step contributes to overall success and has no post-disturbance result. Report the exposed count with the post-disturbance success rate and compare the overall results on all paired seeds. A fixed trigger can fall at different positions within different action chunks.
+
+The output directory contains:
+
+- `protocol.json` with the checkpoint hash, seed ranges and rollout settings.
+- `episodes.csv` with raw peak and final coverage, the clipped normalized score, the environment's success flag (coverage strictly above 0.95), executed control steps, disturbance exposure, steps to success after exposure, and inference timing. Timing includes observation transfer, prediction and action transfer back to the CPU.
+- `summary.csv` with one row per scenario and action execution length. Recovery time is averaged over exposed episodes that succeeded.
+- `videos/` when `--record-first` is set. The first N seeds are the same across conditions, and each file name contains its action execution length and seed.
+
+Use the archived scores for historical comparison. The study evaluates one episode at a time with independently seeded sampling, while the archived training runner evaluated in parallel.

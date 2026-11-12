@@ -57,4 +57,4 @@ All **nine** saved model/optimizer/EMA checkpoints remain on the training machin
 sha256sum -c results/rtx4060-seed42/checkpoints.sha256
 ```
 
-The best longer-run checkpoint is `experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt`. The longer-run `latest.ckpt` contains epoch-200 state; it does not include the unsaved progress up to epoch 232. Checkpoint files are excluded by `.gitignore` and are absent from a fresh clone. The project README describes the upstream resume counter and RNG limitations.
+The best longer-run checkpoint is `experiments/rtx4060-seed42/checkpoints/epoch=0100-test_mean_score=0.791.ckpt`. The longer-run `latest.ckpt` contains epoch-200 state; it does not include the unsaved progress up to epoch 232. Checkpoint files are excluded by `.gitignore` and are absent from a fresh clone. The [reproduction guide](../../docs/reproduction.md#baseline-training-and-resume) describes the upstream resume counter and RNG limitations.

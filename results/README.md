@@ -41,7 +41,7 @@ Mean cumulative policy inference time per clean episode was approximately 129, 7
 - [Clean videos](horizons-dev/videos/clean/) and [disturbed videos](horizons-dev/videos/disturbed/): seeds 200000 and 200001 are recorded for every execution length; filenames include the length and seed.
 - [Artifact manifest and SHA-256 checksums](horizons-dev/manifest.json). Checkpoint weights remain local.
 
-The [study command](../README.md#action-execution-length-study) reproduces this protocol with a fresh output directory and the local checkpoint. Environment seeds are a fixed reproducible list, with sampling seeds `42–46` reset per episode and shared across conditions for each environment seed.
+The [study command](../docs/reproduction.md#action-execution-length-study) reproduces this protocol with a fresh output directory and the local checkpoint. Environment seeds are a fixed reproducible list, with sampling seeds `42–46` reset per episode and shared across conditions for each environment seed.
 
 ## Independent 50-seed action execution length evaluation
 
@@ -65,3 +65,23 @@ Mean cumulative policy inference time per clean episode was approximately 127, 6
 - [Validation record](horizons-test/validation.json): seed pairing, episode counts, metric and summary consistency, disturbance exposure, checkpoint checksum, and full decoding of all 16 videos.
 - [Clean videos](horizons-test/videos/clean/) and [disturbed videos](horizons-test/videos/disturbed/): seeds `300000` and `300001` for every execution length.
 - [Artifact manifest and SHA-256 checksums](horizons-test/manifest.json). Model checkpoints remain local.
+
+### Paired analysis
+
+The [condition estimates](horizons-test/analysis/condition_estimates.csv) report mean peak score, overall success, and cumulative inference time with pointwise 95% percentile bootstrap intervals. They also report mean policy calls, disturbance exposure, and post-disturbance success. The [paired contrasts](horizons-test/analysis/paired_disturbance_effects.csv) subtract clean from disturbed for each seed before averaging. Overall contrasts retain all 50 pairs, including the trial that finished before the impulse. Rates in both CSVs are fractions; differences in success are shown below in percentage points.
+
+| Actions before replanning | Change in mean peak score [95% interval] | Change in success, pp [95% interval] |
+| ---: | ---: | ---: |
+| 2 | +0.012 [−0.027, +0.053] | +2 [−10, +14] |
+| 4 | +0.024 [−0.006, +0.058] | +4 [−6, +16] |
+| 8 | −0.021 [−0.075, +0.025] | 0 [−12, +12] |
+| 12 | −0.026 [−0.068, +0.015] | +14 [+2, +26] |
+
+The [analysis script](../scripts/analyze_horizons.py) resamples 50 seed blocks with replacement in each of 20,000 draws (bootstrap RNG seed 2026), keeping all settings for each seed together. The intervals are exploratory and unadjusted for multiple comparisons. They quantify variation across initial conditions and their paired sampling seeds for this fixed policy; they do not include variation across training runs. In particular, the positive success contrast at 12 actions does not establish a general benefit from perturbations.
+
+Regenerate the derived CSVs and [figure](horizons-test/analysis/horizon_tradeoffs.png) from the repository root:
+
+```bash
+python -m pip install -r requirements-analysis.txt
+python scripts/analyze_horizons.py
+```

@@ -1,5 +1,10 @@
 /.venv/
+/.venv-lerobot/
+# Raw B601 recordings, local calibration, and downloaded backup volumes.
 /data/
+/collection/b601/workspace-bounds.local.json
+/b601-*.tar
+/b601-github-backup-*/
 /experiments/*
 !/experiments/README.md
 !/experiments/rtx4060-seed42/

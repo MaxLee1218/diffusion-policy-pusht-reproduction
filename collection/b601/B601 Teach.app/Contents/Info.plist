@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>B601Teach</string>
+<key>CFBundleName</key><string>B601 示教</string>
+<key>CFBundleDisplayName</key><string>B601 示教</string>
+<key>CFBundleIdentifier</key><string>local.b601.teach</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>NSCameraUsageDescription</key><string>显示抓放画面并录制机械臂示教数据。</string>
+<key>NSHighResolutionCapable</key><true/>
+</dict></plist>

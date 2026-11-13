@@ -1,0 +1,5 @@
+#!/bin/zsh
+set -e
+collection_dir="${0:A:h:h:h:h}"
+project_dir="${collection_dir:h:h}"
+exec "$project_dir/.venv-lerobot/bin/python" "$collection_dir/b601_teach_app.py" "$@"

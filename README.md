@@ -10,6 +10,8 @@ In PushT, a policy uses images and the pusher's position to move a T-shaped bloc
 
 I am extending this Diffusion Policy reproduction to a physical robot. In the current pilot, I use keyboard teleoperation on a reBot B601-DM arm to collect demonstrations of picking up a chess piece and placing it on a marked target. The LeRobot recordings capture RGB observations, measured joint and gripper positions, and commanded positions. The next milestones are training on these demonstrations and evaluating the policy in closed loop on the robot.
 
+The [B601 collection guide](collection/b601/README.md) documents the keyboard controls, capture sequence and dataset schema, with links to the terminal recorder and macOS app.
+
 | Initial position | During transfer | At the target |
 | :---: | :---: | :---: |
 | ![A chess piece between the open gripper and the blue target](docs/assets/hardware/b601-frame-000.png) | ![The robot gripper holds the chess piece beside the target during transfer](docs/assets/hardware/b601-frame-309.png) | ![The chess piece is aligned with the blue target at the end of the recording](docs/assets/hardware/b601-frame-649.png) |

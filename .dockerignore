@@ -1,8 +1,11 @@
 .git
 **/.git
 .venv
+.venv-lerobot
 **/__pycache__
 .pytest_cache
 data
+b601-*.tar
+b601-github-backup-*
 experiments
 results

@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "episodes": 40,
+  "frames": 20741,
+  "image_shape": [
+    20741,
+    240,
+    320,
+    3
+  ],
+  "state_shape": [
+    20741,
+    7
+  ],
+  "action_shape": [
+    20741,
+    7
+  ],
+  "checks": {
+    "train": {
+      "episodes": 36,
+      "windows": 18443,
+      "all_windows_within_episode": true,
+      "sampled_windows": 24
+    },
+    "validation": {
+      "episodes": 4,
+      "windows": 2018,
+      "all_windows_within_episode": true,
+      "sampled_windows": 24
+    }
+  }
+}

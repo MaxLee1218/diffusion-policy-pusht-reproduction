@@ -1,0 +1,16 @@
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+[2026-11-13 16:03:45,559][diffusion_policy.model.diffusion.conditional_unet1d][INFO] - number of parameters: 1.734158e+07
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+wandb: WARNING Disabling the wandb service is deprecated as of version 0.18.0 and will be removed in version 0.19.0.
+Training epoch 0:   0%|          | 0/2086 [00:00<?, ?it/s]Training epoch 0:   0%|          | 1/2086 [00:01<1:02:42,  1.80s/it, loss=1.15]Training epoch 0:   1%|          | 13/2086 [00:02<06:20,  5.45it/s, loss=1.01] Training epoch 0:   1%|          | 25/2086 [00:03<04:21,  7.87it/s, loss=1.03]Training epoch 0:   2%|▏         | 37/2086 [00:04<03:45,  9.09it/s, loss=0.954]Training epoch 0:   2%|▏         | 49/2086 [00:05<03:24,  9.96it/s, loss=0.897]                                                                               Validation epoch 0:   0%|          | 0/294 [00:00<?, ?it/s]                                                           Training epoch 1:   0%|          | 0/2086 [00:00<?, ?it/s]Training epoch 1:   0%|          | 7/2086 [00:01<05:09,  6.71it/s, loss=1.07]Training epoch 1:   1%|          | 15/2086 [00:02<05:32,  6.23it/s, loss=0.998]Training epoch 1:   1%|▏         | 27/2086 [00:03<04:03,  8.45it/s, loss=0.972]Training epoch 1:   2%|▏         | 38/2086 [00:04<03:42,  9.20it/s, loss=0.857]Training epoch 1:   2%|▏         | 49/2086 [00:05<03:33,  9.56it/s, loss=0.739]                                                                               Validation epoch 1:   0%|          | 0/294 [00:00<?, ?it/s]                                                           Training epoch 2:   0%|          | 0/2086 [00:00<?, ?it/s]Training epoch 2:   0%|          | 7/2086 [00:01<05:10,  6.69it/s, loss=0.725]Training epoch 2:   1%|          | 18/2086 [00:02<03:49,  9.01it/s, loss=0.631]Training epoch 2:   1%|▏         | 30/2086 [00:03<03:25,  9.99it/s, loss=0.512]Training epoch 2:   2%|▏         | 42/2086 [00:04<03:12, 10.63it/s, loss=0.586]                                                                               Validation epoch 2:   0%|          | 0/294 [00:00<?, ?it/s]Validation epoch 2:   5%|▌         | 15/294 [00:01<00:18, 14.98it/s]                                                                    

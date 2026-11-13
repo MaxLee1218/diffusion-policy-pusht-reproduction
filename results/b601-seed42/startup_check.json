@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "checked_at": "2026-11-13T08:28:06.404205+00:00",
+  "supervisor_status": "training",
+  "resume": {
+    "source_epoch": 2,
+    "next_epoch": 3,
+    "global_step": 153,
+    "optimizer_updates": 150,
+    "ema_initial_optimization_step": 150
+  },
+  "full_epochs_planned": 100,
+  "train_episodes": 30,
+  "validation_episodes": 4,
+  "training_batch_cap": null,
+  "validation_batch_cap": null,
+  "current_log": {
+    "train_loss": 0.05907846614718437,
+    "global_step": 1241,
+    "epoch": 3,
+    "lr": 9.99912533514774e-05
+  },
+  "training_metric_rows_seen": 1089,
+  "console_log": "experiments/b601-seed42/train.log",
+  "checkpoint_directory": "experiments/b601-seed42/checkpoints",
+  "tests_passed": 22
+}

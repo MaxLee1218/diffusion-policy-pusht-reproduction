@@ -1,0 +1,14 @@
+defaults:
+  - b601
+  - _self_
+
+exp_name: b601_short
+training:
+  num_epochs: 3
+  max_train_steps: 50
+  max_val_steps: 16
+  lr_scheduler: constant_with_warmup
+  lr_warmup_steps: 10
+  sample_every: 1
+  checkpoint_every: 1
+  rollout_every: 1

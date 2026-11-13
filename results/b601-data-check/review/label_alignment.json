@@ -1,0 +1,3314 @@
+{
+  "episodes": 40,
+  "frames": 20741,
+  "command_rows": 6867,
+  "action_change_rows": 6867,
+  "action_changes_without_command": 0,
+  "commands_without_action_change_after_first_frame": 0,
+  "command_precedes_feedback_rows": 0,
+  "held_transition_max_abs_change": 0.0,
+  "full_frame_export_episode_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "full_frame_export_frames": 1704,
+  "source_code_verification": {
+    "status": "verified_against_available_collection_source_and_pinned_driver",
+    "repository_commit": "6416316b34fe0b6ea641da7819396da2e053b2bd",
+    "details": "source_verification.json"
+  },
+  "interpretation": "The supplied collection source and driver confirm persistent absolute motor-degree position targets, stored from send_action return values. Recorded target changes and command timestamps agree in all 40 episodes.",
+  "time_alignment": "In each row, camera receive and feedback-read completion precede command-send completion. Do not shift actions based on measured tracking lag alone. Camera exposure timing is not recorded.",
+  "visual_success": "Exported evidence requires visual review; no automatic success labels are created.",
+  "recordings": [
+    {
+      "frames": 421,
+      "command_rows": 263,
+      "action_change_rows": 263,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 40,
+      "command_after_feedback_ms": {
+        "min": 2.128583,
+        "median": 7.049916,
+        "p95": 10.5542375,
+        "max": 17.75125
+      },
+      "command_after_camera_ms": {
+        "min": 3.138958,
+        "median": 8.062958,
+        "p95": 11.559158,
+        "max": 18.80975
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        3.774059772491455,
+        -44.20384216308594,
+        -12.528291702270508,
+        -7.143564701080322,
+        3.2224602699279785,
+        -9.033478736877441,
+        -43.855934143066406
+      ],
+      "last_action": [
+        4.262950897216797,
+        -51.81835174560547,
+        -0.324044406414032,
+        -26.949417114257812,
+        3.667100667953491,
+        -8.830032348632812,
+        -62.08498764038086
+      ],
+      "state_joint_span": [
+        0.5245587825775146,
+        22.884197235107422,
+        12.458483695983887,
+        24.72020149230957,
+        0.5245585441589355,
+        0.2404775619506836,
+        24.720203399658203
+      ],
+      "action_joint_span": [
+        0.6988258361816406,
+        23.666366577148438,
+        12.412055969238281,
+        24.936918258666992,
+        0.6357100009918213,
+        0.29082202911376953,
+        26.207195281982422
+      ],
+      "action_state_mean_abs_error": [
+        0.03255879878997803,
+        1.074237585067749,
+        0.3127853274345398,
+        0.42937225103378296,
+        0.03635907545685768,
+        0.020533358678221703,
+        0.4453728199005127
+      ],
+      "input_key_available": false,
+      "input_key_counts": null,
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 0,
+      "source_folder": "pick-place-20261112-150734-260371",
+      "all_frames_exported": 421,
+      "video_decoded_frames": 421,
+      "video_fps": 10
+    },
+    {
+      "frames": 337,
+      "command_rows": 136,
+      "action_change_rows": 136,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 35,
+      "command_after_feedback_ms": {
+        "min": 5.6075,
+        "median": 6.635896,
+        "p95": 10.2878015,
+        "max": 11.277875
+      },
+      "command_after_camera_ms": {
+        "min": 6.615708,
+        "median": 7.660125,
+        "p95": 11.309604,
+        "max": 12.299208
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        3.3113303184509277,
+        -19.791484832763672,
+        -0.8196226954460144,
+        4.054454803466797,
+        1.9125076532363892,
+        -8.578826904296875,
+        -55.986568450927734
+      ],
+      "last_action": [
+        14.487201690673828,
+        -29.606056213378906,
+        -11.146159172058105,
+        5.114729404449463,
+        12.181835174560547,
+        -4.130467414855957,
+        -55.986568450927734
+      ],
+      "state_joint_span": [
+        11.431169509887695,
+        12.567712783813477,
+        10.338337898254395,
+        9.595213890075684,
+        11.234458923339844,
+        4.939702033996582,
+        0.02185821533203125
+      ],
+      "action_joint_span": [
+        12.72901439666748,
+        13.155694961547852,
+        10.370896339416504,
+        9.649361610412598,
+        11.696712493896484,
+        5.055835723876953,
+        0.0
+      ],
+      "action_state_mean_abs_error": [
+        0.3625393211841583,
+        0.450654536485672,
+        0.32495519518852234,
+        0.2645362913608551,
+        0.20565101504325867,
+        0.09547707438468933,
+        0.016734182834625244
+      ],
+      "input_key_available": false,
+      "input_key_counts": null,
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 1,
+      "source_folder": "pick-place-20261112-152200-630539",
+      "all_frames_exported": 337,
+      "video_decoded_frames": 337,
+      "video_fps": 10
+    },
+    {
+      "frames": 180,
+      "command_rows": 5,
+      "action_change_rows": 5,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 51,
+      "command_after_feedback_ms": {
+        "min": 6.67175,
+        "median": 6.993834,
+        "p95": 7.2182256,
+        "max": 7.271959
+      },
+      "command_after_camera_ms": {
+        "min": 7.702834,
+        "median": 8.02175,
+        "p95": 8.230275,
+        "max": 8.2765
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        10.218127250671387,
+        -1.3660378456115723,
+        -5.999747276306152,
+        29.18993377685547,
+        4.491587162017822,
+        -15.944612503051758,
+        -55.986568450927734
+      ],
+      "last_action": [
+        10.297295570373535,
+        -4.14781379699707,
+        -9.329926490783691,
+        29.743131637573242,
+        4.563644886016846,
+        -15.911433219909668,
+        -55.986568450927734
+      ],
+      "state_joint_span": [
+        0.15299606323242188,
+        3.890530586242676,
+        4.786651611328125,
+        0.8742637634277344,
+        0.2185659408569336,
+        0.06556987762451172,
+        0.02185821533203125
+      ],
+      "action_joint_span": [
+        0.11156463623046875,
+        3.93576717376709,
+        4.784201622009277,
+        0.8481063842773438,
+        0.10158252716064453,
+        0.04657268524169922,
+        0.0
+      ],
+      "action_state_mean_abs_error": [
+        0.025927018374204636,
+        0.23929324746131897,
+        0.3374527096748352,
+        0.06421776860952377,
+        0.02486514300107956,
+        0.015359407290816307,
+        0.01481501292437315
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 173,
+        "e": 4,
+        "r": 1,
+        "f": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 2,
+      "source_folder": "pick-place-20261112-152515-929544",
+      "all_frames_exported": 180,
+      "video_decoded_frames": 180,
+      "video_fps": 10
+    },
+    {
+      "frames": 153,
+      "command_rows": 81,
+      "action_change_rows": 81,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 46,
+      "command_after_feedback_ms": {
+        "min": 2.167458,
+        "median": 6.306625,
+        "p95": 6.629208,
+        "max": 6.930333
+      },
+      "command_after_camera_ms": {
+        "min": 3.229958,
+        "median": 7.325833,
+        "p95": 7.68025,
+        "max": 7.950958
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.5511244535446167,
+        -88.79571533203125,
+        -48.96468734741211,
+        48.85234832763672,
+        -4.65851354598999,
+        -18.09058952331543,
+        -46.52212142944336
+      ],
+      "last_action": [
+        -1.3088350296020508,
+        -101.38922119140625,
+        -62.288368225097656,
+        49.560264587402344,
+        -4.652910232543945,
+        -17.84735870361328,
+        -54.544349670410156
+      ],
+      "state_joint_span": [
+        0.2622792720794678,
+        12.567710876464844,
+        13.288978576660156,
+        0.8524055480957031,
+        0.0,
+        0.2622795104980469,
+        8.021484375
+      ],
+      "action_joint_span": [
+        0.24246752262115479,
+        12.593505859375,
+        13.338756561279297,
+        1.0212516784667969,
+        0.005603313446044922,
+        0.24350357055664062,
+        8.022228240966797
+      ],
+      "action_state_mean_abs_error": [
+        0.030540568754076958,
+        0.6976571083068848,
+        0.7649848461151123,
+        0.052517835050821304,
+        0.011538097634911537,
+        0.021981719881296158,
+        0.31700414419174194
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "w": 80,
+        "": 71,
+        "r": 1,
+        "o": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 3,
+      "source_folder": "pick-place-20261112-155254-902845",
+      "all_frames_exported": 153,
+      "video_decoded_frames": 153,
+      "video_fps": 10
+    },
+    {
+      "frames": 170,
+      "command_rows": 7,
+      "action_change_rows": 7,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 30,
+      "command_after_feedback_ms": {
+        "min": 2.118292,
+        "median": 2.150458,
+        "p95": 6.408533,
+        "max": 6.514208
+      },
+      "command_after_camera_ms": {
+        "min": 3.13125,
+        "median": 3.161708,
+        "p95": 7.424595699999999,
+        "max": 7.525708
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.3088350296020508,
+        -101.38922119140625,
+        -62.288368225097656,
+        49.560264587402344,
+        -4.652910232543945,
+        -17.84735870361328,
+        -62.565834045410156
+      ],
+      "last_action": [
+        -1.3141106367111206,
+        -100.2824935913086,
+        -63.97595977783203,
+        52.3551139831543,
+        -4.653031826019287,
+        -17.852657318115234,
+        -54.8066291809082
+      ],
+      "state_joint_span": [
+        0.0,
+        1.1365432739257812,
+        1.7267265319824219,
+        2.8195571899414062,
+        0.0,
+        0.0,
+        23.86774444580078
+      ],
+      "action_joint_span": [
+        0.005276203155517578,
+        1.1067276000976562,
+        1.687591552734375,
+        2.794849395751953,
+        0.0001220703125,
+        0.005298614501953125,
+        23.977767944335938
+      ],
+      "action_state_mean_abs_error": [
+        0.010355174541473389,
+        0.07493393868207932,
+        0.10631110519170761,
+        0.07366763800382614,
+        0.013457458466291428,
+        0.017541952431201935,
+        1.323373794555664
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 162,
+        "p": 3,
+        "e": 2,
+        "o": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 4,
+      "source_folder": "pick-place-20261112-155607-067741",
+      "all_frames_exported": 170,
+      "video_decoded_frames": 170,
+      "video_fps": 10
+    },
+    {
+      "frames": 211,
+      "command_rows": 13,
+      "action_change_rows": 13,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 37,
+      "command_after_feedback_ms": {
+        "min": 2.127667,
+        "median": 6.1625,
+        "p95": 6.8752668,
+        "max": 6.884292
+      },
+      "command_after_camera_ms": {
+        "min": 3.13775,
+        "median": 7.190167,
+        "p95": 7.9104998,
+        "max": 7.935875
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.3141106367111206,
+        -100.2824935913086,
+        -63.97595977783203,
+        52.3551139831543,
+        -4.653031826019287,
+        -17.852657318115234,
+        -54.8066291809082
+      ],
+      "last_action": [
+        -1.3582054376602173,
+        -98.66508483886719,
+        -61.21013259887695,
+        51.21063995361328,
+        -4.654056072235107,
+        -17.896915435791016,
+        -54.56620788574219
+      ],
+      "state_joint_span": [
+        0.06556975841522217,
+        2.4042282104492188,
+        4.218379974365234,
+        4.065437316894531,
+        0.0,
+        0.04371452331542969,
+        8.283763885498047
+      ],
+      "action_joint_span": [
+        0.050201416015625,
+        3.0559310913085938,
+        4.178657531738281,
+        4.008716583251953,
+        0.0012421607971191406,
+        0.05063629150390625,
+        8.240795135498047
+      ],
+      "action_state_mean_abs_error": [
+        0.012293738313019276,
+        0.2585134208202362,
+        0.24779456853866577,
+        0.1434907615184784,
+        0.012571879662573338,
+        0.01363016664981842,
+        0.8614894151687622
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 197,
+        "c": 4,
+        "s": 3,
+        "p": 2,
+        "o": 2,
+        "e": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 5,
+      "source_folder": "pick-place-20261112-155627-572405",
+      "all_frames_exported": 211,
+      "video_decoded_frames": 211,
+      "video_fps": 10
+    },
+    {
+      "frames": 232,
+      "command_rows": 120,
+      "action_change_rows": 120,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 30,
+      "command_after_feedback_ms": {
+        "min": 2.122708,
+        "median": 6.314875,
+        "p95": 6.67366105,
+        "max": 6.916959
+      },
+      "command_after_camera_ms": {
+        "min": 3.138541,
+        "median": 7.322896,
+        "p95": 7.702867,
+        "max": 7.922667
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.0875189304351807,
+        -81.5900650024414,
+        -41.91411209106445,
+        49.04932403564453,
+        -4.670665740966797,
+        -18.62847900390625,
+        -54.56620788574219
+      ],
+      "last_action": [
+        -1.5475444793701172,
+        -100.78724670410156,
+        -61.98751449584961,
+        49.87940216064453,
+        -4.6584649085998535,
+        -18.086679458618164,
+        -62.565834045410156
+      ],
+      "state_joint_span": [
+        0.5246131420135498,
+        19.58379364013672,
+        20.06463623046875,
+        1.9889488220214844,
+        0.021856307983398438,
+        0.5464153289794922,
+        16.086681365966797
+      ],
+      "action_joint_span": [
+        0.5436463356018066,
+        19.869361877441406,
+        20.073402404785156,
+        2.0413742065429688,
+        0.012295722961425781,
+        0.5453987121582031,
+        15.978141784667969
+      ],
+      "action_state_mean_abs_error": [
+        0.03136114403605461,
+        0.7267126441001892,
+        0.755087673664093,
+        0.1209661066532135,
+        0.008862512186169624,
+        0.022433362901210785,
+        0.5930106043815613
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "w": 115,
+        "": 111,
+        "e": 2,
+        "o": 2,
+        "r": 1,
+        "p": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 6,
+      "source_folder": "pick-place-20261112-155939-395404",
+      "all_frames_exported": 232,
+      "video_decoded_frames": 232,
+      "video_fps": 10
+    },
+    {
+      "frames": 416,
+      "command_rows": 230,
+      "action_change_rows": 230,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 41,
+      "command_after_feedback_ms": {
+        "min": 2.114917,
+        "median": 6.2862915,
+        "p95": 6.941553799999999,
+        "max": 23.639875
+      },
+      "command_after_camera_ms": {
+        "min": 3.128167,
+        "median": 7.308146,
+        "p95": 7.94972065,
+        "max": 24.648542
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.6349682807922363,
+        -101.39533233642578,
+        -63.42833709716797,
+        50.720985412597656,
+        -4.660449504852295,
+        -18.174509048461914,
+        -62.565834045410156
+      ],
+      "last_action": [
+        -3.0273592472076416,
+        -99.60465240478516,
+        -61.52004623413086,
+        50.717437744140625,
+        -4.690925121307373,
+        -19.571231842041016,
+        -54.58806610107422
+      ],
+      "state_joint_span": [
+        3.1036925315856934,
+        15.736976623535156,
+        19.933547973632812,
+        4.283946990966797,
+        0.1092829704284668,
+        3.693821907043457,
+        16.02111053466797
+      ],
+      "action_joint_span": [
+        3.7599263191223145,
+        16.122940063476562,
+        20.410511016845703,
+        4.279819488525391,
+        0.0877676010131836,
+        3.771282196044922,
+        16.0
+      ],
+      "action_state_mean_abs_error": [
+        0.09653449058532715,
+        0.5970109105110168,
+        0.8069175481796265,
+        0.09907527267932892,
+        0.007996676489710808,
+        0.0626688227057457,
+        0.3178289830684662
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 185,
+        "s": 115,
+        "w": 93,
+        "d": 11,
+        "a": 8,
+        "p": 2,
+        "r": 1,
+        "o": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 7,
+      "source_folder": "pick-place-20261112-162014-461043"
+    },
+    {
+      "frames": 619,
+      "command_rows": 197,
+      "action_change_rows": 197,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 37,
+      "command_after_feedback_ms": {
+        "min": 2.122542,
+        "median": 6.327042,
+        "p95": 7.0727167999999985,
+        "max": 11.54775
+      },
+      "command_after_camera_ms": {
+        "min": 3.135417,
+        "median": 7.340292,
+        "p95": 8.090091399999999,
+        "max": 12.597583
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -3.0273592472076416,
+        -99.60465240478516,
+        -61.52004623413086,
+        50.717437744140625,
+        -4.690925121307373,
+        -19.571231842041016,
+        -54.58806610107422
+      ],
+      "last_action": [
+        -1.964970588684082,
+        -97.65042114257812,
+        -59.7283821105957,
+        50.7944221496582,
+        -4.6679768562316895,
+        -18.50564956665039,
+        -70.17204284667969
+      ],
+      "state_joint_span": [
+        1.6830133199691772,
+        17.507415771484375,
+        22.447120666503906,
+        6.491519927978516,
+        0.08742666244506836,
+        1.9889507293701172,
+        24.086360931396484
+      ],
+      "action_joint_span": [
+        2.050046443939209,
+        17.445762634277344,
+        22.46832275390625,
+        6.437591552734375,
+        0.04584217071533203,
+        2.056356430053711,
+        24.065196990966797
+      ],
+      "action_state_mean_abs_error": [
+        0.037463605403900146,
+        0.5508073568344116,
+        0.7288362979888916,
+        0.12476766854524612,
+        0.013230787590146065,
+        0.035120610147714615,
+        0.568912148475647
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 421,
+        "w": 105,
+        "s": 76,
+        "o": 5,
+        "a": 3,
+        "p": 3,
+        "e": 3,
+        "c": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 8,
+      "source_folder": "pick-place-20261112-162347-799614"
+    },
+    {
+      "frames": 573,
+      "command_rows": 125,
+      "action_change_rows": 125,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 32,
+      "command_after_feedback_ms": {
+        "min": 2.101666,
+        "median": 6.414583,
+        "p95": 7.154991,
+        "max": 7.664958
+      },
+      "command_after_camera_ms": {
+        "min": 3.099625,
+        "median": 7.434291,
+        "p95": 8.203275,
+        "max": 8.711958
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.9221612215042114,
+        -95.78805541992188,
+        -62.084415435791016,
+        55.00581359863281,
+        -4.667001724243164,
+        -18.46242332458496,
+        -70.17204284667969
+      ],
+      "last_action": [
+        -1.9649962186813354,
+        -97.13846588134766,
+        -61.30267333984375,
+        52.879329681396484,
+        -4.667926788330078,
+        -18.50556755065918,
+        -87.94173431396484
+      ],
+      "state_joint_span": [
+        2.579133987426758,
+        14.622291564941406,
+        16.93914794921875,
+        6.775653839111328,
+        0.08742618560791016,
+        2.8414134979248047,
+        32.02042007446289
+      ],
+      "action_joint_span": [
+        2.7402195930480957,
+        14.585014343261719,
+        17.553543090820312,
+        6.837779998779297,
+        0.06668710708618164,
+        2.7483978271484375,
+        31.95553970336914
+      ],
+      "action_state_mean_abs_error": [
+        0.08296205848455429,
+        0.4776059687137604,
+        0.5683245062828064,
+        0.11094444245100021,
+        0.017463212832808495,
+        0.06067601591348648,
+        0.6043384075164795
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 447,
+        "w": 70,
+        "s": 32,
+        "c": 6,
+        "o": 5,
+        "a": 3,
+        "d": 3,
+        "p": 3,
+        "e": 3,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 9,
+      "source_folder": "pick-place-20261112-164119-012579"
+    },
+    {
+      "frames": 615,
+      "command_rows": 244,
+      "action_change_rows": 244,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 46,
+      "command_after_feedback_ms": {
+        "min": 2.100333,
+        "median": 6.296708499999999,
+        "p95": 6.766560699999999,
+        "max": 7.325708
+      },
+      "command_after_camera_ms": {
+        "min": 3.103,
+        "median": 7.3047085,
+        "p95": 7.80383745,
+        "max": 8.336958
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.9649962186813354,
+        -97.13846588134766,
+        -61.30267333984375,
+        52.879329681396484,
+        -4.667926788330078,
+        -18.50556755065918,
+        -87.94173431396484
+      ],
+      "last_action": [
+        -2.1256988048553467,
+        -99.29457092285156,
+        -62.821868896484375,
+        52.25552749633789,
+        -4.671497344970703,
+        -18.66676139831543,
+        -81.16607666015625
+      ],
+      "state_joint_span": [
+        15.49660587310791,
+        7.256500244140625,
+        8.37118911743164,
+        2.994354248046875,
+        0.3278489112854004,
+        15.693262100219727,
+        51.997684478759766
+      ],
+      "action_joint_span": [
+        15.654915809631348,
+        7.2435302734375,
+        8.342597961425781,
+        2.891876220703125,
+        0.20019054412841797,
+        15.707649230957031,
+        53.39725112915039
+      ],
+      "action_state_mean_abs_error": [
+        0.4056197702884674,
+        0.22606851160526276,
+        0.25726932287216187,
+        0.06633538007736206,
+        0.01452822145074606,
+        0.18688252568244934,
+        1.085296630859375
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 370,
+        "a": 96,
+        "d": 80,
+        "w": 24,
+        "p": 16,
+        "s": 13,
+        "o": 7,
+        "c": 7,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 10,
+      "source_folder": "pick-place-20261112-164300-608790"
+    },
+    {
+      "frames": 770,
+      "command_rows": 291,
+      "action_change_rows": 291,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 23,
+      "command_after_feedback_ms": {
+        "min": 2.096,
+        "median": 6.31525,
+        "p95": 6.7924375,
+        "max": 7.158375
+      },
+      "command_after_camera_ms": {
+        "min": 3.106625,
+        "median": 7.3255,
+        "p95": 7.8003125,
+        "max": 8.170542
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.1256988048553467,
+        -99.29457092285156,
+        -62.821868896484375,
+        52.25552749633789,
+        -4.671497344970703,
+        -18.66676139831543,
+        -81.16607666015625
+      ],
+      "last_action": [
+        -1.9654103517532349,
+        -99.2005844116211,
+        -63.194766998291016,
+        52.70860290527344,
+        -4.667944431304932,
+        -18.505922317504883,
+        -86.01835632324219
+      ],
+      "state_joint_span": [
+        19.365280151367188,
+        10.688041687011719,
+        10.578765869140625,
+        2.797698974609375,
+        0.3278489112854004,
+        19.8242130279541,
+        40.61017608642578
+      ],
+      "action_joint_span": [
+        19.605247497558594,
+        10.958808898925781,
+        11.422027587890625,
+        2.8613548278808594,
+        0.20222187042236328,
+        19.672134399414062,
+        44.5888786315918
+      ],
+      "action_state_mean_abs_error": [
+        0.4409845173358917,
+        0.3353850543498993,
+        0.3951699137687683,
+        0.08515492081642151,
+        0.013598132878541946,
+        0.2427542805671692,
+        1.0615334510803223
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 478,
+        "d": 105,
+        "a": 94,
+        "s": 39,
+        "w": 29,
+        "p": 10,
+        "o": 10,
+        "c": 2,
+        "e": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 11,
+      "source_folder": "pick-place-20261112-164412-817061"
+    },
+    {
+      "frames": 593,
+      "command_rows": 245,
+      "action_change_rows": 245,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 45,
+      "command_after_feedback_ms": {
+        "min": 2.087459,
+        "median": 6.314166,
+        "p95": 6.7613834,
+        "max": 7.211542
+      },
+      "command_after_camera_ms": {
+        "min": 3.087042,
+        "median": 7.323,
+        "p95": 7.7642834,
+        "max": 8.231542
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.9654103517532349,
+        -99.2005844116211,
+        -63.194766998291016,
+        52.70860290527344,
+        -4.667944431304932,
+        -18.505922317504883,
+        -86.01835632324219
+      ],
+      "last_action": [
+        -2.3954405784606934,
+        -98.465087890625,
+        -60.66666030883789,
+        50.95185470581055,
+        -4.677420139312744,
+        -18.937339782714844,
+        -84.61947631835938
+      ],
+      "state_joint_span": [
+        17.332561492919922,
+        6.0106201171875,
+        5.966960906982422,
+        4.087238311767578,
+        0.5901279449462891,
+        17.94454574584961,
+        38.70865249633789
+      ],
+      "action_joint_span": [
+        17.913686752319336,
+        7.462127685546875,
+        7.800773620605469,
+        4.057758331298828,
+        0.6113767623901367,
+        17.956010818481445,
+        39.84593963623047
+      ],
+      "action_state_mean_abs_error": [
+        0.48095518350601196,
+        0.24351225793361664,
+        0.29980024695396423,
+        0.0803133025765419,
+        0.02244066819548607,
+        0.2324526011943817,
+        0.7646510004997253
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 347,
+        "a": 104,
+        "d": 69,
+        "s": 29,
+        "w": 22,
+        "o": 11,
+        "p": 6,
+        "c": 3,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 12,
+      "source_folder": "pick-place-20261112-164541-345421"
+    },
+    {
+      "frames": 665,
+      "command_rows": 230,
+      "action_change_rows": 230,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 49,
+      "command_after_feedback_ms": {
+        "min": 2.123458,
+        "median": 6.350958500000001,
+        "p95": 6.7944186,
+        "max": 7.165875
+      },
+      "command_after_camera_ms": {
+        "min": 3.142791,
+        "median": 7.3647290000000005,
+        "p95": 7.82485595,
+        "max": 8.191417
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.3954405784606934,
+        -98.465087890625,
+        -60.66666030883789,
+        50.95185470581055,
+        -4.677420139312744,
+        -18.937339782714844,
+        -84.61947631835938
+      ],
+      "last_action": [
+        -2.2210633754730225,
+        -97.75140380859375,
+        -58.79255676269531,
+        49.77717208862305,
+        -4.673667907714844,
+        -18.762428283691406,
+        -93.60270690917969
+      ],
+      "state_joint_span": [
+        21.26680564880371,
+        6.557090759277344,
+        6.316669464111328,
+        2.7321319580078125,
+        0.7649812698364258,
+        21.572797775268555,
+        40.02004623413086
+      ],
+      "action_joint_span": [
+        21.449695587158203,
+        7.265350341796875,
+        7.1574249267578125,
+        2.682147979736328,
+        0.7469043731689453,
+        21.498910903930664,
+        39.97707748413086
+      ],
+      "action_state_mean_abs_error": [
+        0.5259218215942383,
+        0.20250487327575684,
+        0.23220323026180267,
+        0.05908188968896866,
+        0.022759253159165382,
+        0.25789716839790344,
+        0.6095538139343262
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 434,
+        "a": 102,
+        "d": 91,
+        "s": 11,
+        "w": 10,
+        "o": 9,
+        "p": 4,
+        "c": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 13,
+      "source_folder": "pick-place-20261112-164650-756797"
+    },
+    {
+      "frames": 431,
+      "command_rows": 72,
+      "action_change_rows": 72,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 43,
+      "command_after_feedback_ms": {
+        "min": 2.103167,
+        "median": 6.4442710000000005,
+        "p95": 6.8608102,
+        "max": 7.1205
+      },
+      "command_after_camera_ms": {
+        "min": 3.108375,
+        "median": 7.4726040000000005,
+        "p95": 7.900295900000001,
+        "max": 8.142167
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.2309463024139404,
+        -96.4910888671875,
+        -60.12776184082031,
+        52.37361526489258,
+        -4.673844337463379,
+        -18.7723445892334,
+        -93.60270690917969
+      ],
+      "last_action": [
+        -2.2931084632873535,
+        -100.54671478271484,
+        -60.26231384277344,
+        48.456722259521484,
+        -4.675217151641846,
+        -18.834625244140625,
+        -94.78296661376953
+      ],
+      "state_joint_span": [
+        0.502701997756958,
+        10.425765991210938,
+        11.58416748046875,
+        5.4205474853515625,
+        0.02185678482055664,
+        0.6556987762451172,
+        39.75777053833008
+      ],
+      "action_joint_span": [
+        0.48768043518066406,
+        10.459449768066406,
+        11.708255767822266,
+        5.459506988525391,
+        0.010563373565673828,
+        0.489410400390625,
+        39.758460998535156
+      ],
+      "action_state_mean_abs_error": [
+        0.02494199015200138,
+        0.45596545934677124,
+        0.4778591990470886,
+        0.1070796549320221,
+        0.009125608950853348,
+        0.034901250153779984,
+        1.023351788520813
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 357,
+        "w": 34,
+        "s": 17,
+        "p": 9,
+        "c": 6,
+        "o": 6,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 14,
+      "source_folder": "pick-place-20261112-164825-208538"
+    },
+    {
+      "frames": 391,
+      "command_rows": 131,
+      "action_change_rows": 131,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 33,
+      "command_after_feedback_ms": {
+        "min": 2.104959,
+        "median": 6.339959,
+        "p95": 6.829438,
+        "max": 7.055042
+      },
+      "command_after_camera_ms": {
+        "min": 3.119583,
+        "median": 7.361667,
+        "p95": 7.8480834999999995,
+        "max": 8.076959
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.2931084632873535,
+        -100.54671478271484,
+        -60.26231384277344,
+        48.456722259521484,
+        -4.675217151641846,
+        -18.834625244140625,
+        -94.78296661376953
+      ],
+      "last_action": [
+        -1.9678943157196045,
+        -100.56987762451172,
+        -61.26083755493164,
+        49.401939392089844,
+        -4.668046951293945,
+        -18.50811767578125,
+        -89.79959869384766
+      ],
+      "state_joint_span": [
+        2.7976455688476562,
+        10.73175048828125,
+        12.152435302734375,
+        1.9015769958496094,
+        0.1092829704284668,
+        3.300403594970703,
+        43.145591735839844
+      ],
+      "action_joint_span": [
+        3.396973133087158,
+        11.067550659179688,
+        12.52316665649414,
+        2.0293540954589844,
+        0.07344627380371094,
+        3.4076461791992188,
+        43.01515197753906
+      ],
+      "action_state_mean_abs_error": [
+        0.1812732070684433,
+        0.5037580132484436,
+        0.5583022236824036,
+        0.07036250829696655,
+        0.013931188732385635,
+        0.13408786058425903,
+        1.256885290145874
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 259,
+        "s": 55,
+        "w": 32,
+        "p": 15,
+        "o": 15,
+        "d": 8,
+        "a": 5,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 15,
+      "source_folder": "pick-place-20261112-164924-756487"
+    },
+    {
+      "frames": 525,
+      "command_rows": 122,
+      "action_change_rows": 122,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 34,
+      "command_after_feedback_ms": {
+        "min": 2.102,
+        "median": 6.398270999999999,
+        "p95": 7.056466049999998,
+        "max": 11.681292
+      },
+      "command_after_camera_ms": {
+        "min": 3.121167,
+        "median": 7.417270500000001,
+        "p95": 8.069028849999999,
+        "max": 12.704333
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.9678943157196045,
+        -100.56987762451172,
+        -61.26083755493164,
+        49.401939392089844,
+        -4.668046951293945,
+        -18.50811767578125,
+        -89.79959869384766
+      ],
+      "last_action": [
+        -1.7574232816696167,
+        -98.66545867919922,
+        -60.2306022644043,
+        50.26303482055664,
+        -4.663243293762207,
+        -18.297332763671875,
+        -88.64120483398438
+      ],
+      "state_joint_span": [
+        2.3824245929718018,
+        11.933868408203125,
+        14.928276062011719,
+        4.5025177001953125,
+        0.08742666244506836,
+        2.994354248046875,
+        29.70355987548828
+      ],
+      "action_joint_span": [
+        3.0489633083343506,
+        11.958267211914062,
+        15.207355499267578,
+        4.4544830322265625,
+        0.07085943222045898,
+        3.0582218170166016,
+        29.682449340820312
+      ],
+      "action_state_mean_abs_error": [
+        0.08666231483221054,
+        0.3971896469593048,
+        0.5161029100418091,
+        0.10952012985944748,
+        0.011243309825658798,
+        0.06158203259110451,
+        0.6112213134765625
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 402,
+        "w": 57,
+        "s": 46,
+        "a": 6,
+        "p": 4,
+        "o": 4,
+        "e": 2,
+        "d": 2,
+        "r": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 16,
+      "source_folder": "pick-place-20261112-165606-540210"
+    },
+    {
+      "frames": 791,
+      "command_rows": 179,
+      "action_change_rows": 179,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 97,
+      "command_after_feedback_ms": {
+        "min": 2.113708,
+        "median": 6.322084,
+        "p95": 6.8201,
+        "max": 7.523583
+      },
+      "command_after_camera_ms": {
+        "min": 3.123875,
+        "median": 7.335791,
+        "p95": 7.8469422,
+        "max": 8.550416
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.7574232816696167,
+        -98.66545867919922,
+        -60.2306022644043,
+        50.26303482055664,
+        -4.663243293762207,
+        -18.297332763671875,
+        -88.64120483398438
+      ],
+      "last_action": [
+        -1.624185562133789,
+        -97.0465316772461,
+        -57.28739929199219,
+        48.92787551879883,
+        -4.660188674926758,
+        -18.163684844970703,
+        -93.27485656738281
+      ],
+      "state_joint_span": [
+        15.190614700317383,
+        8.021537780761719,
+        9.464073181152344,
+        4.742938995361328,
+        0.2841358184814453,
+        15.518407821655273,
+        44.41327667236328
+      ],
+      "action_joint_span": [
+        15.399007797241211,
+        8.51153564453125,
+        9.784000396728516,
+        4.427459716796875,
+        0.1815042495727539,
+        15.45134162902832,
+        44.30474090576172
+      ],
+      "action_state_mean_abs_error": [
+        0.32940250635147095,
+        0.27596643567085266,
+        0.3312731683254242,
+        0.06992830336093903,
+        0.011753539554774761,
+        0.18862074613571167,
+        0.610206127166748
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 611,
+        "d": 82,
+        "a": 47,
+        "w": 19,
+        "s": 13,
+        "o": 10,
+        "p": 5,
+        "c": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 17,
+      "source_folder": "pick-place-20261112-165724-172659"
+    },
+    {
+      "frames": 607,
+      "command_rows": 95,
+      "action_change_rows": 95,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 41,
+      "command_after_feedback_ms": {
+        "min": 2.104167,
+        "median": 6.452792,
+        "p95": 6.8696957,
+        "max": 7.487459
+      },
+      "command_after_camera_ms": {
+        "min": 3.125,
+        "median": 7.461291,
+        "p95": 7.893257999999999,
+        "max": 8.495792
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.624185562133789,
+        -97.0465316772461,
+        -57.28739929199219,
+        48.92787551879883,
+        -4.660188674926758,
+        -18.163684844970703,
+        -93.27485656738281
+      ],
+      "last_action": [
+        -1.6121684312820435,
+        -99.72274780273438,
+        -61.260990142822266,
+        50.221519470214844,
+        -4.659965515136719,
+        -18.151409149169922,
+        -89.66846466064453
+      ],
+      "state_joint_span": [
+        0.34976041316986084,
+        12.196205139160156,
+        12.851848602294922,
+        2.66650390625,
+        0.13113975524902344,
+        0.327850341796875,
+        38.86164474487305
+      ],
+      "action_joint_span": [
+        0.3100653886795044,
+        12.345657348632812,
+        12.844841003417969,
+        2.7592086791992188,
+        0.006997108459472656,
+        0.3113422393798828,
+        38.84053421020508
+      ],
+      "action_state_mean_abs_error": [
+        0.019280236214399338,
+        0.4322897791862488,
+        0.47861140966415405,
+        0.07921215146780014,
+        0.009772677905857563,
+        0.018458981066942215,
+        0.849341630935669
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 511,
+        "w": 38,
+        "s": 33,
+        "o": 11,
+        "p": 9,
+        "e": 2,
+        "c": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 18,
+      "source_folder": "pick-place-20261112-165859-032859"
+    },
+    {
+      "frames": 554,
+      "command_rows": 154,
+      "action_change_rows": 154,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 32,
+      "command_after_feedback_ms": {
+        "min": 2.100125,
+        "median": 6.5200415,
+        "p95": 6.8604705,
+        "max": 7.519458
+      },
+      "command_after_camera_ms": {
+        "min": 3.104875,
+        "median": 7.539604000000001,
+        "p95": 7.87253125,
+        "max": 8.536625
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.6121684312820435,
+        -99.72274780273438,
+        -61.260990142822266,
+        50.221519470214844,
+        -4.659965515136719,
+        -18.151409149169922,
+        -89.66846466064453
+      ],
+      "last_action": [
+        -2.0054757595062256,
+        -98.56756591796875,
+        -61.051876068115234,
+        51.202720642089844,
+        -4.668890476226807,
+        -18.546205520629883,
+        -100.26908111572266
+      ],
+      "state_joint_span": [
+        14.971992492675781,
+        5.4860687255859375,
+        6.119956970214844,
+        2.404224395751953,
+        0.5245585441589355,
+        15.977452278137207,
+        51.58235168457031
+      ],
+      "action_joint_span": [
+        15.890965461730957,
+        6.141517639160156,
+        6.947967529296875,
+        2.3647804260253906,
+        0.49615955352783203,
+        15.931682586669922,
+        58.14019012451172
+      ],
+      "action_state_mean_abs_error": [
+        0.44713035225868225,
+        0.21731793880462646,
+        0.2584272623062134,
+        0.06349590420722961,
+        0.021165307611227036,
+        0.2252778857946396,
+        1.0734524726867676
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 399,
+        "d": 52,
+        "a": 46,
+        "s": 19,
+        "o": 16,
+        "w": 14,
+        "p": 6,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 19,
+      "source_folder": "pick-place-20261112-170016-824946"
+    },
+    {
+      "frames": 562,
+      "command_rows": 114,
+      "action_change_rows": 114,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 40,
+      "command_after_feedback_ms": {
+        "min": 2.106292,
+        "median": 6.380312,
+        "p95": 7.022297899999999,
+        "max": 12.7345
+      },
+      "command_after_camera_ms": {
+        "min": 3.111583,
+        "median": 7.404021,
+        "p95": 8.038041549999999,
+        "max": 13.767667
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.0054757595062256,
+        -98.56756591796875,
+        -61.051876068115234,
+        51.202720642089844,
+        -4.668890476226807,
+        -18.546205520629883,
+        -100.26908111572266
+      ],
+      "last_action": [
+        -1.2986589670181274,
+        -98.54019165039062,
+        -59.666751861572266,
+        49.7873649597168,
+        -4.652704238891602,
+        -17.83719253540039,
+        -83.57035827636719
+      ],
+      "state_joint_span": [
+        2.8414132595062256,
+        10.68798828125,
+        13.616832733154297,
+        3.7156753540039062,
+        0.13113975524902344,
+        3.977956771850586,
+        48.36943435668945
+      ],
+      "action_joint_span": [
+        4.114600658416748,
+        10.919036865234375,
+        13.833000183105469,
+        3.7672576904296875,
+        0.0919337272644043,
+        4.12725830078125,
+        48.260841369628906
+      ],
+      "action_state_mean_abs_error": [
+        0.10059308260679245,
+        0.36495789885520935,
+        0.46314916014671326,
+        0.08567699044942856,
+        0.010782729834318161,
+        0.07420769333839417,
+        0.971165657043457
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 447,
+        "w": 50,
+        "s": 38,
+        "p": 8,
+        "o": 8,
+        "a": 4,
+        "d": 3,
+        "c": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 20,
+      "source_folder": "pick-place-20261112-170722-633234"
+    },
+    {
+      "frames": 612,
+      "command_rows": 222,
+      "action_change_rows": 222,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 36,
+      "command_after_feedback_ms": {
+        "min": 2.121084,
+        "median": 6.3285415,
+        "p95": 6.83808125,
+        "max": 7.059166
+      },
+      "command_after_camera_ms": {
+        "min": 3.128875,
+        "median": 7.3492295,
+        "p95": 7.84090655,
+        "max": 8.086291
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.2986589670181274,
+        -98.54019165039062,
+        -59.666751861572266,
+        49.7873649597168,
+        -4.652704238891602,
+        -17.83719253540039,
+        -83.57035827636719
+      ],
+      "last_action": [
+        -1.0478672981262207,
+        -98.70729064941406,
+        -61.32380294799805,
+        51.256927490234375,
+        -4.646784782409668,
+        -17.585643768310547,
+        -91.00171661376953
+      ],
+      "state_joint_span": [
+        16.37087059020996,
+        8.589813232421875,
+        10.425769805908203,
+        3.715679168701172,
+        0.41527557373046875,
+        16.611291885375977,
+        36.588504791259766
+      ],
+      "action_joint_span": [
+        16.529003143310547,
+        8.738357543945312,
+        10.708057403564453,
+        3.797760009765625,
+        0.19440364837646484,
+        16.5850830078125,
+        36.436256408691406
+      ],
+      "action_state_mean_abs_error": [
+        0.4445013403892517,
+        0.24791236221790314,
+        0.2991904020309448,
+        0.05538204312324524,
+        0.016541602090001106,
+        0.2206050157546997,
+        0.857528567314148
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 389,
+        "d": 88,
+        "a": 68,
+        "s": 25,
+        "w": 25,
+        "o": 9,
+        "p": 6,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 21,
+      "source_folder": "pick-place-20261112-170834-113277"
+    },
+    {
+      "frames": 496,
+      "command_rows": 121,
+      "action_change_rows": 121,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 52,
+      "command_after_feedback_ms": {
+        "min": 2.112084,
+        "median": 6.391542,
+        "p95": 6.837334,
+        "max": 7.052583
+      },
+      "command_after_camera_ms": {
+        "min": 3.1225,
+        "median": 7.41175,
+        "p95": 7.86025,
+        "max": 8.107125
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.0478672981262207,
+        -98.70729064941406,
+        -61.32380294799805,
+        51.256927490234375,
+        -4.646784782409668,
+        -17.585643768310547,
+        -91.00171661376953
+      ],
+      "last_action": [
+        -0.04350190609693527,
+        -99.6978530883789,
+        -60.172359466552734,
+        49.033531188964844,
+        -4.62224006652832,
+        -16.578285217285156,
+        -93.0781478881836
+      ],
+      "state_joint_span": [
+        2.7539868354797363,
+        10.884750366210938,
+        13.179752349853516,
+        3.9123878479003906,
+        0.08742666244506836,
+        2.775787353515625,
+        35.102256774902344
+      ],
+      "action_joint_span": [
+        2.698986768722534,
+        10.934364318847656,
+        13.16378402709961,
+        3.9563827514648438,
+        0.0626840591430664,
+        2.7073421478271484,
+        35.081146240234375
+      ],
+      "action_state_mean_abs_error": [
+        0.07940603047609329,
+        0.4700031876564026,
+        0.4979996979236603,
+        0.08629771322011948,
+        0.012133858166635036,
+        0.050160061568021774,
+        0.8032694458961487
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 374,
+        "s": 57,
+        "w": 40,
+        "o": 10,
+        "p": 7,
+        "c": 3,
+        "a": 2,
+        "r": 1,
+        "d": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 22,
+      "source_folder": "pick-place-20261112-170952-307171"
+    },
+    {
+      "frames": 532,
+      "command_rows": 226,
+      "action_change_rows": 226,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 34,
+      "command_after_feedback_ms": {
+        "min": 2.1225,
+        "median": 6.313438,
+        "p95": 6.8169585,
+        "max": 7.217542
+      },
+      "command_after_camera_ms": {
+        "min": 3.134458,
+        "median": 7.3303545,
+        "p95": 7.839854,
+        "max": 8.261042
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.04350190609693527,
+        -99.6978530883789,
+        -60.172359466552734,
+        49.033531188964844,
+        -4.62224006652832,
+        -16.578285217285156,
+        -93.0781478881836
+      ],
+      "last_action": [
+        -1.4362058639526367,
+        -99.7352523803711,
+        -61.30119323730469,
+        50.23794174194336,
+        -4.655887126922607,
+        -17.97515869140625,
+        -88.09473419189453
+      ],
+      "state_joint_span": [
+        16.78614616394043,
+        5.660972595214844,
+        6.7537994384765625,
+        2.7758445739746094,
+        0.5901284217834473,
+        17.441789627075195,
+        30.971302032470703
+      ],
+      "action_joint_span": [
+        17.3019962310791,
+        5.911705017089844,
+        7.243854522705078,
+        2.6662750244140625,
+        0.5759201049804688,
+        17.343908309936523,
+        30.928279876708984
+      ],
+      "action_state_mean_abs_error": [
+        0.51311194896698,
+        0.2837268114089966,
+        0.3348972499370575,
+        0.06464333832263947,
+        0.022306330502033234,
+        0.23892724514007568,
+        0.6246180534362793
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 305,
+        "d": 89,
+        "a": 83,
+        "s": 20,
+        "w": 17,
+        "o": 9,
+        "p": 7,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 23,
+      "source_folder": "pick-place-20261112-171050-741023"
+    },
+    {
+      "frames": 492,
+      "command_rows": 130,
+      "action_change_rows": 130,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 46,
+      "command_after_feedback_ms": {
+        "min": 2.106125,
+        "median": 6.3200205,
+        "p95": 7.276493449999999,
+        "max": 7.811791
+      },
+      "command_after_camera_ms": {
+        "min": 3.122,
+        "median": 7.327437,
+        "p95": 8.29106685,
+        "max": 8.863333
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.4362058639526367,
+        -99.7352523803711,
+        -61.30119323730469,
+        50.23794174194336,
+        -4.655887126922607,
+        -17.97515869140625,
+        -88.09473419189453
+      ],
+      "last_action": [
+        -2.23342227935791,
+        -98.72480010986328,
+        -60.14080047607422,
+        50.15483093261719,
+        -4.673879623413086,
+        -18.774965286254883,
+        -101.5586166381836
+      ],
+      "state_joint_span": [
+        2.6447038650512695,
+        10.753608703613281,
+        13.50760269165039,
+        3.7812461853027344,
+        0.08742618560791016,
+        3.169261932373047,
+        49.505924224853516
+      ],
+      "action_joint_span": [
+        3.186000108718872,
+        10.750755310058594,
+        13.740936279296875,
+        4.099857330322266,
+        0.07642602920532227,
+        3.1955623626708984,
+        49.375526428222656
+      ],
+      "action_state_mean_abs_error": [
+        0.08257147669792175,
+        0.4148041009902954,
+        0.5403351783752441,
+        0.09418464452028275,
+        0.01377631351351738,
+        0.06455736607313156,
+        0.9764156341552734
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 361,
+        "s": 58,
+        "w": 49,
+        "o": 11,
+        "p": 5,
+        "d": 3,
+        "a": 2,
+        "r": 1,
+        "e": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 24,
+      "source_folder": "pick-place-20261112-171333-680457"
+    },
+    {
+      "frames": 568,
+      "command_rows": 284,
+      "action_change_rows": 284,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 38,
+      "command_after_feedback_ms": {
+        "min": 2.111458,
+        "median": 6.302021,
+        "p95": 6.6843955,
+        "max": 7.144875
+      },
+      "command_after_camera_ms": {
+        "min": 3.121333,
+        "median": 7.318625,
+        "p95": 7.7156393,
+        "max": 8.164167
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -2.23342227935791,
+        -98.72480010986328,
+        -60.14080047607422,
+        50.15483093261719,
+        -4.673879623413086,
+        -18.774965286254883,
+        -101.5586166381836
+      ],
+      "last_action": [
+        -1.0778732299804688,
+        -99.25354766845703,
+        -61.52417755126953,
+        50.913482666015625,
+        -4.647493362426758,
+        -17.615739822387695,
+        -87.7231674194336
+      ],
+      "state_joint_span": [
+        17.332561492919922,
+        10.578758239746094,
+        11.91201400756836,
+        3.6282501220703125,
+        0.3278489112854004,
+        18.31610679626465,
+        45.68095779418945
+      ],
+      "action_joint_span": [
+        18.251340866088867,
+        11.071258544921875,
+        12.827056884765625,
+        3.859577178955078,
+        0.19374465942382812,
+        18.313596725463867,
+        45.659847259521484
+      ],
+      "action_state_mean_abs_error": [
+        0.49348190426826477,
+        0.31769219040870667,
+        0.37301626801490784,
+        0.06528264284133911,
+        0.016077764332294464,
+        0.25114867091178894,
+        0.9083815813064575
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 283,
+        "d": 93,
+        "a": 90,
+        "w": 45,
+        "s": 39,
+        "p": 9,
+        "o": 7,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 25,
+      "source_folder": "pick-place-20261112-171432-013596"
+    },
+    {
+      "frames": 576,
+      "command_rows": 93,
+      "action_change_rows": 93,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 48,
+      "command_after_feedback_ms": {
+        "min": 2.105833,
+        "median": 6.51125,
+        "p95": 6.9128495999999995,
+        "max": 7.24625
+      },
+      "command_after_camera_ms": {
+        "min": 3.121875,
+        "median": 7.534208,
+        "p95": 7.941783399999999,
+        "max": 8.278125
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.0778732299804688,
+        -99.25354766845703,
+        -61.52417755126953,
+        50.913482666015625,
+        -4.647493362426758,
+        -17.615739822387695,
+        -87.7231674194336
+      ],
+      "last_action": [
+        -1.6364504098892212,
+        -99.32588958740234,
+        -58.383724212646484,
+        47.748966217041016,
+        -4.6604509353637695,
+        -18.17624282836914,
+        -91.13285827636719
+      ],
+      "state_joint_span": [
+        2.2075719833374023,
+        11.256317138671875,
+        12.851848602294922,
+        4.721080780029297,
+        0.109283447265625,
+        2.6009902954101562,
+        29.20085906982422
+      ],
+      "action_joint_span": [
+        2.5104851722717285,
+        11.860733032226562,
+        12.834701538085938,
+        4.571372985839844,
+        0.05478096008300781,
+        2.5182456970214844,
+        29.15784454345703
+      ],
+      "action_state_mean_abs_error": [
+        0.070355623960495,
+        0.4601795971393585,
+        0.5019200444221497,
+        0.08999081701040268,
+        0.013453255407512188,
+        0.06505652517080307,
+        0.5613937377929688
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 481,
+        "w": 34,
+        "s": 33,
+        "o": 9,
+        "p": 7,
+        "c": 5,
+        "a": 3,
+        "d": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 26,
+      "source_folder": "pick-place-20261112-171540-442097"
+    },
+    {
+      "frames": 544,
+      "command_rows": 173,
+      "action_change_rows": 173,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 43,
+      "command_after_feedback_ms": {
+        "min": 2.119333,
+        "median": 6.425084,
+        "p95": 6.8715003999999995,
+        "max": 8.135375
+      },
+      "command_after_camera_ms": {
+        "min": 3.12675,
+        "median": 7.433708,
+        "p95": 7.9013583999999994,
+        "max": 9.183791
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.6364504098892212,
+        -99.32588958740234,
+        -58.383724212646484,
+        47.748966217041016,
+        -4.6604509353637695,
+        -18.17624282836914,
+        -91.13285827636719
+      ],
+      "last_action": [
+        -0.5354015231132507,
+        -98.71615600585938,
+        -57.672996520996094,
+        47.555667877197266,
+        -4.634451389312744,
+        -17.07164192199707,
+        -95.96327209472656
+      ],
+      "state_joint_span": [
+        15.562121391296387,
+        5.81396484375,
+        6.513378143310547,
+        2.863269805908203,
+        0.5682716369628906,
+        15.999253273010254,
+        39.998191833496094
+      ],
+      "action_joint_span": [
+        15.871404647827148,
+        6.996772766113281,
+        7.816082000732422,
+        2.771839141845703,
+        0.504753589630127,
+        15.911494255065918,
+        39.93336486816406
+      ],
+      "action_state_mean_abs_error": [
+        0.4779113233089447,
+        0.24643242359161377,
+        0.29281505942344666,
+        0.07346343994140625,
+        0.020468059927225113,
+        0.24154315888881683,
+        0.9706072807312012
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 370,
+        "a": 60,
+        "d": 57,
+        "s": 21,
+        "w": 14,
+        "o": 12,
+        "p": 7,
+        "r": 1,
+        "e": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 27,
+      "source_folder": "pick-place-20261112-171647-095967"
+    },
+    {
+      "frames": 567,
+      "command_rows": 185,
+      "action_change_rows": 185,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 30,
+      "command_after_feedback_ms": {
+        "min": 2.092625,
+        "median": 6.354667,
+        "p95": 6.9290916,
+        "max": 11.766958
+      },
+      "command_after_camera_ms": {
+        "min": 3.106666,
+        "median": 7.373584,
+        "p95": 7.9344334,
+        "max": 12.783542
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.5354015231132507,
+        -98.71615600585938,
+        -57.672996520996094,
+        47.555667877197266,
+        -4.634451389312744,
+        -17.07164192199707,
+        -95.96327209472656
+      ],
+      "last_action": [
+        -1.0020831823349,
+        -99.60226440429688,
+        -58.086395263671875,
+        47.121063232421875,
+        -4.645669937133789,
+        -17.53973960876465,
+        -91.43885040283203
+      ],
+      "state_joint_span": [
+        10.775469779968262,
+        10.294570922851562,
+        13.114181518554688,
+        5.3986358642578125,
+        0.2185659408569336,
+        10.88475227355957,
+        34.09685134887695
+      ],
+      "action_joint_span": [
+        10.810012817382812,
+        10.346488952636719,
+        13.50595474243164,
+        5.315731048583984,
+        0.18034791946411133,
+        10.84547233581543,
+        34.07568359375
+      ],
+      "action_state_mean_abs_error": [
+        0.33380937576293945,
+        0.3561469614505768,
+        0.4509262144565582,
+        0.09934967756271362,
+        0.011773667298257351,
+        0.16648705303668976,
+        0.6267308592796326
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 380,
+        "d": 60,
+        "w": 51,
+        "s": 30,
+        "a": 28,
+        "p": 7,
+        "o": 7,
+        "c": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 28,
+      "source_folder": "pick-place-20261112-172143-408058"
+    },
+    {
+      "frames": 534,
+      "command_rows": 221,
+      "action_change_rows": 221,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 27,
+      "command_after_feedback_ms": {
+        "min": 2.127292,
+        "median": 6.332208,
+        "p95": 6.771375,
+        "max": 7.440584
+      },
+      "command_after_camera_ms": {
+        "min": 3.141292,
+        "median": 7.342583,
+        "p95": 7.793583,
+        "max": 8.452584
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.0020831823349,
+        -99.60226440429688,
+        -58.086395263671875,
+        47.121063232421875,
+        -4.645669937133789,
+        -17.53973960876465,
+        -91.43885040283203
+      ],
+      "last_action": [
+        -0.9960376024246216,
+        -98.86326599121094,
+        -57.1916389465332,
+        46.96528625488281,
+        -4.6455230712890625,
+        -17.533714294433594,
+        -90.25859069824219
+      ],
+      "state_joint_span": [
+        13.004899024963379,
+        8.458610534667969,
+        8.371246337890625,
+        3.2129745483398438,
+        0.26227903366088867,
+        13.289033889770508,
+        30.66530990600586
+      ],
+      "action_joint_span": [
+        13.162240028381348,
+        8.907249450683594,
+        8.97265625,
+        3.1630287170410156,
+        0.1900005340576172,
+        13.206209182739258,
+        30.644145965576172
+      ],
+      "action_state_mean_abs_error": [
+        0.44305533170700073,
+        0.33858487010002136,
+        0.40884435176849365,
+        0.09901024401187897,
+        0.015489237383008003,
+        0.23386520147323608,
+        0.6107988953590393
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 312,
+        "d": 80,
+        "a": 69,
+        "s": 32,
+        "w": 28,
+        "o": 5,
+        "p": 4,
+        "c": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 29,
+      "source_folder": "pick-place-20261112-172307-081515"
+    },
+    {
+      "frames": 650,
+      "command_rows": 298,
+      "action_change_rows": 298,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 28,
+      "command_after_feedback_ms": {
+        "min": 2.106875,
+        "median": 6.301208,
+        "p95": 6.7952356499999995,
+        "max": 7.207625
+      },
+      "command_after_camera_ms": {
+        "min": 3.115833,
+        "median": 7.313625,
+        "p95": 7.8052312,
+        "max": 8.247458
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.9960376024246216,
+        -98.86326599121094,
+        -57.1916389465332,
+        46.96528625488281,
+        -4.6455230712890625,
+        -17.533714294433594,
+        -90.25859069824219
+      ],
+      "last_action": [
+        -1.8486778736114502,
+        -99.689697265625,
+        -58.43473815917969,
+        47.4506721496582,
+        -4.665307521820068,
+        -18.388891220092773,
+        -92.53173065185547
+      ],
+      "state_joint_span": [
+        14.600430488586426,
+        10.097915649414062,
+        11.540508270263672,
+        3.081836700439453,
+        0.5464153289794922,
+        15.583978652954102,
+        41.55006408691406
+      ],
+      "action_joint_span": [
+        16.34835433959961,
+        10.412933349609375,
+        11.582073211669922,
+        3.0437889099121094,
+        0.5190653800964355,
+        16.38961410522461,
+        41.660091400146484
+      ],
+      "action_state_mean_abs_error": [
+        0.41407835483551025,
+        0.3875194787979126,
+        0.43910983204841614,
+        0.06990187615156174,
+        0.020676953718066216,
+        0.21463946998119354,
+        0.9202828407287598
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 351,
+        "d": 77,
+        "w": 67,
+        "a": 67,
+        "s": 57,
+        "o": 18,
+        "p": 10,
+        "r": 1,
+        "e": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 30,
+      "source_folder": "pick-place-20261112-172409-546779"
+    },
+    {
+      "frames": 592,
+      "command_rows": 231,
+      "action_change_rows": 231,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 30,
+      "command_after_feedback_ms": {
+        "min": 2.102084,
+        "median": 6.337083,
+        "p95": 6.8354375,
+        "max": 11.528959
+      },
+      "command_after_camera_ms": {
+        "min": 3.094209,
+        "median": 7.353833,
+        "p95": 7.8615005,
+        "max": 12.536709
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.8486778736114502,
+        -99.689697265625,
+        -58.43473815917969,
+        47.4506721496582,
+        -4.665307521820068,
+        -18.388891220092773,
+        -92.53173065185547
+      ],
+      "last_action": [
+        -1.6465554237365723,
+        -101.0412826538086,
+        -58.72414016723633,
+        46.3719367980957,
+        -4.660709381103516,
+        -18.18614387512207,
+        -94.10540771484375
+      ],
+      "state_joint_span": [
+        12.043208122253418,
+        8.720893859863281,
+        9.857490539550781,
+        3.9561004638671875,
+        0.3934192657470703,
+        12.85190200805664,
+        35.692386627197266
+      ],
+      "action_joint_span": [
+        13.100577354431152,
+        9.398002624511719,
+        10.998069763183594,
+        3.5663528442382812,
+        0.3837137222290039,
+        13.135841369628906,
+        35.64936065673828
+      ],
+      "action_state_mean_abs_error": [
+        0.42604705691337585,
+        0.3094305992126465,
+        0.3652287423610687,
+        0.09451445192098618,
+        0.034039318561553955,
+        0.22999152541160583,
+        0.701896607875824
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 359,
+        "a": 69,
+        "d": 60,
+        "s": 51,
+        "w": 25,
+        "o": 14,
+        "p": 9,
+        "c": 3,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 31,
+      "source_folder": "pick-place-20261112-172535-754978"
+    },
+    {
+      "frames": 529,
+      "command_rows": 189,
+      "action_change_rows": 189,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 38,
+      "command_after_feedback_ms": {
+        "min": 2.092917,
+        "median": 6.323084,
+        "p95": 6.866024599999999,
+        "max": 7.544333
+      },
+      "command_after_camera_ms": {
+        "min": 3.10675,
+        "median": 7.334958,
+        "p95": 7.9100832,
+        "max": 8.552333
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.6465554237365723,
+        -101.0412826538086,
+        -58.72414016723633,
+        46.3719367980957,
+        -4.660709381103516,
+        -18.18614387512207,
+        -94.10540771484375
+      ],
+      "last_action": [
+        -1.0474555492401123,
+        -100.03150177001953,
+        -57.84426498413086,
+        46.453147888183594,
+        -4.646749496459961,
+        -17.585229873657227,
+        -90.80500793457031
+      ],
+      "state_joint_span": [
+        8.393099784851074,
+        10.513191223144531,
+        13.114177703857422,
+        5.595344543457031,
+        0.17485284805297852,
+        8.917604446411133,
+        31.626998901367188
+      ],
+      "action_joint_span": [
+        8.91486644744873,
+        10.6358642578125,
+        13.39590072631836,
+        5.523090362548828,
+        0.1610879898071289,
+        8.94373893737793,
+        31.6058349609375
+      ],
+      "action_state_mean_abs_error": [
+        0.29356127977371216,
+        0.35469651222229004,
+        0.4449232220649719,
+        0.10429739207029343,
+        0.01092102937400341,
+        0.14983008801937103,
+        0.6356908679008484
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 339,
+        "s": 55,
+        "w": 44,
+        "d": 42,
+        "a": 32,
+        "p": 6,
+        "o": 6,
+        "e": 2,
+        "c": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 32,
+      "source_folder": "pick-place-20261112-173619-522116"
+    },
+    {
+      "frames": 599,
+      "command_rows": 192,
+      "action_change_rows": 192,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 31,
+      "command_after_feedback_ms": {
+        "min": 2.109209,
+        "median": 6.327729,
+        "p95": 6.852079499999999,
+        "max": 7.528
+      },
+      "command_after_camera_ms": {
+        "min": 3.11475,
+        "median": 7.3458334999999995,
+        "p95": 7.89236525,
+        "max": 8.558708
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.0474555492401123,
+        -100.03150177001953,
+        -57.84426498413086,
+        46.453147888183594,
+        -4.646749496459961,
+        -17.585229873657227,
+        -90.80500793457031
+      ],
+      "last_action": [
+        -0.30040353536605835,
+        -99.15282440185547,
+        -58.15037536621094,
+        47.577354431152344,
+        -4.628659248352051,
+        -16.83594512939453,
+        -92.4661636352539
+      ],
+      "state_joint_span": [
+        15.321698188781738,
+        7.890342712402344,
+        6.141815185546875,
+        3.7375335693359375,
+        0.41527509689331055,
+        15.496551513671875,
+        41.506351470947266
+      ],
+      "action_joint_span": [
+        15.3148193359375,
+        8.605506896972656,
+        7.0006256103515625,
+        3.7171630859375,
+        0.21040821075439453,
+        15.366065979003906,
+        49.39744186401367
+      ],
+      "action_state_mean_abs_error": [
+        0.3971656560897827,
+        0.23118706047534943,
+        0.28053703904151917,
+        0.07324762642383575,
+        0.017700854688882828,
+        0.1852623075246811,
+        3.5141003131866455
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 406,
+        "d": 75,
+        "a": 67,
+        "s": 16,
+        "w": 11,
+        "o": 11,
+        "p": 9,
+        "e": 2,
+        "r": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 33,
+      "source_folder": "pick-place-20261112-173724-044570"
+    },
+    {
+      "frames": 650,
+      "command_rows": 258,
+      "action_change_rows": 258,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 30,
+      "command_after_feedback_ms": {
+        "min": 2.107125,
+        "median": 6.33475,
+        "p95": 6.84105625,
+        "max": 7.260625
+      },
+      "command_after_camera_ms": {
+        "min": 3.113416,
+        "median": 7.3499795,
+        "p95": 7.86662225,
+        "max": 8.28525
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.30040353536605835,
+        -99.15282440185547,
+        -58.15037536621094,
+        47.577354431152344,
+        -4.628659248352051,
+        -16.83594512939453,
+        -92.4661636352539
+      ],
+      "last_action": [
+        -0.4184114933013916,
+        -100.17169189453125,
+        -58.149131774902344,
+        46.568729400634766,
+        -4.631523132324219,
+        -16.954458236694336,
+        -101.07777404785156
+      ],
+      "state_joint_span": [
+        16.086734771728516,
+        11.868354797363281,
+        12.61142349243164,
+        3.234832763671875,
+        0.5682716369628906,
+        17.004711151123047,
+        48.10709762573242
+      ],
+      "action_joint_span": [
+        17.027753829956055,
+        11.948257446289062,
+        12.608440399169922,
+        3.195903778076172,
+        0.5533843040466309,
+        17.069904327392578,
+        48.107845306396484
+      ],
+      "action_state_mean_abs_error": [
+        0.4301884174346924,
+        0.39240509271621704,
+        0.43689650297164917,
+        0.07572673261165619,
+        0.02253085747361183,
+        0.21631112694740295,
+        0.7985374927520752
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 391,
+        "a": 71,
+        "w": 59,
+        "d": 52,
+        "s": 50,
+        "o": 12,
+        "p": 10,
+        "c": 3,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 34,
+      "source_folder": "pick-place-20261112-173837-263759"
+    },
+    {
+      "frames": 604,
+      "command_rows": 238,
+      "action_change_rows": 238,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 34,
+      "command_after_feedback_ms": {
+        "min": 2.110125,
+        "median": 6.331958,
+        "p95": 6.816631199999999,
+        "max": 11.806375
+      },
+      "command_after_camera_ms": {
+        "min": 3.112625,
+        "median": 7.347666,
+        "p95": 7.8453624,
+        "max": 12.830625
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.4184114933013916,
+        -100.17169189453125,
+        -58.149131774902344,
+        46.568729400634766,
+        -4.631523132324219,
+        -16.954458236694336,
+        -101.07777404785156
+      ],
+      "last_action": [
+        -0.8947658538818359,
+        -99.14871215820312,
+        -55.33802795410156,
+        44.817298889160156,
+        -4.643156051635742,
+        -17.43208122253418,
+        -95.1326675415039
+      ],
+      "state_joint_span": [
+        11.474882125854492,
+        11.802787780761719,
+        14.534866333007812,
+        4.808563232421875,
+        0.4371323585510254,
+        12.611478805541992,
+        45.374969482421875
+      ],
+      "action_joint_span": [
+        12.933568000793457,
+        11.834060668945312,
+        15.055335998535156,
+        4.8313140869140625,
+        0.3820500373840332,
+        12.968198776245117,
+        50.42469787597656
+      ],
+      "action_state_mean_abs_error": [
+        0.3281155824661255,
+        0.3330117464065552,
+        0.4164290130138397,
+        0.09034833312034607,
+        0.03506935015320778,
+        0.18354162573814392,
+        3.1088035106658936
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 365,
+        "s": 77,
+        "w": 47,
+        "d": 45,
+        "a": 42,
+        "p": 13,
+        "o": 11,
+        "c": 2,
+        "r": 1,
+        "e": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 35,
+      "source_folder": "pick-place-20261112-173953-274894"
+    },
+    {
+      "frames": 603,
+      "command_rows": 177,
+      "action_change_rows": 177,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 39,
+      "command_after_feedback_ms": {
+        "min": 2.11,
+        "median": 6.376709,
+        "p95": 7.090582999999999,
+        "max": 9.634458
+      },
+      "command_after_camera_ms": {
+        "min": 3.117125,
+        "median": 7.38725,
+        "p95": 8.1124,
+        "max": 10.819167
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.8947658538818359,
+        -99.14871215820312,
+        -55.33802795410156,
+        44.817298889160156,
+        -4.643156051635742,
+        -17.43208122253418,
+        -95.1326675415039
+      ],
+      "last_action": [
+        -0.3124448359012604,
+        -99.73701477050781,
+        -57.91495132446289,
+        46.75871658325195,
+        -4.6289567947387695,
+        -16.8480224609375,
+        -91.19842529296875
+      ],
+      "state_joint_span": [
+        3.8905303478240967,
+        12.48028564453125,
+        18.971858978271484,
+        7.431407928466797,
+        0.13113975524902344,
+        5.027072906494141,
+        42.09647750854492
+      ],
+      "action_joint_span": [
+        5.14466667175293,
+        12.756111145019531,
+        19.14684295654297,
+        7.469348907470703,
+        0.11333513259887695,
+        5.160552978515625,
+        42.0534553527832
+      ],
+      "action_state_mean_abs_error": [
+        0.13099026679992676,
+        0.4422149956226349,
+        0.5306877493858337,
+        0.12129490077495575,
+        0.014792431145906448,
+        0.10666891932487488,
+        0.732099711894989
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 425,
+        "w": 76,
+        "s": 50,
+        "d": 19,
+        "e": 11,
+        "a": 8,
+        "p": 6,
+        "o": 5,
+        "c": 2,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 36,
+      "source_folder": "pick-place-20261112-174853-894950"
+    },
+    {
+      "frames": 705,
+      "command_rows": 241,
+      "action_change_rows": 241,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 27,
+      "command_after_feedback_ms": {
+        "min": 2.101167,
+        "median": 6.321083,
+        "p95": 6.837209,
+        "max": 7.495541
+      },
+      "command_after_camera_ms": {
+        "min": 3.124958,
+        "median": 7.334792,
+        "p95": 7.850125,
+        "max": 8.520083
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -0.3124448359012604,
+        -99.73701477050781,
+        -57.91495132446289,
+        46.75871658325195,
+        -4.6289567947387695,
+        -16.8480224609375,
+        -91.19842529296875
+      ],
+      "last_action": [
+        -1.2614305019378662,
+        -97.95671081542969,
+        -58.692649841308594,
+        49.393714904785156,
+        -4.651847839355469,
+        -17.79985237121582,
+        -84.6413345336914
+      ],
+      "state_joint_span": [
+        15.146845817565918,
+        8.961311340332031,
+        12.698905944824219,
+        6.229244232177734,
+        0.45898866653442383,
+        15.496551513671875,
+        44.30399703979492
+      ],
+      "action_joint_span": [
+        15.34947681427002,
+        9.414436340332031,
+        13.474483489990234,
+        6.26959228515625,
+        0.21652507781982422,
+        15.400726318359375,
+        44.28288650512695
+      ],
+      "action_state_mean_abs_error": [
+        0.4198826253414154,
+        0.3248401880264282,
+        0.37151458859443665,
+        0.09221352636814117,
+        0.01634797267615795,
+        0.21767601370811462,
+        0.6701761484146118
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 463,
+        "d": 76,
+        "a": 50,
+        "s": 47,
+        "w": 47,
+        "o": 9,
+        "p": 7,
+        "e": 4,
+        "r": 1,
+        "c": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 37,
+      "source_folder": "pick-place-20261112-175002-709925"
+    },
+    {
+      "frames": 476,
+      "command_rows": 137,
+      "action_change_rows": 137,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 88,
+      "command_after_feedback_ms": {
+        "min": 2.104541,
+        "median": 6.336958,
+        "p95": 6.834366,
+        "max": 7.463542
+      },
+      "command_after_camera_ms": {
+        "min": 3.120916,
+        "median": 7.349083,
+        "p95": 7.8508249999999995,
+        "max": 8.500083
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.2614305019378662,
+        -97.95671081542969,
+        -58.692649841308594,
+        49.393714904785156,
+        -4.651847839355469,
+        -17.79985237121582,
+        -84.6413345336914
+      ],
+      "last_action": [
+        -1.9232288599014282,
+        -99.25817108154297,
+        -59.69239807128906,
+        49.14517593383789,
+        -4.66699743270874,
+        -18.463607788085938,
+        -95.59165954589844
+      ],
+      "state_joint_span": [
+        1.1365981101989746,
+        12.305488586425781,
+        13.26717758178711,
+        3.3003997802734375,
+        0.1092829704284668,
+        1.6829586029052734,
+        45.13459777832031
+      ],
+      "action_joint_span": [
+        1.6212124824523926,
+        12.975090026855469,
+        13.273601531982422,
+        3.3516159057617188,
+        0.03531599044799805,
+        1.6262054443359375,
+        45.069725036621094
+      ],
+      "action_state_mean_abs_error": [
+        0.039674852043390274,
+        0.5091386437416077,
+        0.5267132520675659,
+        0.08789291232824326,
+        0.01486699003726244,
+        0.03877347707748413,
+        1.0160061120986938
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 338,
+        "s": 61,
+        "w": 48,
+        "o": 12,
+        "p": 10,
+        "e": 3,
+        "c": 2,
+        "r": 1,
+        "d": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 38,
+      "source_folder": "pick-place-20261112-175123-190704"
+    },
+    {
+      "frames": 596,
+      "command_rows": 197,
+      "action_change_rows": 197,
+      "action_changes_without_command": 0,
+      "commands_without_action_change_after_first_frame": 0,
+      "held_transition_max_abs_change": 0.0,
+      "longest_unchanged_target_frames": 24,
+      "command_after_feedback_ms": {
+        "min": 2.104417,
+        "median": 6.425084,
+        "p95": 6.8037583999999995,
+        "max": 6.881208
+      },
+      "command_after_camera_ms": {
+        "min": 3.110542,
+        "median": 7.437583,
+        "p95": 7.8295914,
+        "max": 7.90475
+      },
+      "command_precedes_feedback_rows": 0,
+      "first_action": [
+        -1.924078106880188,
+        -100.10476684570312,
+        -60.853302001953125,
+        49.45988845825195,
+        -4.667012691497803,
+        -18.464487075805664,
+        -95.59165954589844
+      ],
+      "last_action": [
+        -0.4046790897846222,
+        -99.53914642333984,
+        -57.83769226074219,
+        46.88678741455078,
+        -4.631231307983398,
+        -16.940528869628906,
+        -104.50931549072266
+      ],
+      "state_joint_span": [
+        14.753427505493164,
+        6.557090759277344,
+        7.037937164306641,
+        4.5025177001953125,
+        0.5901284217834473,
+        15.67145824432373,
+        51.6916389465332
+      ],
+      "action_joint_span": [
+        15.621794700622559,
+        7.051353454589844,
+        7.548274993896484,
+        4.487087249755859,
+        0.49260568618774414,
+        15.66153621673584,
+        55.53919982910156
+      ],
+      "action_state_mean_abs_error": [
+        0.4265190660953522,
+        0.32388290762901306,
+        0.34686872363090515,
+        0.0945693776011467,
+        0.022330626845359802,
+        0.2008543610572815,
+        2.1838207244873047
+      ],
+      "input_key_available": true,
+      "input_key_counts": {
+        "": 398,
+        "d": 67,
+        "a": 45,
+        "s": 36,
+        "w": 19,
+        "o": 16,
+        "p": 6,
+        "e": 5,
+        "c": 3,
+        "r": 1
+      },
+      "initial_command_status": "no_send_timestamp",
+      "episode_index": 39,
+      "source_folder": "pick-place-20261112-175224-608271"
+    }
+  ],
+  "visual_review_result": "See ../visual_review.json; all-frame review of episodes 0-6 and event-focused samples for 7-39 completed."
+}

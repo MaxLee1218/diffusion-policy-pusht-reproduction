@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-13T08:25:48.933065+00:00",
+  "supervisor_pid": 5825,
+  "process_group": 5825,
+  "run_dir": "experiments/b601-seed42",
+  "output_dir": "results/b601-seed42",
+  "profile": "b601_train",
+  "planned_full_epochs": 100,
+  "hardware_connected": false,
+  "training_command": [
+    "bash",
+    "scripts/train.sh",
+    "experiments/b601-seed42",
+    "--resume"
+  ],
+  "source_checkpoint_sha256": "baf0f9ffd5fcb8ea4ad0df65f23c1bf5e91bfa97abb546ab8cda308c8a2661a6",
+  "training_pid": 5827,
+  "training_finished_at": "2026-11-13T15:35:53.400573+00:00",
+  "finished_at": "2026-11-13T15:51:00.072845+00:00",
+  "evaluation_recovery": {
+    "previous_error": "Command '['/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/bin/python', 'scripts/validate_b601_training.py', 'experiments/b601-seed42', '--output', 'results/b601-seed42', '--device', 'cuda:0']' returned non-zero exit status 1.",
+    "previous_failure_at": "2026-11-13T15:36:19.849078+00:00",
+    "cause": "Validator required train_action_mse_error on epochs where action sampling was not scheduled. Fixed optional metric validation and reran successfully.",
+    "validation_log": "results/b601-seed42/checkpoint-validation-rerun.log"
+  },
+  "runtime": {
+    "elapsed_seconds": 26018.224880385,
+    "device": "cuda:0",
+    "epochs_completed_this_invocation": 100,
+    "global_step": 208753,
+    "epoch_counter": 103,
+    "model_parameters": 28538753,
+    "training_precision": "float32",
+    "ema": true,
+    "optimizer_updates": 208750,
+    "resume": {
+      "source_epoch": 2,
+      "next_epoch": 3,
+      "global_step": 153,
+      "optimizer_updates": 150,
+      "ema_initial_optimization_step": 150
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "peak_allocated_gib": 1.0899720191955566,
+    "peak_reserved_gib": 1.4140625
+  },
+  "full_heldout_ema_noise_mse": 0.026799844500424372,
+  "offline_evaluation": {
+    "status": "complete",
+    "completed_at": "2026-11-13T15:58:18.065422+00:00",
+    "report": "results/b601-seed42/evaluation/evaluation.json",
+    "assessment": "results/b601-seed42/evaluation/assessment.json",
+    "summary": "results/b601-seed42/evaluation/summary.txt",
+    "candidate_weights": "ema_model",
+    "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6"
+  },
+  "sampler_benchmark": {
+    "status": "complete",
+    "completed_at": "2026-11-13T17:47:44.247738+00:00",
+    "report": "results/b601-seed42/sampler-benchmark/benchmark.json",
+    "summary": "results/b601-seed42/sampler-benchmark/summary.txt",
+    "candidate": "ddim_10",
+    "candidate_settings": "results/b601-seed42/sampler-benchmark/candidate.json",
+    "hardware_connected": false
+  }
+}

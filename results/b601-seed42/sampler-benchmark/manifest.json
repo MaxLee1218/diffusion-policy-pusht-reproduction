@@ -1,0 +1,16 @@
+{
+  "created_at": "2026-11-13T17:47:44.247738+00:00",
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "files": {
+    "results/b601-seed42/sampler-benchmark/assessment.json": "bed1cb0d330dbe6a424c1a1563807b2467675cd83f29e29b5e9d401b9c3a2f37",
+    "results/b601-seed42/sampler-benchmark/summary.txt": "cac6d9d272270796c4b087981556e522a4008411898e87a185b1588ac96d0b9f",
+    "results/b601-seed42/sampler-benchmark/summary.csv": "178f6469f7c2ec3add8de8ec1b80dcf709b9b6314617abd0c8476e2b3752b965",
+    "results/b601-seed42/sampler-benchmark/latency.csv": "dc87b002ccb79e51938cc6906e697bc72c7853cd2badf45dd42569999fe45476",
+    "results/b601-seed42/sampler-benchmark/speed_accuracy.png": "083c52965dbac4bcfc23826ffb8787e3d70e928f4cb7ac1351a5748a8d0ccdb3",
+    "results/b601-seed42/sampler-benchmark/benchmark.json": "89cee65c7e806edef2deff56e4e585ba2f77b988facea529b14cebd0db44bd69",
+    "results/b601-seed42/sampler-benchmark/predictions.npz": "5615f4e18351978f1ec5673addce7854a2e27acca0a7897e9228dc29ddf7e2da",
+    "results/b601-seed42/sampler-benchmark/candidate.json": "d114e0eb079f0ee01e490cf835e2bdfc22f6792e4b6c808b0ae57c186d7db83e",
+    "results/b601-seed42/sampler-benchmark/source_snapshot/benchmark_b601_sampling.py": "383175bb8a619491785de373d3799c329599ee2ef02eda18c2543cf0166cd476",
+    "results/b601-seed42/sampler-benchmark/source_snapshot/evaluate_b601_checkpoints.py": "1c3ec559ec8a940fd0182bde08e3f4f628ad6abab02f8611aae0277a5023f211"
+  }
+}

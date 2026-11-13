@@ -6,6 +6,22 @@ The checkpoint evaluator writes `eval_log.json` and rollout videos to a new dire
 
 The [RTX 4060 seed-42 experiment archive](rtx4060-seed42/README.md) preserves the subsequent longer run, all raw training metrics, configurations, 33 videos across validation and training, per-episode evaluation results, stop status, and local checkpoint metadata/checksums. Small artifacts referenced by the earlier validation report are also committed. Model checkpoints from both runs remain local.
 
+## B601 real-robot offline training and sampling
+
+The B601 extension has completed data review, 100 full training epochs, offline action evaluation and a five-configuration sampler benchmark. Physical closed-loop task success has not yet been evaluated.
+
+| Archive | Contents |
+| --- | --- |
+| [Data audit](b601-data-check/summary.txt) | Recording integrity and timing, source/driver semantics, visual-review decisions, and the 34-episode training/validation selection. Raw images and recordings remain local. |
+| [Short run](b601-short-seed42/summary.txt) | 150 optimizer updates, frozen 30/4 episode split, checkpoint checks, and full held-out EMA noise MSE of 0.564569. |
+| [Full training](b601-seed42/validation.json) | 100 full epochs and 208,600 additional optimizer updates; settings, runtime, source snapshot, all training metrics, and final checkpoint validation. Final EMA noise MSE is 0.026800 over 2,347 validation windows. |
+| [Action comparison](b601-seed42/evaluation/summary.txt) | Five weight/checkpoint combinations, hold-position and training-mean baselines, fixed 128-window/two-seed predictions, per-joint/per-episode errors and plots. |
+| [Sampler benchmark](b601-seed42/sampler-benchmark/summary.txt) | DDPM 100 and DDIM 100/50/20/10; 500 interleaved batch-one latency measurements, action errors, raw predictions, source snapshots and hashes. |
+
+The final EMA with DDIM 10 steps is the candidate for subsequent predict-only integration. Its batch-one median/P95 inference time is 0.096/0.196 seconds and normalized action MSE is 0.002625, compared with 0.935/1.125 seconds and 0.002655 for DDPM 100 steps. Overall gripper MAE rises by 2.01%, with a 9.45% increase in episode 30. These are comparisons on four validation episodes also used to select checkpoints, with no live camera/robot I/O in the timing and no independent robot success rate.
+
+The [next-step plan](../docs/reproduction.md#b601-next-steps) preserves the local checkpoint hash, candidate parameters, live input/action mapping checks, timing measurements, known regressions and the sequence from predict-only integration to controlled closed-loop trials. Large model weights and raw data remain excluded from Git.
+
 ## RTX 4060 baseline analysis
 
 ![Training loss, validation loss and the five recorded rollout evaluations](rtx4060-seed42/analysis/baseline.png)

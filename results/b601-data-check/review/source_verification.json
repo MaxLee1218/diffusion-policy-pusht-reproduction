@@ -1,0 +1,127 @@
+{
+  "status": "verified_against_available_collection_source_and_pinned_driver",
+  "repository_commit": "6416316b34fe0b6ea641da7819396da2e053b2bd",
+  "collection_source": "collection/b601/b601_pick_place.py",
+  "driver_package": "lerobot-robot-seeed-b601==1.0.5",
+  "driver_wheel_sha256": "b318b90eaf66e3c1ef7a82b04b98f12608ebd1e98532fc80df7e50e3f4e9bd0e",
+  "files": [
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "sha256": "76d57f7292e2d1693d3e1303a2b55e1926ca1b9ab7e0f03f9e32096cea405b20"
+    },
+    {
+      "path": "collection/b601/b601_teach_app.py",
+      "sha256": "b9ef7500250e7a80243703315a5de806463226baab7eb30ff7239dfc0d93b739"
+    },
+    {
+      "path": "collection/b601/requirements.txt",
+      "sha256": "83b3c3d41aac057a9725c73b4fcfa2b83042951c032404a9f00d6e9eead4542d"
+    },
+    {
+      "path": "data/tools/b601-driver-review/lerobot_robot_seeed_b601/config_seeed_b601_dm_follower.py",
+      "sha256": "de7f5642adc6d677c3e306c6c93c183de671a0257b8ae16bca08737e7fc68690"
+    },
+    {
+      "path": "data/tools/b601-driver-review/lerobot_robot_seeed_b601/seeed_b601_follower.py",
+      "sha256": "5910ad62c518308c20c64ec851a7c5389eff0ca7f4cf9b493696ab3addd63fd7"
+    }
+  ],
+  "action_semantics": {
+    "representation": "absolute joint-position target in motor degrees, six arm joints plus gripper",
+    "stored_value": "values returned by robot.send_action after direction/scale mapping, joint-limit clipping and relative target capping",
+    "no_command_frame": "applied target is copied forward unchanged; command timestamp stays empty",
+    "initialization": "measured state initializes applied once when the control session starts, not on every R/start-recording event",
+    "next_episode": "saved episodes within one app session inherit the last applied target; the initial target need not equal that episode's first measured state",
+    "driver_input_mapping": {
+      "shoulder_pan.pos": -1.0,
+      "shoulder_lift.pos": -1.0,
+      "elbow_flex.pos": 1.0,
+      "wrist_flex.pos": 1.0,
+      "wrist_yaw.pos": 1.0,
+      "wrist_roll.pos": -1.0,
+      "gripper.pos": -6.0
+    },
+    "deployment_conversion": "driver_input[j] = predicted_motor_target_deg[j] / joint_directions[j]; send_action multiplies by those factors again",
+    "gripper_keys": "o requests measured gripper angle minus 8 degrees; p requests plus 8 degrees, then driver limits apply"
+  },
+  "row_order": [
+    "read image and record camera receive timestamp",
+    "read measured motor state and record feedback-read completion",
+    "compute and send new target if goal changes",
+    "save returned target and command-send completion timestamp",
+    "record image, measured pre-command state, applied target and timing row"
+  ],
+  "training_alignment": "Keep the original within-row observation-before-action convention. Do not shift stored targets solely to reduce actuator tracking lag. Keep held-target frames.",
+  "cross_checks": {
+    "recorded_episodes": 40,
+    "recorded_frames": 20741,
+    "same_row_action_changes_and_command_timestamps": 6867,
+    "action_change_command_mismatches": 0,
+    "command_completion_before_feedback_read": 0,
+    "held_transition_max_abs_change": 0.0,
+    "hardware_free_collection_loop_tests": 2
+  },
+  "source_anchors": [
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 269,
+      "meaning": "session target initialized from measured state"
+    },
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 294,
+      "meaning": "camera read followed by measured feedback"
+    },
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 301,
+      "meaning": "hold last applied target by default"
+    },
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 347,
+      "meaning": "gripper increment computed from measured motor angle"
+    },
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 368,
+      "meaning": "inverse direction scaling, send and store returned applied target"
+    },
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 386,
+      "meaning": "episode creation/saving does not reinitialize the session target"
+    },
+    {
+      "path": "collection/b601/b601_pick_place.py",
+      "line": 401,
+      "meaning": "record pre-command state with post-dispatch applied target"
+    },
+    {
+      "path": "data/tools/b601-driver-review/lerobot_robot_seeed_b601/seeed_b601_follower.py",
+      "line": 617,
+      "meaning": "feedback radians converted to motor degrees"
+    },
+    {
+      "path": "data/tools/b601-driver-review/lerobot_robot_seeed_b601/seeed_b601_follower.py",
+      "line": 653,
+      "meaning": "input direction/scale and position-limit mapping"
+    },
+    {
+      "path": "data/tools/b601-driver-review/lerobot_robot_seeed_b601/seeed_b601_follower.py",
+      "line": 671,
+      "meaning": "relative target cap before sending"
+    },
+    {
+      "path": "data/tools/b601-driver-review/lerobot_robot_seeed_b601/seeed_b601_follower.py",
+      "line": 743,
+      "meaning": "return mapped and limited motor-degree target"
+    }
+  ],
+  "limits_of_verification": [
+    "The source commit used during the November 12 recordings is not embedded in the archive. This review verifies the source now supplied and its consistency with recorded logs, not byte-identical historical collection code.",
+    "Command completion timestamps show software dispatch completion, not hardware execution acknowledgement.",
+    "Camera timestamps are receive times, not exposure times. Per-motor feedback ages and synchronized sample timestamps were not recorded.",
+    "Hardware-free tests use a mock robot; no device or macOS GUI was exercised."
+  ]
+}

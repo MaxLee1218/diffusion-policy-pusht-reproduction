@@ -1,0 +1,12 @@
+{
+  "base_commit": "6416316b34fe0b6ea641da7819396da2e053b2bd",
+  "files_sha256": {
+    "real_robot/dataset.py": "5ebc30eecdaac577b21e827645084d9aa9bcff902a30cbde22a8e6a1c6fc15e2",
+    "real_robot/workspace.py": "4f2a7114beb97b8190a50708757191953dde1dc42769aaa9091973ac814452f4",
+    "real_robot/offline_runner.py": "5b230756c5f9c90479db895b872bf4cdedbed60da363e6dd1746f13be10ef95a",
+    "configs/b601.yaml": "07d854508eab2a7342bc50975931300a339a6ef5b519d494e420e9a6f12c2e45",
+    "configs/b601_short.yaml": "f77d6bc674b8042db94e4f5dfdd21defaf74892ff3f4f9df11b99916f6194de5",
+    "scripts/train.sh": "688573573f7c4305c172b3d9789ce0173b99d62971ea54b27738548005478383",
+    "scripts/validate_b601_training.py": "f80e0da09f4bc63d21b867e24324431e3d20d779151d9cf974a977b03934eb01"
+  }
+}

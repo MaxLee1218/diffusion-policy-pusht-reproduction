@@ -20,6 +20,18 @@
 !/results/horizons-dev/
 !/results/horizons-test/
 !/results/horizons-test-control/
+!/results/b601-data-check/
+!/results/b601-short-seed42/
+!/results/b601-seed42/
+/results/b601-data-check/previews/
+/results/b601-data-check/overview-*.jpg
+/results/b601-data-check/review/all_frames/
+/results/b601-data-check/review/event_sheets/
+/results/b601-data-check/review/plots/
+/results/b601-data-check/review/videos/
+# The open monitor updates these continuously; completed run reports are archived.
+/results/b601-seed42/monitor_status.json
+/results/b601-seed42/monitor.log
 __pycache__/
 .pytest_cache/
 *.ckpt

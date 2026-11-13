@@ -1,0 +1,60 @@
+Evaluating short_ema: experiments/b601-short-seed42/checkpoints/latest.ckpt
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+short_ema {"windows": 128, "normalized_mse": 0.5838996171951294, "rmse_motor_degrees": 15.04301643371582, "arm_mae_motor_degrees": 8.489960670471191, "gripper_mae_motor_degrees": 22.76888656616211, "mae_motor_degrees_by_joint": [11.57473373413086, 11.92646598815918, 12.918783187866211, 3.873307466506958, 0.25682681798934937, 10.389630317687988, 22.768857955932617], "first_action_normalized_mse": 0.6524779200553894, "last_action_normalized_mse": 0.5508326888084412, "normalized_mse_by_seed": [0.5781868100166321, 0.5896124243736267]}
+Evaluating best_main: experiments/b601-seed42/checkpoints/epoch=0034-val_loss=0.0126.ckpt
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+best_main {"windows": 128, "normalized_mse": 0.0034724075812846422, "rmse_motor_degrees": 1.5027467012405396, "arm_mae_motor_degrees": 0.3472197353839874, "gripper_mae_motor_degrees": 2.3347415924072266, "mae_motor_degrees_by_joint": [0.32827436923980713, 0.526080846786499, 0.6052223443984985, 0.28388214111328125, 0.009213327430188656, 0.33064544200897217, 2.3347415924072266], "first_action_normalized_mse": 0.0021155483555048704, "last_action_normalized_mse": 0.004987762775272131, "normalized_mse_by_seed": [0.0033890721388161182, 0.003555742558091879]}
+Evaluating best_ema: experiments/b601-seed42/checkpoints/epoch=0034-val_loss=0.0126.ckpt
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+best_ema {"windows": 128, "normalized_mse": 0.003272110130637884, "rmse_motor_degrees": 1.503333330154419, "arm_mae_motor_degrees": 0.33687177300453186, "gripper_mae_motor_degrees": 2.252530097961426, "mae_motor_degrees_by_joint": [0.31732532382011414, 0.5341874361038208, 0.6023262143135071, 0.23757223784923553, 0.00870547629892826, 0.3211137652397156, 2.252528429031372], "first_action_normalized_mse": 0.0019672561902552843, "last_action_normalized_mse": 0.004647739231586456, "normalized_mse_by_seed": [0.0031199625227600336, 0.0034242591354995966]}
+Evaluating final_main: experiments/b601-seed42/checkpoints/latest.ckpt
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+final_main {"windows": 128, "normalized_mse": 0.0026453041937202215, "rmse_motor_degrees": 1.286378264427185, "arm_mae_motor_degrees": 0.2922384440898895, "gripper_mae_motor_degrees": 1.7414371967315674, "mae_motor_degrees_by_joint": [0.2222440242767334, 0.5179787278175354, 0.5618894100189209, 0.2196306437253952, 0.006178233772516251, 0.2255103439092636, 1.7414352893829346], "first_action_normalized_mse": 0.0016220781253650784, "last_action_normalized_mse": 0.0038290817756205797, "normalized_mse_by_seed": [0.0025930667761713266, 0.002697542542591691]}
+Evaluating final_ema: experiments/b601-seed42/checkpoints/latest.ckpt
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+final_ema {"windows": 128, "normalized_mse": 0.00265469029545784, "rmse_motor_degrees": 1.2907177209854126, "arm_mae_motor_degrees": 0.2920767068862915, "gripper_mae_motor_degrees": 1.7549084424972534, "mae_motor_degrees_by_joint": [0.2221556007862091, 0.5179697871208191, 0.5615816712379456, 0.21912173926830292, 0.0061769988387823105, 0.22545559704303741, 1.7549086809158325], "first_action_normalized_mse": 0.0016233258647844195, "last_action_normalized_mse": 0.003855820745229721, "normalized_mse_by_seed": [0.0025978314224630594, 0.002711548237130046]}
+Saved evaluation to results/b601-seed42/evaluation

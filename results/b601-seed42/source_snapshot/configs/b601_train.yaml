@@ -1,0 +1,13 @@
+defaults:
+  - b601
+  - _self_
+
+exp_name: b601_train
+ema:
+  _target_: real_robot.workspace.ResumeAwareEMAModel
+training:
+  num_epochs: 100
+  # Continue the already warmed-up AdamW state from the short run.
+  lr_warmup_steps: 0
+  checkpoint_every: 1
+  sample_every: 10

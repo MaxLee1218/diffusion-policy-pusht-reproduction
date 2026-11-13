@@ -4,3 +4,7 @@ results/rtx4060-seed42/*.log -text -whitespace
 results/horizons-test-control/*.log -text -whitespace
 # Preserve the CSV writer's original CRLF bytes for artifact checksums.
 results/horizons-test/*.csv -text whitespace=cr-at-eol
+# Keep completed B601 evidence and source snapshots byte-exact across platforms.
+results/b601-*/** -text
+results/b601-*/**/*.csv whitespace=cr-at-eol
+results/b601-*/**/*.log -whitespace

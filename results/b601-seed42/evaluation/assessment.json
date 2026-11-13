@@ -1,0 +1,67 @@
+{
+  "completed_at": "2026-11-13T15:58:18.065422+00:00",
+  "scope": "Offline validation only; no robot connected or moved.",
+  "training_complete": true,
+  "validation_pass": true,
+  "candidate_checkpoint": "experiments/b601-seed42/checkpoints/latest.ckpt",
+  "candidate_weights": "ema_model",
+  "selection_reason": "Final main and EMA predictions are close and both outperform the minimum-noise-loss checkpoint on the sampled action metric. EMA matches the configured inference workflow; this is not proof of closed-loop superiority.",
+  "final_ema_normalized_mse_reduction_vs_short_percent": 99.54535159515771,
+  "final_ema_normalized_mse_reduction_vs_hold_percent": 20.72731307787752,
+  "changing_target_mse_reduction_vs_hold_percent": 37.64663121605457,
+  "held_target_mse_increase_vs_hold_percent": 25.509544720385826,
+  "episodes_better_than_hold": [
+    20,
+    27,
+    30
+  ],
+  "episodes_worse_than_hold": [
+    8
+  ],
+  "limitations": [
+    "Validation episodes were used for checkpoint selection; independent task success has not been measured.",
+    "Overall gripper MAE is higher than holding measured position, despite improvement on gripper-transition windows.",
+    "Single-observation 100-step inference median exceeds the nominal 0.8-second eight-action execution interval; robot/camera I/O is not included.",
+    "Late validation noise loss rises while sampled action error improves; loss alone is not a sufficient deployment selection rule."
+  ],
+  "latency": {
+    "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+    "weights": "ema_model",
+    "batch_size": 1,
+    "inference_steps": 100,
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "warmup": 2,
+    "measurements": 20,
+    "seconds": [
+      0.9602131239989831,
+      0.8985119750032027,
+      0.9416357519985468,
+      0.965694247999636,
+      0.88600910400055,
+      0.9218899680017785,
+      0.8885160199970414,
+      0.9374551410001004,
+      0.8912316379974072,
+      0.9986409600023762,
+      0.9039604880017578,
+      0.8822879479994299,
+      0.896094465002534,
+      0.886831740001071,
+      1.2305277730010857,
+      0.8893553250018158,
+      0.9195074519993796,
+      1.0435213960008696,
+      1.0579823560001387,
+      0.8865623179990507
+    ],
+    "median_seconds": 0.9117339700005687,
+    "p95_seconds": 1.0666096268501861,
+    "scope": "CPU-to-GPU observation transfer + predict_action + GPU-to-CPU action transfer; excludes camera/robot I/O",
+    "nominal_eight_action_chunk_seconds": 0.8
+  },
+  "tests": {
+    "passed": 30,
+    "warnings": 11
+  },
+  "no_new_training_started": true
+}

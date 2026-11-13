@@ -1,0 +1,18 @@
+{
+  "files_sha256": {
+    "dataset_confirmation.json": "e2b2258c913ba9965e54d242ad95c0162bf4409100142634a3ad17d461a78ddd",
+    "effective_config.yaml": "7bd7e2e9074f0dd55a2025080580a88b92a044b2b601750bb05b35990df870ef",
+    "dataset_provenance.json": "d9733874487871311d22d20f4bc3103a6b86c0ba4c94b2e607fd8a78a3d54d7f",
+    "logs.json.txt": "5ab149d1824c3ef2eec7028c54002f7d3863af69df0417568db4a6fe9fdf00fe",
+    "summary.txt": "bff6ed09499d32377adba4244b9da437a76b73b07132a77f6b1a368169e94719",
+    "checkpoint-validation.log": "bb4aa341ef5ddfb7f4293cf908873948823ecfe4768bea569c711ef4eb5a3211",
+    "validation.json": "236a63cfe807449b4d6cc42614c36a69a9314f19d951dffb67536d536914b00b",
+    "runtime.json": "ac2cb719be338cc543ee6a01b8925606804886eec54b6a4f55909b8d61bac122",
+    "train.log": "3f962348514e5d40e1112135c8a8acb1c75ccbea49156d14285879b95c3c7542",
+    "dataset_split.json": "b032b7307307ac4223e59fa36479d5e43d55a25d876a61191212636fe7b48e15",
+    "loss_curve.png": "431d498258c6404390098a98af6f4591f18289cc0e97b769dee3eb80addcbd59",
+    "heldout_predictions.csv": "dae5ed93b39a13a77564bf7798b047b43a25b1c0b6bdad9763bf245a16641438",
+    "implementation.json": "752f12277aba9c5e20945f2b66ef0da1f79f3cddfcc78803095a77962f197743"
+  },
+  "checkpoint_sha256": "baf0f9ffd5fcb8ea4ad0df65f23c1bf5e91bfa97abb546ab8cda308c8a2661a6"
+}

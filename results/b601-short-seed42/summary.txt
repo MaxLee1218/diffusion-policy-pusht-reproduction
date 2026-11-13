@@ -1,0 +1,28 @@
+B601 short offline training: PASS
+
+Data: 34 accepted demonstrations / 19269 frames; frozen split 30 train / 4 validation.
+Validation episode indices: 8, 20, 27, 30. Normalization fitted on training only.
+Input: 2 RGB observations at 320x240 plus 7 joint positions. Output: 16x7 absolute
+motor-degree targets. Full field of view, original row alignment, no image crop.
+
+Run: 3 capped epochs x 50 batches, batch size 8, 150 AdamW updates, FP32, EMA.
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+Elapsed training workflow: 26.126 s
+Peak PyTorch allocated/reserved: 1.094 / 1.316 GiB
+
+Epoch 0: train=1.035413, capped main validation=0.979688
+Epoch 1: train=0.931430, capped main validation=0.721996
+Epoch 2: train=0.578372, capped main validation=0.424949
+Independent full-held-out EMA noise MSE: 0.564569 over 2347 windows
+
+Checkpoint validation: main model, EMA and optimizer exactly restored.
+Continued one optimizer update in memory: step 150 -> 151, finite gradients, weights changed.
+Original checkpoint unchanged; counters follow upstream logging semantics.
+100-step diffusion sampling: finite [4,16,7] outputs, one sequence per held-out episode.
+Same-seed repeated sampling matches.
+Max training-range overshoot: 0.000442505 motor degrees, within derived old-scheduler roundoff bound.
+
+This verifies the offline training pipeline, not task success or readiness for robot execution.
+No robot connection or motion was performed.
+Checkpoint: experiments/b601-short-seed42/checkpoints/latest.ckpt
+SHA256: baf0f9ffd5fcb8ea4ad0df65f23c1bf5e91bfa97abb546ab8cda308c8a2661a6

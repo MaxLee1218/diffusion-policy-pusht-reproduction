@@ -1,0 +1,8 @@
+{
+  "pid": 6161,
+  "command": [
+    "/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/bin/python",
+    "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/monitor_b601_training.py"
+  ],
+  "closing_monitor_stops_training": false
+}

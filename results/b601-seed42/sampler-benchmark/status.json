@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-13T17:39:40.109848+00:00",
+  "hardware_connected": false,
+  "updated_at": "2026-11-13T17:45:48.491455+00:00",
+  "variant": null,
+  "accuracy_variants_finished": 5,
+  "latency_rounds_finished": 100,
+  "latency_rounds_total": 100,
+  "checkpoint_unchanged": true,
+  "assessment_completed_at": "2026-11-13T17:47:44.247738+00:00",
+  "candidate": "ddim_10"
+}

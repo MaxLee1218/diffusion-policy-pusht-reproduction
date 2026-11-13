@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-13T15:58:18.065422+00:00",
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "files": {
+    "results/b601-seed42/evaluation/assessment.json": "09a25021976a43744e3bddd7a3a0efafbfb8c4d3039782fe2f639f23440eb1ee",
+    "results/b601-seed42/evaluation/latency.log": "c13d388d10f9d32173dd9887a46d9569a2324a032f00521bbb0a5994c431b725",
+    "results/b601-seed42/evaluation/prediction_breakdown.png": "faa1c58edc6d9f64b6fb03c78367cc044eb8af79c004f0edc9aea0cf9b60430c",
+    "results/b601-seed42/evaluation/summary.txt": "37a4c8b3b83a63835fa99b6b57e8522865cad02ee79b92f9f2ec98a818593931",
+    "results/b601-seed42/evaluation/latency.json": "137de8904c474be3ad413714a00398bda6a92a881345a28a28d8f3a219c97ff6",
+    "results/b601-seed42/evaluation/evaluation.png": "e6903afa474fb2e7e900405815c164bf722a276a9a772b34c92271cde58b310b",
+    "results/b601-seed42/evaluation/predictions.npz": "3bb2edb43903dc570f8c114194f1cb5caadefdfa4d5ddfa7f9fd811b8434a5ad",
+    "results/b601-seed42/evaluation/evaluation.json": "5fa65cd48e6d4df9483317f9cb8f0f396193688e268bb943f9713829628785e0",
+    "scripts/evaluate_b601_checkpoints.py": "1c3ec559ec8a940fd0182bde08e3f4f628ad6abab02f8611aae0277a5023f211",
+    "scripts/validate_b601_training.py": "c0a9650540572483d34c1a08236f162fffa50237dfe946722b9479f1ebb9c42d",
+    "tests/test_b601_evaluation.py": "c2ab1b31d84c80d7103086dce5f43b909ce1f1c696724e94e096cd3bd2c22462",
+    "tests/test_b601_validation.py": "2985d2f1bb88dd2ae34e806e477214021a5d07e57ac50d1108ea79df709fd103"
+  }
+}

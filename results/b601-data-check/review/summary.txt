@@ -1,0 +1,28 @@
+B601 pre-training review
+
+Coverage: all 40 formal episodes checked numerically. All 1704 frames in the first seven
+episodes inspected in chronological sheets, with state/target plots and key events.
+Episodes 7-39 reviewed using uniform full-recording samples and gripper-event frames.
+No automatic or independently certified task-success labels.
+
+Candidate set: 34 episodes, 19269 frames (original indices 6-39).
+Episodes 0-5 (1472 frames) recommended for exclusion from full-task training.
+The original 40-episode merged Zarr and all raw Parquet data remain unchanged.
+
+Action evidence: 6867 target changes match 6867 command-send timestamps in the same rows.
+All non-command transitions retain the target exactly; no command completion precedes
+feedback-read completion. This supports persistent absolute joint-position targets.
+Position units follow the provided motor-degree reference. The supplied collection source at 6416316 and the pinned B601 driver 1.0.5
+confirm these semantics. The hardware-free collection-loop tests pass.
+The exact historical recording source commit was not stored in the archive.
+See source_verification.json for evidence and verification limits.
+
+Preserve original row alignment; motor response lag alone is not a reason to shift actions.
+No-command frames are valid held targets and should not be automatically removed.
+Nominal FPS is 10; measured FPS is 9.6868-9.7392. One receive interval is 235.559 ms.
+Video/sheet timestamps use nominal 10 Hz; curve x-axes use actual camera receive time.
+
+Short offline training is now complete: 34 operator-accepted episodes, fixed 30/4 split,
+150 optimizer updates. Training/validation, full held-out EMA evaluation, diffusion
+sampling and checkpoint/optimizer recovery passed. See ../../b601-short-seed42/summary.txt.
+Candidate status and offline loss do not establish a robot success rate.

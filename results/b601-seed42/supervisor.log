@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_training.py", line 91, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_training.py", line 74, in main
+    subprocess.run([sys.executable, "scripts/validate_b601_training.py", str(args.run_dir),
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/data/tools/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/bin/python', 'scripts/validate_b601_training.py', 'experiments/b601-seed42', '--output', 'results/b601-seed42', '--device', 'cuda:0']' returned non-zero exit status 1.

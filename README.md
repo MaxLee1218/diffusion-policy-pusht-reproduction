@@ -8,7 +8,18 @@ In PushT, a policy uses images and the pusher's position to move a T-shaped bloc
 
 ## Real-robot reproduction in progress
 
-I am extending this Diffusion Policy reproduction to a physical robot. In the current pilot, I use keyboard teleoperation on a reBot B601-DM arm to collect demonstrations of picking up a chess piece and placing it on a marked target. The LeRobot recordings capture RGB observations, measured joint and gripper positions, and commanded positions. The next milestones are training on these demonstrations and evaluating the policy in closed loop on the robot.
+The B601 extension uses keyboard demonstrations of picking up a chess piece and placing it on a marked target. Data review, 100 full training epochs, offline action evaluation, and a five-configuration sampler comparison are complete. Of 40 complete formal recordings, 34 were retained for training and validation, split by episode into 30 training and four validation demonstrations. The policy uses two RGB observations and seven measured joint/gripper positions to predict absolute motor-degree targets.
+
+The current candidate is the final EMA checkpoint with DDIM 10-step sampling. On 128 fixed validation windows and two sampling seeds, its normalized eight-action prediction MSE is 0.002625. Each sampler has 100 interleaved batch-one latency measurements on an RTX 4060 Laptop GPU:
+
+| Sampler | Median inference | P95 inference | Normalized action MSE |
+| --- | ---: | ---: | ---: |
+| DDPM 100 steps | 0.935 s | 1.125 s | 0.002655 |
+| DDIM 10 steps | 0.096 s | 0.196 s | 0.002625 |
+
+These are offline command-prediction results on validation episodes also used for checkpoint selection. Gripper MAE increases by 2.01% overall and 9.45% in episode 30 when switching to the DDIM candidate. Camera/robot I/O is excluded from these timings, and physical closed-loop task success has not been measured. The next milestone is [predict-only integration, followed by controlled closed-loop evaluation](docs/reproduction.md#b601-next-steps).
+
+See the [data audit](results/b601-data-check/summary.txt), [training and checkpoint validation](results/b601-seed42/validation.json), [action-prediction comparison](results/b601-seed42/evaluation/summary.txt), and [sampler benchmark](results/b601-seed42/sampler-benchmark/summary.txt). Raw recordings and model weights remain local; checked-in reports preserve settings, provenance, predictions, metrics, and hashes.
 
 The [B601 collection guide](collection/b601/README.md) documents the keyboard controls, capture sequence and dataset schema, with links to the terminal recorder and macOS app.
 

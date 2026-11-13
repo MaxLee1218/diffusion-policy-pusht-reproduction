@@ -1,0 +1,42 @@
+{"status": "preparing", "started_at": "2026-11-13T17:37:10.157320+00:00", "hardware_connected": false, "updated_at": "2026-11-13T17:37:10.157336+00:00"}
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"status": "accuracy", "started_at": "2026-11-13T17:37:10.157320+00:00", "hardware_connected": false, "updated_at": "2026-11-13T17:37:14.228150+00:00", "variant": "ddpm_100", "accuracy_variants_finished": 0}
+{"status": "failed", "started_at": "2026-11-13T17:37:10.157320+00:00", "hardware_connected": false, "updated_at": "2026-11-13T17:37:45.000409+00:00", "variant": "ddpm_100", "accuracy_variants_finished": 0, "error": "\nNot equal to tolerance rtol=0.0001, atol=0.0001\n\nMismatched elements: 286 / 14336 (1.99%)\nMax absolute difference: 0.00567627\nMax relative difference: 0.00129821\n x: array([[[[  -3.212313,  -99.98561 ,  -61.840454, ...,   -4.69616 ,\n           -19.73513 ,  -55.041027],\n         [  -3.290564,  -99.91042 ,  -61.790314, ...,   -4.696784,...\n y: array([[[[  -3.21231 ,  -99.985695,  -61.84038 , ...,   -4.696157,\n           -19.735426,  -55.04164 ],\n         [  -3.290717,  -99.91033 ,  -61.79009 , ...,   -4.696786,..."}
+Traceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/benchmark_b601_sampling.py", line 373, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/benchmark_b601_sampling.py", line 369, in main
+    run(args)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/benchmark_b601_sampling.py", line 287, in run
+    np.testing.assert_allclose(predictions, prior_ddpm, rtol=1e-4, atol=1e-4)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/data/tools/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0.0001, atol=0.0001
+
+Mismatched elements: 286 / 14336 (1.99%)
+Max absolute difference: 0.00567627
+Max relative difference: 0.00129821
+ x: array([[[[  -3.212313,  -99.98561 ,  -61.840454, ...,   -4.69616 ,
+           -19.73513 ,  -55.041027],
+         [  -3.290564,  -99.91042 ,  -61.790314, ...,   -4.696784,...
+ y: array([[[[  -3.21231 ,  -99.985695,  -61.84038 , ...,   -4.696157,
+           -19.735426,  -55.04164 ],
+         [  -3.290717,  -99.91033 ,  -61.79009 , ...,   -4.696786,...

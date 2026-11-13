@@ -1,0 +1,31 @@
+B601 demonstration audit
+Archive SHA-256: 6 verified volumes
+Raw recordings: /home/mingx/projects/diffusion-policy-pusht-reproduction/data/b601
+Merged Zarr: /home/mingx/projects/diffusion-policy-pusht-reproduction/data/b601/merged/demonstrations.zarr
+Formal recordings: 40 episodes, 20741 frames
+Valid pilot episodes (excluded): 3
+Incomplete recordings (excluded): 6
+Stationary references (excluded): 1
+Validation errors: 0
+Joint state/action dimensions: 7, units: motor degrees in the B601 recording coordinate convention
+Images: RGB [320, 240]; originals retained at 640x480
+Nominal FPS: 10; measured FPS: 9.6868 to 9.7392
+Camera receive gaps >200ms: 1; max gap: 235.559 ms
+Command send timestamp rows: 6867/20741
+Start-pose reference: pass
+
+Validation covers archive integrity, recording inventory, embedded image decoding,
+finite seven-joint states/actions, frame order, episode boundaries, timing and metadata.
+Blank command timestamps must be interpreted using the recorder's command/hold behavior.
+Nominal timestamps were preserved; no action shifts, resampling or trimming were applied.
+Visual previews are sampled frames; task success is not labeled by these checks.
+The existing PushT training profile uses two-dimensional actions and needs a separate
+seven-joint dataset adapter and task configuration for these recordings.
+
+Follow-up pre-training review:
+- Full-frame review of episodes 0-6 completed (1704 frames).
+- Recommend excluding episodes 0-5 from full-task training; episode 6 retained.
+- Provisional candidates: 34 episodes / 19269 frames, not verified success labels.
+- All 6867 action changes match command send rows; targets persist without commands.
+- Supplied recorder source (6416316) and B601 driver 1.0.5 confirm target semantics; see review/source_verification.json.
+See review/summary.txt and review/training_candidates.json for details.

@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-11-13T17:47:44.247738+00:00",
+  "candidate": "ddim_10",
+  "purpose": "Offline candidate for subsequent predict-only integration; no deployment configuration modified.",
+  "checkpoint": "experiments/b601-seed42/checkpoints/latest.ckpt",
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "weights": "ema_model",
+  "median_speedup": 9.733414513381486,
+  "p95_speedup": 5.734277914037388,
+  "action_mse_change_percent": -1.1314808655982111,
+  "overall_gripper_mae_change_percent": 2.007811238015189,
+  "episode_30_gripper_mae_change_percent": 9.445335538501576,
+  "offline_latency_below_eight_action_budget": true,
+  "remaining_checks": [
+    "Live camera/normalization/driver mapping in predict-only mode.",
+    "Gripper behavior, held targets and individual-episode regressions.",
+    "Complete observation-to-action delay and control interval; inference plus execution in series still causes delays.",
+    "Independent controlled robot trials and grasp/place success rates."
+  ],
+  "validation": {
+    "test_results": "44 passed, 11 dependency-deprecation warnings",
+    "latency_rows": 500,
+    "measurements_per_variant": 100,
+    "finite_and_seed_repeatable": true,
+    "checkpoint_unchanged": true,
+    "accuracy_windows": 128,
+    "accuracy_seeds": [
+      101,
+      202
+    ]
+  },
+  "reference_reproduction": {
+    "max_motor_degree_difference": 0.00567626953125,
+    "max_normalized_coordinate_difference": 0.00017997097165789455,
+    "current_normalized_mse": 0.002654705196619034,
+    "previous_normalized_mse": 0.00265469029545784,
+    "relative_mse_difference": 5.613144862639329e-06,
+    "limits": {
+      "motor_degrees": 0.01,
+      "normalized_coordinate": 0.001,
+      "relative_mse_difference": 0.01
+    }
+  },
+  "initial_attempt": {
+    "status_file": "results/b601-seed42/sampler-benchmark-attempt1/status.json",
+    "cause": "Overly strict cross-process per-coordinate allclose; observed maximum difference 0.005676 motor degrees. Strict attempt was preserved. Current run checks both motor/normalized coordinate differences and aggregate MSE consistency."
+  },
+  "limitations": [
+    "Only four validation episodes, also used for checkpoint selection; no independent test success rate.",
+    "Single-observation latency excludes live camera, preprocessing and robot I/O.",
+    "An action chunk of 0.8 seconds is an overlap budget, not an end-to-end closed-loop guarantee.",
+    "Closeness in offline command error does not establish safe or successful robot behavior.",
+    "No training, hardware connection, robot motion or persistent inference configuration change."
+  ]
+}

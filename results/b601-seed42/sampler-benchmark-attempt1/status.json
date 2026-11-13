@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "started_at": "2026-11-13T17:37:10.157320+00:00",
+  "hardware_connected": false,
+  "updated_at": "2026-11-13T17:37:45.000409+00:00",
+  "variant": "ddpm_100",
+  "accuracy_variants_finished": 0,
+  "error": "\nNot equal to tolerance rtol=0.0001, atol=0.0001\n\nMismatched elements: 286 / 14336 (1.99%)\nMax absolute difference: 0.00567627\nMax relative difference: 0.00129821\n x: array([[[[  -3.212313,  -99.98561 ,  -61.840454, ...,   -4.69616 ,\n           -19.73513 ,  -55.041027],\n         [  -3.290564,  -99.91042 ,  -61.790314, ...,   -4.696784,...\n y: array([[[[  -3.21231 ,  -99.985695,  -61.84038 , ...,   -4.696157,\n           -19.735426,  -55.04164 ],\n         [  -3.290717,  -99.91033 ,  -61.79009 , ...,   -4.696786,..."
+}

@@ -1,0 +1,38 @@
+{
+  "launched_at": "2026-11-13T08:25:48.902877+00:00",
+  "pid": 5825,
+  "process_group": 5825,
+  "command": [
+    "/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/bin/python",
+    "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_training.py",
+    "--run-dir",
+    "experiments/b601-seed42",
+    "--output",
+    "results/b601-seed42",
+    "--source-checkpoint",
+    "experiments/b601-short-seed42/checkpoints/latest.ckpt"
+  ],
+  "planned_full_epochs": 100,
+  "optimizer_updates_at_start": 150,
+  "planned_additional_optimizer_updates": 208600,
+  "train_episodes": 30,
+  "validation_episodes": 4,
+  "train_batches_per_epoch": 2086,
+  "batch_size": 8,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "free_gpu_bytes_at_launch": 7443841024,
+  "git_commit": "6416316b34fe0b6ea641da7819396da2e053b2bd",
+  "implementation_sha256": {
+    "real_robot/__init__.py": "aef8924a3f464a1ab4618d54bce314fe854ed051458bb5c1fcaabe238d83baa0",
+    "real_robot/dataset.py": "5ebc30eecdaac577b21e827645084d9aa9bcff902a30cbde22a8e6a1c6fc15e2",
+    "real_robot/workspace.py": "a7e33acd761fb0d60c2d831ed60123a865e9331252606b49296d33adf8a3c052",
+    "real_robot/offline_runner.py": "5b230756c5f9c90479db895b872bf4cdedbed60da363e6dd1746f13be10ef95a",
+    "configs/b601.yaml": "07d854508eab2a7342bc50975931300a339a6ef5b519d494e420e9a6f12c2e45",
+    "configs/b601_train.yaml": "b7e17304d5df8847a52f108566008174bbd576e5d3ffc6f23469ca53b00c47e5",
+    "scripts/train.sh": "688573573f7c4305c172b3d9789ce0173b99d62971ea54b27738548005478383",
+    "scripts/run_b601_training.py": "2c06f7ba7ed58c37ad64da3c46d93befbed46fd258b95ff5b9fc1fb4cc471a7e",
+    "scripts/validate_b601_training.py": "121abcfc28e4111d12a1c97069bc50433c4516c40ac53a7503cd0342a876c923",
+    "requirements.txt": "6a553f22ab6197da12b1b877adb9c0bae7d7ae48d58a650c45e2c5b136bcb5fd",
+    "requirements-torch.txt": "46e69af0b4ee06d344504405e77e49a566e3d8b7abe07cc33720b914e30840df"
+  }
+}

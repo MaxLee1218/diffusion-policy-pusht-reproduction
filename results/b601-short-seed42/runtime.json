@@ -1,0 +1,13 @@
+{
+  "elapsed_seconds": 26.126092528999834,
+  "device": "cuda:0",
+  "epochs_completed_this_invocation": 3,
+  "global_step": 153,
+  "epoch_counter": 3,
+  "model_parameters": 28538753,
+  "training_precision": "float32",
+  "ema": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_allocated_gib": 1.093827724456787,
+  "peak_reserved_gib": 1.31640625
+}

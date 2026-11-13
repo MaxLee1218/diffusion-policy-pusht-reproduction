@@ -40,7 +40,7 @@ trap 'rmdir -- "$lock"' EXIT
 
 export SDL_VIDEODRIVER=${SDL_VIDEODRIVER:-dummy}
 export SDL_AUDIODRIVER=${SDL_AUDIODRIVER:-dummy}
-export PYTHONPATH="$PWD/upstream/diffusion_policy${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONPATH="$PWD:$PWD/upstream/diffusion_policy${PYTHONPATH:+:$PYTHONPATH}"
 export HYDRA_FULL_ERROR=1
 "${PYTHON:-python}" upstream/diffusion_policy/train.py \
   --config-dir "$PWD/configs" --config-name "${PUSHT_CONFIG:-baseline}" \

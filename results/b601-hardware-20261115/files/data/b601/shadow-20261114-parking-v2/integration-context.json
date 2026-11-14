@@ -1,0 +1,26 @@
+{
+  "operator_confirmed_pose": "parking",
+  "operator_confirmed_workspace_measured": false,
+  "reference_pose_verified": false,
+  "physical_zero_verified": false,
+  "workspace_limits_available": false,
+  "same_seed_replay_exact": true,
+  "preprocessing_exact_for_episodes": [
+    8,
+    20,
+    27,
+    30
+  ],
+  "driver_configuration_hash_and_seven_direction_factors_match_audit": true,
+  "tests": {
+    "passed": 52,
+    "dependency_warnings": 11
+  },
+  "clock_remote_to_local_elapsed_ratio": 0.9726735544876935,
+  "acquisition_rate_windows_qpc_hz": 10.003614132948922,
+  "next_required_inputs": [
+    "Measured workspace bounds in robot-base XYZ coordinates, meters, and allowance for fingers/object/table",
+    "Confirmation of zero convention and reference starting pose"
+  ],
+  "execution_ready": false
+}

@@ -1,0 +1,32 @@
+{
+  "robot_state": "paused_holding",
+  "direction_complaint_confirmed_for_second_trial": true,
+  "confirmed_cause": "Automatic alignment to an old static reference commanded a negative-X retreat before policy execution.",
+  "second_trial": {
+    "storage_id": "rhc-trial-003",
+    "reference_moves": 39,
+    "policy_actions_sent": 0,
+    "video_start_x_mm": 332.4487,
+    "video_end_x_mm": 285.2621,
+    "duration_recorded_seconds": 63.8849,
+    "first_prediction_step_3_delta_x_mm": 0.48125,
+    "policy_rejection": "observation expired"
+  },
+  "prior_trial": {
+    "storage_id": "rhc-trial-002",
+    "operator_report": "no contact with chess piece",
+    "video_model_start_x_mm": 285.4172,
+    "video_model_end_x_mm": 349.1197,
+    "about_30_to_60_second_x_mm": [
+      326.8419,
+      327.0388
+    ],
+    "late_z_change_mm": [
+      27.4832,
+      49.7134
+    ]
+  },
+  "unsupported_conclusion": "No evidence for reversing all motor/X signs; prior model commands and its first positive-X prediction do not show a global sign inversion.",
+  "unresolved": "Why the policy fails to reach/contact the piece despite its positive-X motion in the prior run; camera/base calibration and initial-scene equivalence are not established by these videos alone.",
+  "next_step": "Separate reference-pose motion from model-run start; validate initial joint pose and scene against an actual demonstration, then review a prediction-only approach before any new task motion."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed_full_load_validation",
+  "elapsed_wsl_seconds": 60.062061878998065,
+  "completed_inferences": 100,
+  "actions_in_this_run": 572,
+  "action_interval_median_ms": 102.2413,
+  "action_interval_p95_ms": 104.99235,
+  "max_dispatch_lateness_ms": 30.8132,
+  "cycle_interval_p95_ms": 21.8231,
+  "cycle_interval_max_ms": 37.675,
+  "max_target_variation_deg": 0.0,
+  "max_motor_mos_temp_c": 39.0,
+  "recording_id": "20261114T162110-527c4467",
+  "recording_finalized": true,
+  "safety_thresholds_unchanged": true,
+  "task_motion_test": false
+}

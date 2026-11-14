@@ -1,0 +1,90 @@
+{
+  "state": "paused",
+  "pid": 23468,
+  "connected": true,
+  "busy": false,
+  "message": "已暂停，保持当前位置",
+  "current_motor_degrees": [
+    -0.44806040955283644,
+    -99.0010238682069,
+    -58.915353969075746,
+    48.336593058019915,
+    -4.6882964878101125,
+    -17.10306688927873,
+    -104.57451287245067
+  ],
+  "target_motor_degrees": [
+    -0.42620380420879567,
+    -99.0010238682069,
+    -58.893497363731704,
+    48.35850430487732,
+    -4.6882964878101125,
+    -17.081210283934688,
+    -104.57451287245067
+  ],
+  "xyz_m": [
+    0.2864831890745586,
+    0.012748871275191222,
+    0.024983318413970446
+  ],
+  "target_xyz_m": [
+    0.28623503842185416,
+    0.012859996401604009,
+    0.024895751336217742
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 168511504506300,
+  "bounded_trajectory_commands": 43,
+  "model_trajectory_commands": 0,
+  "rhc_running": false,
+  "sequence_actions_sent": 0,
+  "model_control_enabled": true,
+  "control_generation": 2,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -104.57451287245067,
+  "control_version": 7,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "feedback_loop_hz": 50,
+  "rpc_error": null,
+  "event_log_error": null,
+  "event_logs_submitted": 43,
+  "event_logs_written": 43,
+  "window_visible": true,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "model_process_running": false,
+  "model_run_id": "3a7083cd3a6f47c8b894a69072c5bc5c",
+  "preview_frames_rendered": 2491,
+  "preview_frame_id": 4649,
+  "preview_age_ms": 25.1508,
+  "preview_elapsed_seconds": 156.83244090000517,
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-005\\recordings\\20261114T165931-2678e880",
+    "accepting": false,
+    "error": null,
+    "finalized": true,
+    "rgb_depth_frames_submitted": 1931,
+    "rgb_depth_frames_written": 1931,
+    "control_cycles_submitted": 3062,
+    "control_cycles_written": 3062,
+    "depth_chunks_written": 129
+  }
+}

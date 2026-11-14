@@ -1,0 +1,604 @@
+{
+  "status": "complete",
+  "mode": "predict_only",
+  "error": null,
+  "predictions": 7,
+  "rejected_stale_pairs": [
+    {
+      "frame_ids": [
+        42,
+        43
+      ],
+      "pair_gap_ms": 92.7959,
+      "receive_age_estimate_ms": 253.212777
+    },
+    {
+      "frame_ids": [
+        50,
+        51
+      ],
+      "pair_gap_ms": 92.7263,
+      "receive_age_estimate_ms": 254.510884
+    },
+    {
+      "frame_ids": [
+        58,
+        59
+      ],
+      "pair_gap_ms": 92.4516,
+      "receive_age_estimate_ms": 253.688951
+    },
+    {
+      "frame_ids": [
+        66,
+        67
+      ],
+      "pair_gap_ms": 92.1074,
+      "receive_age_estimate_ms": 253.103787
+    },
+    {
+      "frame_ids": [
+        81,
+        82
+      ],
+      "pair_gap_ms": 92.6768,
+      "receive_age_estimate_ms": 346.724221
+    },
+    {
+      "frame_ids": [
+        89,
+        90
+      ],
+      "pair_gap_ms": 106.6512,
+      "receive_age_estimate_ms": 349.650255
+    },
+    {
+      "frame_ids": [
+        97,
+        98
+      ],
+      "pair_gap_ms": 108.8226,
+      "receive_age_estimate_ms": 341.455027
+    },
+    {
+      "frame_ids": [
+        105,
+        106
+      ],
+      "pair_gap_ms": 91.4368,
+      "receive_age_estimate_ms": 368.190173
+    },
+    {
+      "frame_ids": [
+        113,
+        114
+      ],
+      "pair_gap_ms": 91.9152,
+      "receive_age_estimate_ms": 365.674834
+    },
+    {
+      "frame_ids": [
+        121,
+        122
+      ],
+      "pair_gap_ms": 92.6207,
+      "receive_age_estimate_ms": 364.209041
+    },
+    {
+      "frame_ids": [
+        128,
+        129
+      ],
+      "pair_gap_ms": 107.8208,
+      "receive_age_estimate_ms": 448.263788
+    },
+    {
+      "frame_ids": [
+        136,
+        137
+      ],
+      "pair_gap_ms": 92.6116,
+      "receive_age_estimate_ms": 469.771427
+    },
+    {
+      "frame_ids": [
+        144,
+        145
+      ],
+      "pair_gap_ms": 91.9031,
+      "receive_age_estimate_ms": 468.053761
+    },
+    {
+      "frame_ids": [
+        152,
+        153
+      ],
+      "pair_gap_ms": 92.5737,
+      "receive_age_estimate_ms": 463.551323
+    },
+    {
+      "frame_ids": [
+        160,
+        161
+      ],
+      "pair_gap_ms": 92.3013,
+      "receive_age_estimate_ms": 464.658768
+    },
+    {
+      "frame_ids": [
+        167,
+        168
+      ],
+      "pair_gap_ms": 108.3,
+      "receive_age_estimate_ms": 547.488422
+    },
+    {
+      "frame_ids": [
+        175,
+        176
+      ],
+      "pair_gap_ms": 93.1491,
+      "receive_age_estimate_ms": 564.38254
+    },
+    {
+      "frame_ids": [
+        183,
+        184
+      ],
+      "pair_gap_ms": 92.5267,
+      "receive_age_estimate_ms": 567.381356
+    },
+    {
+      "frame_ids": [
+        191,
+        192
+      ],
+      "pair_gap_ms": 92.4449,
+      "receive_age_estimate_ms": 567.646147
+    },
+    {
+      "frame_ids": [
+        199,
+        200
+      ],
+      "pair_gap_ms": 103.4406,
+      "receive_age_estimate_ms": 568.200587
+    },
+    {
+      "frame_ids": [
+        206,
+        207
+      ],
+      "pair_gap_ms": 108.4932,
+      "receive_age_estimate_ms": 644.775716
+    },
+    {
+      "frame_ids": [
+        214,
+        215
+      ],
+      "pair_gap_ms": 107.6125,
+      "receive_age_estimate_ms": 660.169806
+    },
+    {
+      "frame_ids": [
+        222,
+        223
+      ],
+      "pair_gap_ms": 108.2945,
+      "receive_age_estimate_ms": 658.115528
+    },
+    {
+      "frame_ids": [
+        230,
+        231
+      ],
+      "pair_gap_ms": 92.724,
+      "receive_age_estimate_ms": 668.071299
+    },
+    {
+      "frame_ids": [
+        238,
+        239
+      ],
+      "pair_gap_ms": 92.2443,
+      "receive_age_estimate_ms": 667.582169
+    },
+    {
+      "frame_ids": [
+        246,
+        247
+      ],
+      "pair_gap_ms": 91.9946,
+      "receive_age_estimate_ms": 658.800503
+    },
+    {
+      "frame_ids": [
+        253,
+        254
+      ],
+      "pair_gap_ms": 107.1727,
+      "receive_age_estimate_ms": 761.23454
+    },
+    {
+      "frame_ids": [
+        261,
+        262
+      ],
+      "pair_gap_ms": 108.2677,
+      "receive_age_estimate_ms": 758.939749
+    },
+    {
+      "frame_ids": [
+        269,
+        270
+      ],
+      "pair_gap_ms": 104.4053,
+      "receive_age_estimate_ms": 759.522876
+    },
+    {
+      "frame_ids": [
+        277,
+        278
+      ],
+      "pair_gap_ms": 107.9881,
+      "receive_age_estimate_ms": 757.773629
+    },
+    {
+      "frame_ids": [
+        285,
+        286
+      ],
+      "pair_gap_ms": 107.5251,
+      "receive_age_estimate_ms": 746.226984
+    },
+    {
+      "frame_ids": [
+        292,
+        293
+      ],
+      "pair_gap_ms": 92.827,
+      "receive_age_estimate_ms": 869.106509
+    },
+    {
+      "frame_ids": [
+        300,
+        301
+      ],
+      "pair_gap_ms": 92.5542,
+      "receive_age_estimate_ms": 868.114118
+    },
+    {
+      "frame_ids": [
+        308,
+        309
+      ],
+      "pair_gap_ms": 92.3539,
+      "receive_age_estimate_ms": 865.147825
+    },
+    {
+      "frame_ids": [
+        316,
+        317
+      ],
+      "pair_gap_ms": 92.3927,
+      "receive_age_estimate_ms": 870.721615
+    },
+    {
+      "frame_ids": [
+        324,
+        325
+      ],
+      "pair_gap_ms": 92.2291,
+      "receive_age_estimate_ms": 854.769006
+    },
+    {
+      "frame_ids": [
+        332,
+        333
+      ],
+      "pair_gap_ms": 92.5189,
+      "receive_age_estimate_ms": 867.113323
+    },
+    {
+      "frame_ids": [
+        339,
+        340
+      ],
+      "pair_gap_ms": 103.974,
+      "receive_age_estimate_ms": 959.337555
+    },
+    {
+      "frame_ids": [
+        347,
+        348
+      ],
+      "pair_gap_ms": 107.7094,
+      "receive_age_estimate_ms": 959.781306
+    },
+    {
+      "frame_ids": [
+        355,
+        356
+      ],
+      "pair_gap_ms": 107.4006,
+      "receive_age_estimate_ms": 961.327229
+    },
+    {
+      "frame_ids": [
+        363,
+        364
+      ],
+      "pair_gap_ms": 108.0805,
+      "receive_age_estimate_ms": 943.411629
+    },
+    {
+      "frame_ids": [
+        371,
+        372
+      ],
+      "pair_gap_ms": 107.839,
+      "receive_age_estimate_ms": 959.220152
+    },
+    {
+      "frame_ids": [
+        378,
+        379
+      ],
+      "pair_gap_ms": 92.3049,
+      "receive_age_estimate_ms": 1057.19751
+    },
+    {
+      "frame_ids": [
+        386,
+        387
+      ],
+      "pair_gap_ms": 91.706,
+      "receive_age_estimate_ms": 1070.464702
+    },
+    {
+      "frame_ids": [
+        394,
+        395
+      ],
+      "pair_gap_ms": 92.1575,
+      "receive_age_estimate_ms": 1059.019408
+    },
+    {
+      "frame_ids": [
+        402,
+        403
+      ],
+      "pair_gap_ms": 92.7712,
+      "receive_age_estimate_ms": 1054.250769
+    },
+    {
+      "frame_ids": [
+        410,
+        411
+      ],
+      "pair_gap_ms": 92.3547,
+      "receive_age_estimate_ms": 1066.346721
+    },
+    {
+      "frame_ids": [
+        417,
+        418
+      ],
+      "pair_gap_ms": 108.0465,
+      "receive_age_estimate_ms": 1156.363001
+    },
+    {
+      "frame_ids": [
+        425,
+        426
+      ],
+      "pair_gap_ms": 107.4802,
+      "receive_age_estimate_ms": 1160.598837
+    },
+    {
+      "frame_ids": [
+        433,
+        434
+      ],
+      "pair_gap_ms": 107.9855,
+      "receive_age_estimate_ms": 1156.48629
+    },
+    {
+      "frame_ids": [
+        441,
+        442
+      ],
+      "pair_gap_ms": 107.653,
+      "receive_age_estimate_ms": 1149.225297
+    },
+    {
+      "frame_ids": [
+        449,
+        450
+      ],
+      "pair_gap_ms": 105.4082,
+      "receive_age_estimate_ms": 1158.284529
+    },
+    {
+      "frame_ids": [
+        456,
+        457
+      ],
+      "pair_gap_ms": 91.686,
+      "receive_age_estimate_ms": 1268.18604
+    },
+    {
+      "frame_ids": [
+        464,
+        465
+      ],
+      "pair_gap_ms": 92.0659,
+      "receive_age_estimate_ms": 1245.744482
+    },
+    {
+      "frame_ids": [
+        472,
+        473
+      ],
+      "pair_gap_ms": 92.1014,
+      "receive_age_estimate_ms": 1267.152749
+    },
+    {
+      "frame_ids": [
+        480,
+        481
+      ],
+      "pair_gap_ms": 91.9395,
+      "receive_age_estimate_ms": 1255.898302
+    },
+    {
+      "frame_ids": [
+        488,
+        489
+      ],
+      "pair_gap_ms": 93.4781,
+      "receive_age_estimate_ms": 1254.541133
+    },
+    {
+      "frame_ids": [
+        495,
+        496
+      ],
+      "pair_gap_ms": 93.1068,
+      "receive_age_estimate_ms": 1369.067363
+    },
+    {
+      "frame_ids": [
+        503,
+        504
+      ],
+      "pair_gap_ms": 108.2517,
+      "receive_age_estimate_ms": 1354.512565
+    },
+    {
+      "frame_ids": [
+        511,
+        512
+      ],
+      "pair_gap_ms": 107.5807,
+      "receive_age_estimate_ms": 1356.860857
+    },
+    {
+      "frame_ids": [
+        519,
+        520
+      ],
+      "pair_gap_ms": 107.2566,
+      "receive_age_estimate_ms": 1344.610765
+    },
+    {
+      "frame_ids": [
+        527,
+        528
+      ],
+      "pair_gap_ms": 107.5862,
+      "receive_age_estimate_ms": 1360.274707
+    },
+    {
+      "frame_ids": [
+        534,
+        535
+      ],
+      "pair_gap_ms": 92.6529,
+      "receive_age_estimate_ms": 1449.93683
+    },
+    {
+      "frame_ids": [
+        542,
+        543
+      ],
+      "pair_gap_ms": 92.2901,
+      "receive_age_estimate_ms": 1467.869535
+    },
+    {
+      "frame_ids": [
+        550,
+        551
+      ],
+      "pair_gap_ms": 92.637,
+      "receive_age_estimate_ms": 1466.642302
+    },
+    {
+      "frame_ids": [
+        558,
+        559
+      ],
+      "pair_gap_ms": 92.3224,
+      "receive_age_estimate_ms": 1453.727603
+    },
+    {
+      "frame_ids": [
+        566,
+        567
+      ],
+      "pair_gap_ms": 93.067,
+      "receive_age_estimate_ms": 1455.238161
+    },
+    {
+      "frame_ids": [
+        573,
+        574
+      ],
+      "pair_gap_ms": 107.6127,
+      "receive_age_estimate_ms": 1542.496481
+    }
+  ],
+  "bridge_stop": {
+    "kind": "stopped",
+    "captured_frames": 584,
+    "motion_commands_sent": 0,
+    "enable_commands_sent": 0,
+    "disable_commands_sent": 0,
+    "calibration_commands_sent": 0
+  },
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "checkpoint_unchanged": true,
+  "inference_ms": {
+    "count": 7,
+    "median": 115.766808,
+    "p95": 343.5044702999999,
+    "max": 365.829666
+  },
+  "bridge_roundtrip_ms": {
+    "count": 7,
+    "median": 7.652917,
+    "p95": 837.7570911999992,
+    "max": 1192.78717
+  },
+  "camera_receive_to_prediction_estimate_ms": {
+    "count": 7,
+    "median": 268.618623,
+    "p95": 496.43959599999994,
+    "max": 530.228476
+  },
+  "pair_gap_ms": {
+    "count": 7,
+    "median": 93.2107,
+    "p95": 107.56338,
+    "max": 107.7054
+  },
+  "max_first_action_delta_motor_degrees": 83.03471291065216,
+  "out_of_training_range_counts": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 7,
+    "elbow_flex": 7,
+    "wrist_flex": 7,
+    "wrist_yaw": 7,
+    "wrist_roll": 0,
+    "gripper": 7
+  },
+  "execution_readiness_verified": false,
+  "motion_commands_sent": 0,
+  "limitations": [
+    "Current parked pose/zero correspondence and camera viewpoint are not yet aligned to demonstrations.",
+    "SDK cached motor states lack per-motor reception timestamps; fresh response for each request is not proven.",
+    "Camera timestamps are receive times, not exposure times; end-to-end estimates include clock uncertainty.",
+    "No actuator commands, live execution, task success or measured workspace verification."
+  ]
+}

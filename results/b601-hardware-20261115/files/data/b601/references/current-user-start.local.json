@@ -1,0 +1,21 @@
+{
+  "purpose": "User selected current pose as experiment start; no calibration or encoder zero change",
+  "source_is_training_demonstration": false,
+  "captured_unix": 1794674943.1265562,
+  "position_units": "absolute motor degrees",
+  "observation.state": {
+    "shoulder_pan.pos": -0.44806040955283644,
+    "shoulder_lift.pos": -98.97916726286286,
+    "elbow_flex.pos": -58.893497363731704,
+    "wrist_flex.pos": 48.35850430487732,
+    "wrist_yaw.pos": -4.666439882466071,
+    "wrist_roll.pos": -17.059353678590647,
+    "gripper.pos": -104.55265626710663
+  },
+  "xyz_m": [
+    0.28628349755683236,
+    0.012680703026417611,
+    0.02499157830418361
+  ],
+  "auto_reference_alignment": false
+}

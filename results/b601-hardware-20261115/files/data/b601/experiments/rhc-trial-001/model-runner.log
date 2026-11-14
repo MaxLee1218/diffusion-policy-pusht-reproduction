@@ -1,0 +1,74 @@
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' insteDiffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"alignment_step": 1, "remaining_deg": 7.781113158686068}
+{"alignment_step": 11, "remaining_deg": 3.737531887011798}
+than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 207, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 157, in main
+    run_rhc(args, trial, model, policy, result, low, high, save)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/b601_rhc_loop.py", line 49, in run_rhc
+    validate_sequence(model, q, actions)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/real_robot/receding_horizon.py", line 15, in validate_sequence
+    raise ValueError("预测动作序列变化超过采集时的单步范围")
+ValueError: 预测动作序列变化超过采集时的单步范围
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' insteDiffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"alignment_step": 1, "remaining_deg": 0.10928075838766205}
+{"inference": 1, "actions_sent": 0, "accepted_actions": 12, "inference_ms": 111.157514}
+{"inference": 2, "actions_sent": 4, "accepted_actions": 12, "inference_ms": 107.7698}
+havior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 207, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 157, in main
+    run_rhc(args, trial, model, policy, result, low, high, save)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/b601_rhc_loop.py", line 29, in run_rhc
+    identifier, sample = trial.request("sample")
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 51, in request
+    raise RuntimeError("操作员已暂停或接管，模型运行已取消")
+RuntimeError: 操作员已暂停或接管，模型运行已取消
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' insteDiffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 208, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 133, in main
+    identifier, sample = trial.request("sample")
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 62, in request
+    raise RuntimeError(response.get("error", "Controller rejected request"))
+RuntimeError: 实验记录未开启，模型不会继续执行
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' insteDiffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"alignment_step": 1, "remaining_deg": 0.8306033762543734}
+{"inference": 1, "actions_sent": 0, "accepted_actions": 12, "inference_ms": 145.853967}
+{"inference": 2, "actions_sent": 4, "accepted_actions": 11, "inference_ms": 168.88147}
+{"inference": 3, "actions_sent": 10, "accepted_actions": 11, "inferenTraceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 209, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 158, in main
+    run_rhc(args, trial, model, policy, result, low, high, save)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/b601_rhc_loop.py", line 51, in run_rhc
+    plan_id, accepted = trial.request("execute_sequence", actions=actions.tolist(),
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 51, in request
+    raise RuntimeError("操作员已暂停或接管，模型运行已取消")
+RuntimeError: 操作员已暂停或接管，模型运行已取消
+ence_ms": 133.444145}
+{"inference": 14, "actions_sent": 74, "accepted_actions": 11, "inference_ms": 146.359792}
+{"inference": 15, "actions_sent": 80, "accepted_actions": 11, "inference_ms": 130.700115}
+{"inference": 16, "actions_sent": 85, "accepted_actions": 11, "inference_ms": 133.038902}
+{"inference": 17, "actions_sent": 91, "accepted_actions": 12, "inference_ms": 106.367378}
+{"inference": 18, "actions_sent": 96, "accepted_actions": 11, "inference_ms": 101.704779}
+{"inference": 19, "actions_sent": 103, "accepted_actions": 10, "inference_ms": 163.523563}
+{"inference": 20, "actions_sent": 109, "accepted_actions": 11, "inference_ms": 130.537859}
+{"inference": 21, "actions_sent": 114, "accepted_actions": 12, "inference_ms": 139.358024}
+{"inference": 22, "actions_sent": 119, "accepted_actions": 11, "inference_ms": 138.414845}
+{"inference": 23, "actions_sent": 126, "accepted_actions": 11, "inference_ms": 138.576694}

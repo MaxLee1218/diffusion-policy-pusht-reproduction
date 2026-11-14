@@ -1,0 +1,47 @@
+{
+  "status": "completed_10_model_steps_holding",
+  "windows_pid": 7500,
+  "session": "data/b601/model-trial-20261114-03",
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "motion_policy": "arm <=0.5 motor degrees, gripper <=2 motor degrees, end_link <=6 mm per step",
+  "final_motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "paused": true,
+  "last_fault": null,
+  "completed_policy_steps": 10,
+  "max_arrival_error_deg": 0.14669262124021287,
+  "start_xyz_m": [
+    0.27405661594297,
+    0.009013716989244958,
+    0.02728567587797759
+  ],
+  "final_xyz_m": [
+    0.25810172849891616,
+    -0.000149220204063244,
+    0.030246014655462006
+  ],
+  "net_displacement_mm": 18.63548918162373,
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "tests_passed": 69,
+  "full_pick_place_success_evaluated": false,
+  "prior_attempts": [
+    "data/b601/model-trial-20261114-01",
+    "data/b601/model-trial-20261114-02"
+  ],
+  "checked_at_utc": "2026-11-14T15:21:15.498818+00:00"
+}

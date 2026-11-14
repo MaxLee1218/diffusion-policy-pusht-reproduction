@@ -1,0 +1,14 @@
+{
+  "source": "assistant_monitor",
+  "reason": "FK feedback shows negative X and positive Y displacement during policy execution, inconsistent with operator stated chess location in +X. Stop to avoid continuing away from target.",
+  "observed_xyz_m": [
+    0.25794014980223257,
+    0.08763467949078403,
+    0.03000627981200596
+  ],
+  "planned_start_xyz_m": [
+    0.28628349755683236,
+    0.012680703026417611,
+    0.02499157830418361
+  ]
+}

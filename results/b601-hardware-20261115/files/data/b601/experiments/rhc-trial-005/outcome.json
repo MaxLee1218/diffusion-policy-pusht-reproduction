@@ -1,0 +1,88 @@
+{
+  "trial": "rhc-trial-005",
+  "retry_of": "rhc-trial-004",
+  "request": "先复位然后再跑一次",
+  "reset_verified": {
+    "status": "reset_complete",
+    "reference": "start-pose.json",
+    "actual_motor_degrees": [
+      -0.44806040955283644,
+      -99.0010238682069,
+      -58.915353969075746,
+      48.336593058019915,
+      -4.6882964878101125,
+      -17.10306688927873,
+      -104.57451287245067
+    ],
+    "max_joint_error_degrees": 0.04371321068808243,
+    "xyz_m": [
+      0.2864831890745586,
+      0.012748871275191222,
+      0.024983318413970446
+    ],
+    "reset_recording": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-005\\recordings\\20261114T165931-2678e880",
+    "reset_commands": 43,
+    "model_sequence_actions_sent": 0,
+    "first_plan_rejected": "observation older than 500 ms; no threshold change",
+    "startup_attempt_archive": "data/b601/experiments/rhc-trial-005/attempts/reset-complete-first-plan-expired",
+    "next_launch": "fresh model load/warmup and current reference check; no further reset required"
+  },
+  "run_id": "e67b0e36ab9244eeaa755d45eed3838d",
+  "recording_id": "20261114T170203-c6f9c2fc",
+  "outcome": "stopped_without_verified_task_success",
+  "task_success": null,
+  "success_evaluated": false,
+  "termination": "operator_pause_or_takeover",
+  "termination_source": "pause/takeover control-generation change; Esc, manual takeover, or focus loss not distinguished by runner",
+  "elapsed_seconds": 246.00068284000008,
+  "inferences": 410,
+  "sequence_actions_sent": 2338,
+  "policy_input_start_motor_degrees": [
+    -0.4917736202409181,
+    -99.0010238682069,
+    -58.95906717976383,
+    48.336593058019915,
+    -4.6882964878101125,
+    -17.12492349462277,
+    -104.57451287245067
+  ],
+  "first_feedback_xyz_mm": [
+    286.4831890745586,
+    12.748871275191222,
+    24.983318413970444
+  ],
+  "last_feedback_xyz_mm": [
+    257.46187160826474,
+    87.17384989902874,
+    30.04185225366765
+  ],
+  "net_feedback_displacement_mm": [
+    -29.02131746629385,
+    74.42497862383752,
+    5.058533839697205
+  ],
+  "feedback_xyz_min_mm": [
+    255.0112905532535,
+    12.527773313599354,
+    24.904529401277298
+  ],
+  "feedback_xyz_max_mm": [
+    286.77959528429136,
+    91.16023647198429,
+    30.470820938069576
+  ],
+  "recording": {
+    "state": "complete",
+    "finalized": true,
+    "error": null,
+    "rgb_depth_frames": 7200,
+    "control_cycles": 11741,
+    "metadata_frame_indices_contiguous": true,
+    "color_source_frame_gaps": 0,
+    "depth_source_frame_gaps": 0,
+    "verification_scope": "Manifest and JSONL readback; RGB pixels and depth arrays not decoded for this trial in this check"
+  },
+  "hardware_status_after_run": "paused and all seven motors enabled; no last_fault",
+  "known_issue": "Negative-X positive-Y drift persists; successful grasp and placement have not been established",
+  "next_step": "Offline comparison of frozen real observations, training images, joint states, and expert approach actions before further task motion."
+}

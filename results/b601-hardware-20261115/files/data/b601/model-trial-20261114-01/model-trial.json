@@ -1,0 +1,11 @@
+{
+  "status": "stopped",
+  "completed_steps": 0,
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "max_arm_step_degrees": 0.5,
+  "max_gripper_step_degrees": 2.0,
+  "success_evaluated": false,
+  "alignment_steps": 14,
+  "alignment_error_deg": 9.966773693090147,
+  "error": "RuntimeError('\u63a7\u5236\u8bf7\u6c42\u5df2\u8fc7\u671f')"
+}

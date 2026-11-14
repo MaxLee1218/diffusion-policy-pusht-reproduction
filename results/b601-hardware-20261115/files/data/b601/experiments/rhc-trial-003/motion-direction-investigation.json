@@ -1,0 +1,57 @@
+{
+  "robot_state": "paused",
+  "model_actions_sent": 0,
+  "accepted_manual_keys": 0,
+  "model_status": "stopped",
+  "model_error": "RuntimeError('序列观测已过期')",
+  "reference_commands": 39,
+  "before_xyz_mm": [
+    332.44868465937316,
+    8.370020952075853,
+    49.105083473979015
+  ],
+  "after_xyz_mm": [
+    285.56113849338414,
+    12.79527846307312,
+    24.56316270478151
+  ],
+  "before_motor_degrees": [
+    -1.2130415965942645,
+    -106.27938273079921,
+    -74.1059678907509,
+    56.379987749167014,
+    -4.819436119874357,
+    -18.13032734044865,
+    -84.50987595905441
+  ],
+  "after_motor_degrees": [
+    -0.42620380420879567,
+    -98.97916726286286,
+    -58.7842143370115,
+    48.35850430487732,
+    -4.666439882466071,
+    -17.037497073246605,
+    -104.55265626710663
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "last_fault": null,
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-003\\recordings\\20261114T163641-efb91e6e",
+    "accepting": false,
+    "error": null,
+    "finalized": true,
+    "rgb_depth_frames_submitted": 1917,
+    "rgb_depth_frames_written": 1917,
+    "control_cycles_submitted": 3051,
+    "control_cycles_written": 3051,
+    "depth_chunks_written": 128
+  }
+}

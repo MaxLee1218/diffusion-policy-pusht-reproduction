@@ -1,0 +1,141 @@
+{
+  "units": "robot base end_link XYZ in mm, derived from motor feedback and URDF; not external position measurement",
+  "reference_alignment_skipped": true,
+  "reference_alignment_event_count": 0,
+  "saved_start_xyz_mm": [
+    286.28349755683234,
+    12.68070302641761,
+    24.99157830418361
+  ],
+  "first_policy_feedback_xyz_mm": [
+    287.067198501569,
+    12.66475964112105,
+    25.3563691528067
+  ],
+  "last_feedback_xyz_mm": [
+    258.03632234049746,
+    88.4553290349902,
+    29.872980904260686
+  ],
+  "displacement_from_first_policy_feedback_mm": [
+    -29.030876161071546,
+    75.79056939386915,
+    4.516611751453986
+  ],
+  "arm_targets_match_policy_within_float_roundoff": true,
+  "max_arm_target_difference_degrees": 2.7755575615628914e-17,
+  "sequence_actions": 517,
+  "predictions": 91,
+  "prediction_examples": [
+    {
+      "inference_index": 0,
+      "sample_xyz_mm": [
+        287.067198501569,
+        12.66475964112105,
+        25.3563691528067
+      ],
+      "first_prediction_xyz_mm": [
+        286.2114308817915,
+        13.93868631883033,
+        24.625489265649282
+      ],
+      "last_prediction_xyz_mm": [
+        288.4658623724287,
+        14.533210957722318,
+        24.93104596544196
+      ]
+    },
+    {
+      "inference_index": 10,
+      "sample_xyz_mm": [
+        285.87972405289736,
+        22.775857536044818,
+        28.67814925191142
+      ],
+      "first_prediction_xyz_mm": [
+        284.7801372620262,
+        24.689062143250084,
+        28.39545466062618
+      ],
+      "last_prediction_xyz_mm": [
+        285.0362325102283,
+        25.77730803024857,
+        28.627709658641088
+      ]
+    },
+    {
+      "inference_index": 20,
+      "sample_xyz_mm": [
+        281.23468403975096,
+        33.61241033916411,
+        28.09205403028267
+      ],
+      "first_prediction_xyz_mm": [
+        277.78607635638105,
+        36.405631872007255,
+        27.562107687622046
+      ],
+      "last_prediction_xyz_mm": [
+        278.7563930948278,
+        33.634094505324306,
+        28.048700496197647
+      ]
+    },
+    {
+      "inference_index": 50,
+      "sample_xyz_mm": [
+        259.35954182857785,
+        83.97015450122896,
+        29.54971514552551
+      ],
+      "first_prediction_xyz_mm": [
+        258.6626999473013,
+        83.12250264278667,
+        29.66174505137012
+      ],
+      "last_prediction_xyz_mm": [
+        259.46000724457247,
+        82.12660025335333,
+        29.98886291807065
+      ]
+    },
+    {
+      "inference_index": 90,
+      "sample_xyz_mm": [
+        258.0069346552377,
+        87.43779707902092,
+        30.006279812005904
+      ],
+      "first_prediction_xyz_mm": [
+        257.88474899608497,
+        88.93943831143952,
+        29.942936640011325
+      ],
+      "last_prediction_xyz_mm": [
+        261.0108630288224,
+        90.81110671488639,
+        30.253772056127502
+      ]
+    }
+  ],
+  "last_raw_model_target_xyz_mm": [
+    257.77246620947074,
+    89.55653076708035,
+    30.116538666432046
+  ],
+  "last_dispatched_target_xyz_mm": [
+    257.77246620947074,
+    89.55653076708035,
+    30.116538666432046
+  ],
+  "recording_readback": {
+    "video_frames_decoded": 1749,
+    "depth_frames_decompressed": 1749,
+    "depth_record_indices_contiguous": true,
+    "frame_records": 1749,
+    "control_records": 2852,
+    "color_source_frame_gaps": 0,
+    "depth_source_frame_gaps": 0
+  },
+  "conclusion": "Negative-X, positive-Y drift occurred during actual policy execution with no reference alignment. All dispatched arm targets match logged raw policy targets within floating point roundoff. Root cause of model drift remains unresolved; do not flip motor signs without evidence. The first prediction contains both X directions across the horizon, not monotonically negative X."
+}

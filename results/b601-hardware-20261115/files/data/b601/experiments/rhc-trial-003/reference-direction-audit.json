@@ -1,0 +1,12 @@
+{
+  "reference_moves_verified": 39,
+  "nontrivial_joint_moves": 154,
+  "feedback_moved_toward_requested_goal": 154,
+  "max_arrival_error_deg": 0.14371806992839709,
+  "policy_sequence_actions_sent": 0,
+  "conclusion": "Observed motion was reference alignment, with feedback following requested motor goals; this does not establish whether the initial scene matches training or whether future model targets approach the piece.",
+  "reference_source_is_training_demonstration": false,
+  "operator_concern": "gripper/end effector moving in the opposite direction and cannot reach the piece",
+  "model_run_result": "not_started_observation_expired",
+  "motion_state": "paused_holding"
+}

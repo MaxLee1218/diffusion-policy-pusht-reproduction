@@ -1,0 +1,9 @@
+{
+  "outcome": "engineering_failure",
+  "completed_actions": 7,
+  "completed_inferences": 2,
+  "task_success": false,
+  "reason": "\u52a8\u4f5c\u8c03\u5ea6\u8fdf\u5230\u8d85\u8fc7 75 ms\uff0c\u5df2\u4fdd\u6301",
+  "model_weights_unchanged": true,
+  "recording_id": "20261114T155651-57351c33"
+}

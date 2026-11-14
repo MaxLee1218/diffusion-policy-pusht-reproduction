@@ -1,0 +1,64 @@
+{
+  "state": "paused",
+  "pid": 10208,
+  "connected": true,
+  "busy": false,
+  "message": "已到位，可继续按键",
+  "current_motor_degrees": [
+    -1.2348982019383055,
+    -96.42188979609672,
+    -56.57669719726338,
+    48.861206227790255,
+    -4.666439882466071,
+    -17.758765049599955,
+    -88.8156818533438
+  ],
+  "target_motor_degrees": [
+    -1.2251933690029995,
+    -96.40273511366563,
+    -56.569824253199194,
+    48.86363378400246,
+    -4.649265670322473,
+    -17.74795309786371,
+    -88.905952350367
+  ],
+  "xyz_m": [
+    0.2740430951629585,
+    0.009014009154994816,
+    0.027478027552031492
+  ],
+  "target_xyz_m": [
+    0.27402212322550495,
+    0.009006053143721637,
+    0.027531355420650577
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 162395532779800,
+  "model_trajectory_commands": 39,
+  "model_control_enabled": true,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -88.905952350367,
+  "control_version": 3,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 控制 | 6 mm · 模型单步联调"
+}

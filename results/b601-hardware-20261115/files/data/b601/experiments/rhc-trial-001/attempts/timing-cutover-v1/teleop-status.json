@@ -1,0 +1,126 @@
+{
+  "state": "paused",
+  "pid": 23924,
+  "connected": true,
+  "busy": false,
+  "message": "动作调度迟到超过 75 ms，已保持",
+  "current_motor_degrees": [
+    -0.4917736202409181,
+    -99.72229184456025,
+    -59.745959613662656,
+    48.81749301710217,
+    -4.644583277122031,
+    -17.015640467902564,
+    -97.51472006329877
+  ],
+  "target_motor_degrees": [
+    -0.4917736202409181,
+    -99.72229184456025,
+    -59.745959613662656,
+    48.81749301710217,
+    -4.62272667177799,
+    -17.015640467902564,
+    -97.49286345795473
+  ],
+  "xyz_m": [
+    0.288296686390916,
+    0.012375287598851717,
+    0.024827181475765736
+  ],
+  "target_xyz_m": [
+    0.2882962071042296,
+    0.012305556998768138,
+    0.02482153124901232
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 164699776627700,
+  "bounded_trajectory_commands": 8,
+  "model_trajectory_commands": 7,
+  "rhc_running": false,
+  "sequence_actions_sent": 7,
+  "model_control_enabled": true,
+  "control_generation": 2,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": {
+    "type": "fault",
+    "id": 0,
+    "reason": "动作调度迟到超过 75 ms，已保持",
+    "trajectory_key": null,
+    "current_motor_degrees": [
+      -0.4917736202409181,
+      -99.72229184456025,
+      -59.745959613662656,
+      48.81749301710217,
+      -4.62272667177799,
+      -17.015640467902564,
+      -97.49286345795473
+    ],
+    "last_sent_motor_degrees": [
+      -0.47448939085006714,
+      -100.7821273803711,
+      -61.013450622558594,
+      48.810123443603516,
+      -4.634369373321533,
+      -16.997907638549805,
+      -96.02084350585938
+    ],
+    "joint_tracking_errors_deg": [
+      0.017284229390850947,
+      1.0598355358108478,
+      1.267491008895938,
+      0.007369573498657189,
+      0.01164270154354341,
+      0.01773282935275944,
+      1.4720199520953514
+    ],
+    "endpoint_motor_degrees": [
+      -0.47448939085006714,
+      -100.7821273803711,
+      -61.013450622558594,
+      48.810123443603516,
+      -4.634369373321533,
+      -16.997907638549805,
+      -96.02084350585938
+    ],
+    "time_ns": 164606925432100
+  },
+  "gripper_target_motor_degrees": -97.49286345795473,
+  "control_version": 6,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "model_process_running": false,
+  "preview_frames_rendered": 1680,
+  "preview_frame_id": 3049,
+  "preview_age_ms": 28.1318,
+  "preview_elapsed_seconds": 103.47803470000508,
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-001\\recordings\\20261114T155651-57351c33",
+    "accepting": false,
+    "error": null,
+    "finalized": true,
+    "rgb_depth_frames_submitted": 228,
+    "rgb_depth_frames_written": 228,
+    "control_cycles_submitted": 150,
+    "control_cycles_written": 150,
+    "depth_chunks_written": 16
+  }
+}

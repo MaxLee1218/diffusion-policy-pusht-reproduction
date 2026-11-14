@@ -1,0 +1,11 @@
+{
+  "source_snapshot/real_robot/receding_horizon.py": "080b81402f3f5a2611e7387ed96dd356a8e9d5bb262f23ec08bbb1ee8790b5f1",
+  "source_snapshot/real_robot/manual_control.py": "202a3561536b3e6ff5391512a13cba555576a22e928041fb5082719383182e13",
+  "source_snapshot/real_robot/model_control.py": "552675b76615396578868f2bd4b66340e8d4766c74cebb3e4d121ac8e3cb8b1b",
+  "source_snapshot/real_robot/recording.py": "0b2729e0bc7f1311700d63ddbc6da77621633ebc93ffb0f0250393b91fdb624c",
+  "source_snapshot/scripts/b601_manual_control-next-launch.py": "ed0b2cbd0ec7c00a2178c8f6e400852319d5855a1ce58662a83553a048dfb143",
+  "source_snapshot/scripts/b601_rhc_loop.py": "a29a70d547624beb9fcaaf25b336d2fba93f7d1281821efef5e53a583904058f",
+  "source_snapshot/scripts/b601_model_camera.py": "6b117dbcefe8159b2f24f826a838c71cf7ea8b6df9ab55b193520b8e658e4703",
+  "source_snapshot/scripts/run_b601_model_trial.py": "81d841fd549f705cd7fa36170cacc5de71d9504e0eff6016c5c329d8b87bf22a",
+  "source_snapshot/scripts/b601_manual_control.py": "efa2fd839bffc9fb096f9eac5e4c558a91557f7e60eb23c7b162e0e53f3ed3c9"
+}

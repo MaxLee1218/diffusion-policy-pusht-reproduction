@@ -1,0 +1,71 @@
+{
+  "state": "complete",
+  "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-003\\recordings\\20261114T163641-efb91e6e",
+  "accepting": false,
+  "error": null,
+  "finalized": true,
+  "rgb_depth_frames_submitted": 1917,
+  "rgb_depth_frames_written": 1917,
+  "control_cycles_submitted": 3051,
+  "control_cycles_written": 3051,
+  "depth_chunks_written": 128,
+  "camera": {
+    "serial": "260322279327",
+    "fps": 30,
+    "color": {
+      "width": 640,
+      "height": 480,
+      "fx": 393.46307373046875,
+      "fy": 392.52850341796875,
+      "ppx": 317.13421630859375,
+      "ppy": 234.08914184570312,
+      "model": "distortion.inverse_brown_conrady",
+      "coeffs": [
+        -0.05283921957015991,
+        0.05662483721971512,
+        0.00028904323698952794,
+        -7.765350164845586e-05,
+        -0.018454454839229584
+      ]
+    },
+    "depth": {
+      "width": 640,
+      "height": 480,
+      "fx": 399.0938415527344,
+      "fy": 399.0938415527344,
+      "ppx": 321.7757568359375,
+      "ppy": 240.03700256347656,
+      "model": "distortion.brown_conrady",
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "depth_unit_m": 9.999999747378752e-05,
+    "depth_to_color_rotation": [
+      0.9999656677246094,
+      -0.007453907746821642,
+      -0.0036269300617277622,
+      0.007459052838385105,
+      0.9999712109565735,
+      0.0014070288743823767,
+      0.003616337664425373,
+      -0.0014340339694172144,
+      0.9999924302101135
+    ],
+    "depth_to_color_translation_m": [
+      9.603350918041542e-06,
+      1.0000001566368155e-05,
+      1.0000000656873453e-05
+    ]
+  },
+  "started_unix_ns": 1794674201607807300,
+  "started_windows_qpc_ns": 166990003870400,
+  "clock_domain": "Windows perf_counter_ns for camera/control; sensor clocks also recorded",
+  "rgb": "lossless libx264rgb CRF 0, 640x480 RGB24, 30 fps, 5-second MKV segments",
+  "depth": "lossless NPZ uint16 sensor Z16, 15 frames per chunk, units in camera metadata",
+  "feedback_freshness": "SDK cache lacks per-motor reception timestamps; explicit requests/polls recorded"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "mode": "predict_only",
+  "started_at": "2026-11-14T14:10:50.086559+00:00",
+  "output": "data/b601/shadow-20261114-parking",
+  "motion_commands_sent": 0,
+  "enable_commands_sent": 0,
+  "hardware_connected": true,
+  "error": null,
+  "predictions": 7,
+  "stopped": {
+    "kind": "stopped",
+    "captured_frames": 584,
+    "motion_commands_sent": 0,
+    "enable_commands_sent": 0,
+    "disable_commands_sent": 0,
+    "calibration_commands_sent": 0
+  },
+  "finished_at": "2026-11-14T14:12:02.235849+00:00"
+}

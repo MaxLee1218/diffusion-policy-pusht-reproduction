@@ -1,0 +1,9 @@
+{
+  "source_snapshot/real_robot/manual_control.py": "202a3561536b3e6ff5391512a13cba555576a22e928041fb5082719383182e13",
+  "source_snapshot/real_robot/model_control.py": "552675b76615396578868f2bd4b66340e8d4766c74cebb3e4d121ac8e3cb8b1b",
+  "source_snapshot/real_robot/recording.py": "2fef161ed8598fd09e0a17834a43122c4f312794461a8b2f52b587f7c9101fda",
+  "source_snapshot/scripts/b601_model_camera.py": "ad6992b9f475d83201d91450157acd1fe9b4dfe803c8583b9284d99933ad19f4",
+  "source_snapshot/scripts/run_b601_model_trial.py": "69bfcf29b8629648278cdd430df608e88b838f7d31dbe3f10bd475ef260f6f1c",
+  "source_snapshot/scripts/b601_manual_control.py": "e74996bec7ea42789bbe84eef59aa611f9b8edb5aa0bf66163fd3205c043e658",
+  "source_snapshot/scripts/b601_model_camera-before-posix-fix.py": "00b717ea402f6349d43d7847786f06791ace3a3522259ff4f99a1c643c699366"
+}

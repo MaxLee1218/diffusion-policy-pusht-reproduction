@@ -1,0 +1,71 @@
+{
+  "state": "paused",
+  "pid": 16616,
+  "connected": true,
+  "busy": false,
+  "message": "已接管并保持；点“开始键盘控制”后按键",
+  "current_motor_degrees": [
+    -6.983294690447757,
+    -83.85412315721982,
+    -42.806817264464236,
+    48.18359682061163,
+    -4.841292725218398,
+    -23.550874748797487,
+    -85.9524119117611
+  ],
+  "target_motor_degrees": [
+    -6.983294690447757,
+    -83.85412315721982,
+    -42.806817264464236,
+    48.18359682061163,
+    -4.819436119874357,
+    -23.529018143453445,
+    -85.9524119117611
+  ],
+  "xyz_m": [
+    0.21147729251820163,
+    -0.010320715228378841,
+    0.023035025777867008
+  ],
+  "target_xyz_m": [
+    0.21146889563971713,
+    -0.01038992005404034,
+    0.023029135455041566
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 163468715161700,
+  "bounded_trajectory_commands": 0,
+  "model_trajectory_commands": 0,
+  "model_control_enabled": true,
+  "control_generation": 0,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -85.9524119117611,
+  "control_version": 5,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "model_process_running": false,
+  "preview_frames_rendered": 12,
+  "preview_frame_id": 36,
+  "preview_age_ms": 29.2855,
+  "preview_elapsed_seconds": 3.0136916000046767
+}

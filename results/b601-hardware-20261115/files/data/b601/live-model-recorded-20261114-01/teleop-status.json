@@ -1,0 +1,82 @@
+{
+  "state": "paused",
+  "pid": 16616,
+  "connected": true,
+  "busy": false,
+  "message": "已暂停，保持当前位置",
+  "current_motor_degrees": [
+    -0.9070491217776934,
+    -105.57991671827654,
+    -66.91503544953476,
+    49.42947796673532,
+    -4.841292725218398,
+    -17.780621654943992,
+    -93.31819719572957
+  ],
+  "target_motor_degrees": [
+    -0.8851925164336525,
+    -105.57991671827654,
+    -66.91503544953476,
+    49.42947796673532,
+    -4.841292725218398,
+    -17.780621654943992,
+    -93.29634059038553
+  ],
+  "xyz_m": [
+    0.3204558311394783,
+    0.01040453119718476,
+    0.024105552801590324
+  ],
+  "target_xyz_m": [
+    0.3204518388035501,
+    0.010526806739962225,
+    0.024105552801590352
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 31,
+  "updated_ns": 164334158605200,
+  "bounded_trajectory_commands": 50,
+  "model_trajectory_commands": 50,
+  "model_control_enabled": true,
+  "control_generation": 23,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -93.29634059038553,
+  "control_version": 5,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "model_process_running": false,
+  "preview_frames_rendered": 13836,
+  "preview_frame_id": 25993,
+  "preview_age_ms": 27.5327,
+  "preview_elapsed_seconds": 868.4922342000064,
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\live-model-recorded-20261114-01\\recordings\\20261114T153946-328dcf5c",
+    "accepting": false,
+    "error": null,
+    "finalized": true,
+    "rgb_depth_frames_submitted": 2253,
+    "rgb_depth_frames_written": 2253,
+    "control_cycles_submitted": 1447,
+    "control_cycles_written": 1447,
+    "depth_chunks_written": 151
+  }
+}

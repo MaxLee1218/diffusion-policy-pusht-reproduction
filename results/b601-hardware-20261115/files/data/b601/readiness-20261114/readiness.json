@@ -1,0 +1,140 @@
+{
+  "checked_at": "2026-11-14T14:37:27.931544+00:00",
+  "port": "COM5",
+  "baud": 921600,
+  "feedback_only": true,
+  "motion_commands_sent": 0,
+  "enable_commands_sent": 0,
+  "calibration_commands_sent": 0,
+  "disable_commands_sent": 0,
+  "all_seven_responded": true,
+  "elapsed_seconds": 0.579914199974155,
+  "motors": [
+    {
+      "name": "shoulder_pan",
+      "motor_id": 1,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159835963984600,
+      "position_motor_degrees": 4.447873829025664,
+      "velocity_degrees_per_second": -0.13993691571522124,
+      "torque_nm": -0.047863006591796875,
+      "mos_temperature_c": 30.0,
+      "rotor_temperature_c": 28.0,
+      "status_code": 0,
+      "feedback_can_id": 1,
+      "arbitration_id": 17
+    },
+    {
+      "name": "shoulder_lift",
+      "motor_id": 2,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159836024764900,
+      "position_motor_degrees": -0.9726189378098158,
+      "velocity_degrees_per_second": -0.13993691571522124,
+      "torque_nm": -0.07521438598632812,
+      "mos_temperature_c": 30.0,
+      "rotor_temperature_c": 27.0,
+      "status_code": 0,
+      "feedback_can_id": 2,
+      "arbitration_id": 18
+    },
+    {
+      "name": "elbow_flex",
+      "motor_id": 3,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159836085307200,
+      "position_motor_degrees": -2.284069899965624,
+      "velocity_degrees_per_second": -0.13993691571522124,
+      "torque_nm": 0.0068378448486328125,
+      "mos_temperature_c": 29.0,
+      "rotor_temperature_c": 27.0,
+      "status_code": 0,
+      "feedback_can_id": 3,
+      "arbitration_id": 3
+    },
+    {
+      "name": "wrist_flex",
+      "motor_id": 4,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159836145888100,
+      "position_motor_degrees": 8.819249539347185,
+      "velocity_degrees_per_second": -0.41975610563230364,
+      "torque_nm": -0.012209892272949219,
+      "mos_temperature_c": 30.0,
+      "rotor_temperature_c": 28.0,
+      "status_code": 0,
+      "feedback_can_id": 4,
+      "arbitration_id": 20
+    },
+    {
+      "name": "wrist_yaw",
+      "motor_id": 5,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159836206406400,
+      "position_motor_degrees": 0.9070491217776934,
+      "velocity_degrees_per_second": -0.41975610563230364,
+      "torque_nm": 0.0073261260986328125,
+      "mos_temperature_c": 31.0,
+      "rotor_temperature_c": 28.0,
+      "status_code": 0,
+      "feedback_can_id": 5,
+      "arbitration_id": 21
+    },
+    {
+      "name": "wrist_roll",
+      "motor_id": 6,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159836266835900,
+      "position_motor_degrees": -4.491587039713745,
+      "velocity_degrees_per_second": -0.41975610563230364,
+      "torque_nm": -0.0024423599243164062,
+      "mos_temperature_c": 32.0,
+      "rotor_temperature_c": 30.0,
+      "status_code": 0,
+      "feedback_can_id": 6,
+      "arbitration_id": 22
+    },
+    {
+      "name": "gripper",
+      "motor_id": 7,
+      "responded": true,
+      "attempts": 1,
+      "read_complete_monotonic_ns": 159836327709600,
+      "position_motor_degrees": -0.44806040955283644,
+      "velocity_degrees_per_second": -0.41975610563230364,
+      "torque_nm": -0.0024423599243164062,
+      "mos_temperature_c": 31.0,
+      "rotor_temperature_c": 28.0,
+      "status_code": 0,
+      "feedback_can_id": 7,
+      "arbitration_id": 23
+    }
+  ],
+  "end_link_xyz_m": [
+    0.2559040281905112,
+    0.01700032227247092,
+    0.1675499006241478
+  ],
+  "inside_history_workspace": false,
+  "workspace_bounds_m": [
+    [
+      0.19204062708122285,
+      0.37895785477188915
+    ],
+    [
+      -0.09060585730105165,
+      0.11271197219555674
+    ],
+    [
+      0.004389702243127074,
+      0.15101363938512544
+    ]
+  ],
+  "execution_interface_present": false
+}

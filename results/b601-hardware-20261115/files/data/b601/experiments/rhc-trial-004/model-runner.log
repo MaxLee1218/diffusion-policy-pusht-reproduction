@@ -1,0 +1,95 @@
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' insteDiffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"inference": 1, "actions_sent": 0, "accepted_actions": 11, "inference_ms": 107.635023}
+{"inference": 2, "actions_sent": 4, "accepted_actions": 11, "inference_ms": 113.66701}
+{"inference": 3, "actions_sent": 9, "accepted_actions": 12, "inference_ms": 114.19839}
+{"inference": 4, "actions_sent": 16, "accTraceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 220, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 169, in main
+    run_rhc(args, trial, model, policy, result, low, high, save)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/b601_rhc_loop.py", line 34, in run_rhc
+    identifier, sample = trial.request("sample")
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 62, in request
+    raise RuntimeError(response.get("error", "Controller rejected request"))
+RuntimeError: 操作员已暂停或接管，模型运行已取消
+"inference_ms": 97.938402}
+{"inference": 14, "actions_sent": 73, "accepted_actions": 12, "inference_ms": 99.767891}
+{"inference": 15, "actions_sent": 79, "accepted_actions": 11, "inference_ms": 139.34524}
+{"inference": 16, "actions_sent": 84, "accepted_actions": 11, "inference_ms": 145.498634}
+{"inference": 17, "actions_sent": 89, "accepted_actions": 12, "inference_ms": 136.471327}
+{"inference": 18, "actions_sent": 97, "accepted_actions": 12, "inference_ms": 101.275964}
+{"inference": 19, "actions_sent": 102, "accepted_actions": 11, "inference_ms": 163.400857}
+{"inference": 20, "actions_sent": 107, "accepted_actions": 12, "inference_ms": 100.604135}
+{"inference": 21, "actions_sent": 113, "accepted_actions": 11, "inference_ms": 141.233442}
+{"inference": 22, "actions_sent": 118, "accepted_actions": 11, "inference_ms": 147.142112}
+{"inference": 23, "actions_sent": 126, "accepted_actions": 11, "inference_ms": 144.178014}
+{"inference": 24, "actions_sent": 131, "accepted_actions": 11, "inference_ms": 143.134891}
+{"inference": 25, "actions_sent": 136, "accepted_actions": 11, "inference_ms": 206.237392}
+{"inference": 26, "actions_sent": 142, "accepted_actions": 11, "inference_ms": 98.83401}
+{"inference": 27, "actions_sent": 147, "accepted_actions": 11, "inference_ms": 109.739754}
+{"inference": 28, "actions_sent": 152, "accepted_actions": 12, "inference_ms": 110.019036}
+{"inference": 29, "actions_sent": 158, "accepted_actions": 12, "inference_ms": 112.711677}
+{"inference": 30, "actions_sent": 165, "accepted_actions": 11, "inference_ms": 118.098554}
+{"inference": 31, "actions_sent": 170, "accepted_actions": 11, "inference_ms": 142.946}
+{"inference": 32, "actions_sent": 176, "accepted_actions": 11, "inference_ms": 137.942182}
+{"inference": 33, "actions_sent": 181, "accepted_actions": 12, "inference_ms": 126.828258}
+{"inference": 34, "actions_sent": 187, "accepted_actions": 11, "inference_ms": 121.82666}
+{"inference": 35, "actions_sent": 192, "accepted_actions": 12, "inference_ms": 99.84568}
+{"inference": 36, "actions_sent": 199, "accepted_actions": 12, "inference_ms": 99.76287}
+{"inference": 37, "actions_sent": 205, "accepted_actions": 11, "inference_ms": 144.681444}
+{"inference": 38, "actions_sent": 210, "accepted_actions": 11, "inference_ms": 149.205719}
+{"inference": 39, "actions_sent": 216, "accepted_actions": 12, "inference_ms": 136.79979}
+{"inference": 40, "actions_sent": 221, "accepted_actions": 12, "inference_ms": 111.064696}
+{"inference": 41, "actions_sent": 228, "accepted_actions": 11, "inference_ms": 101.861813}
+{"inference": 42, "actions_sent": 234, "accepted_actions": 11, "inference_ms": 121.577363}
+{"inference": 43, "actions_sent": 239, "accepted_actions": 12, "inference_ms": 137.672458}
+{"inference": 44, "actions_sent": 244, "accepted_actions": 11, "inference_ms": 154.636673}
+{"inference": 45, "actions_sent": 252, "accepted_actions": 11, "inference_ms": 152.039657}
+{"inference": 46, "actions_sent": 257, "accepted_actions": 11, "inference_ms": 149.100588}
+{"inference": 47, "actions_sent": 262, "accepted_actions": 12, "inference_ms": 135.147502}
+{"inference": 48, "actions_sent": 268, "accepted_actions": 11, "inference_ms": 96.989725}
+{"inference": 49, "actions_sent": 273, "accepted_actions": 12, "inference_ms": 99.413072}
+{"inference": 50, "actions_sent": 278, "accepted_actions": 12, "inference_ms": 99.397068}
+{"inference": 51, "actions_sent": 285, "accepted_actions": 11, "inference_ms": 114.070451}
+{"inference": 52, "actions_sent": 291, "accepted_actions": 11, "inference_ms": 154.585898}
+{"inference": 53, "actions_sent": 296, "accepted_actions": 11, "inference_ms": 161.255175}
+{"inference": 54, "actions_sent": 302, "accepted_actions": 12, "inference_ms": 152.779601}
+{"inference": 55, "actions_sent": 307, "accepted_actions": 11, "inference_ms": 132.133709}
+{"inference": 56, "actions_sent": 314, "accepted_actions": 11, "inference_ms": 100.2997}
+{"inference": 57, "actions_sent": 318, "accepted_actions": 12, "inference_ms": 99.9529}
+{"inference": 58, "actions_sent": 325, "accepted_actions": 12, "inference_ms": 105.116032}
+{"inference": 59, "actions_sent": 331, "accepted_actions": 11, "inference_ms": 147.270202}
+{"inference": 60, "actions_sent": 338, "accepted_actions": 11, "inference_ms": 149.047867}
+{"inference": 61, "actions_sent": 343, "accepted_actions": 11, "inference_ms": 144.116472}
+{"inference": 62, "actions_sent": 348, "accepted_actions": 12, "inference_ms": 129.040027}
+{"inference": 63, "actions_sent": 354, "accepted_actions": 12, "inference_ms": 99.036617}
+{"inference": 64, "actions_sent": 359, "accepted_actions": 12, "inference_ms": 96.902106}
+{"inference": 65, "actions_sent": 365, "accepted_actions": 12, "inference_ms": 107.716224}
+{"inference": 66, "actions_sent": 370, "accepted_actions": 11, "inference_ms": 142.355907}
+{"inference": 67, "actions_sent": 377, "accepted_actions": 11, "inference_ms": 150.9867}
+{"inference": 68, "actions_sent": 383, "accepted_actions": 11, "inference_ms": 152.317885}
+{"inference": 69, "actions_sent": 388, "accepted_actions": 11, "inference_ms": 136.795641}
+{"inference": 70, "actions_sent": 393, "accepted_actions": 11, "inference_ms": 100.120417}
+{"inference": 71, "actions_sent": 399, "accepted_actions": 12, "inference_ms": 102.483115}
+{"inference": 72, "actions_sent": 404, "accepted_actions": 12, "inference_ms": 104.926036}
+{"inference": 73, "actions_sent": 411, "accepted_actions": 12, "inference_ms": 108.497234}
+{"inference": 74, "actions_sent": 417, "accepted_actions": 11, "inference_ms": 116.607582}
+{"inference": 75, "actions_sent": 422, "accepted_actions": 12, "inference_ms": 118.929552}
+{"inference": 76, "actions_sent": 429, "accepted_actions": 12, "inference_ms": 159.19241}
+{"inference": 77, "actions_sent": 434, "accepted_actions": 11, "inference_ms": 158.70275}
+{"inference": 78, "actions_sent": 440, "accepted_actions": 12, "inference_ms": 105.636419}
+{"inference": 79, "actions_sent": 445, "accepted_actions": 12, "inference_ms": 108.608837}
+{"inference": 80, "actions_sent": 450, "accepted_actions": 12, "inference_ms": 99.614731}
+{"inference": 81, "actions_sent": 457, "accepted_actions": 10, "inference_ms": 199.194247}
+{"inference": 82, "actions_sent": 463, "accepted_actions": 11, "inference_ms": 138.369245}
+{"inference": 83, "actions_sent": 468, "accepted_actions": 12, "inference_ms": 126.131786}
+{"inference": 84, "actions_sent": 473, "accepted_actions": 11, "inference_ms": 113.812805}
+{"inference": 85, "actions_sent": 479, "accepted_actions": 11, "inference_ms": 104.473001}
+{"inference": 86, "actions_sent": 486, "accepted_actions": 12, "inference_ms": 109.169693}
+{"inference": 87, "actions_sent": 492, "accepted_actions": 12, "inference_ms": 137.900849}
+{"inference": 88, "actions_sent": 497, "accepted_actions": 11, "inference_ms": 139.52208}
+{"inference": 89, "actions_sent": 502, "accepted_actions": 11, "inference_ms": 145.468684}
+{"inference": 90, "actions_sent": 508, "accepted_actions": 12, "inference_ms": 137.379916}
+{"inference": 91, "actions_sent": 515, "accepted_actions": 11, "inference_ms": 100.777239}

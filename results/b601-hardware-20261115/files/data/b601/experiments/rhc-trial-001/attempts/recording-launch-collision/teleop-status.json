@@ -1,0 +1,84 @@
+{
+  "state": "paused",
+  "pid": 24256,
+  "connected": true,
+  "busy": false,
+  "message": "已暂停，保持当前位置",
+  "current_motor_degrees": [
+    -0.5573434362730405,
+    -99.74414844990429,
+    -59.7678162190067,
+    48.79563641175813,
+    -4.644583277122031,
+    -17.059353678590647,
+    -97.49286345795473
+  ],
+  "target_motor_degrees": [
+    -0.5354868309289996,
+    -99.72229184456025,
+    -59.745959613662656,
+    48.79563641175813,
+    -4.62272667177799,
+    -17.059353678590647,
+    -97.49286345795473
+  ],
+  "xyz_m": [
+    0.2885095098640596,
+    0.012043319451680187,
+    0.024811318087824663
+  ],
+  "target_xyz_m": [
+    0.28840511033143124,
+    0.012084605805455378,
+    0.02482269368957371
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 164833808851900,
+  "bounded_trajectory_commands": 0,
+  "model_trajectory_commands": 0,
+  "rhc_running": false,
+  "sequence_actions_sent": 0,
+  "model_control_enabled": true,
+  "control_generation": 1,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -97.49286345795473,
+  "control_version": 6,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "model_process_running": false,
+  "preview_frames_rendered": 1389,
+  "preview_frame_id": 2565,
+  "preview_age_ms": 20.8068,
+  "preview_elapsed_seconds": 87.31660180000472,
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-001\\recordings\\20261114T155921-6400bb70",
+    "accepting": false,
+    "error": null,
+    "finalized": true,
+    "rgb_depth_frames_submitted": 5,
+    "rgb_depth_frames_written": 5,
+    "control_cycles_submitted": 4,
+    "control_cycles_written": 4,
+    "depth_chunks_written": 1
+  }
+}

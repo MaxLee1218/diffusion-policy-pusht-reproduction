@@ -1,0 +1,28 @@
+{
+  "purpose": "B601 start-pose reference, captured without issuing any motion commands",
+  "robot_type": "seeed_b601_dm_follower",
+  "capture_started_at": "2026-11-12T18:00:49+01:00",
+  "source_dataset": "/Users/limingxuan/Desktop/Projects/vla-chess-robot/data/b601/pick-place-20261112-180049-031641",
+  "source_is_training_demonstration": false,
+  "position_units": "motor degrees in the B601 recording coordinate convention",
+  "samples": 26,
+  "estimator": "per-joint median of observed positions",
+  "observation.state": {
+    "shoulder_pan.pos": -0.426204,
+    "shoulder_lift.pos": -98.935455,
+    "elbow_flex.pos": -58.76236,
+    "wrist_flex.pos": 48.38036,
+    "wrist_yaw.pos": -4.644583,
+    "wrist_roll.pos": -16.971928,
+    "gripper.pos": -104.508942
+  },
+  "sample_span_deg": {
+    "shoulder_pan.pos": 0.0,
+    "shoulder_lift.pos": 0.021858,
+    "elbow_flex.pos": 0.0,
+    "wrist_flex.pos": 0.0,
+    "wrist_yaw.pos": 0.0,
+    "wrist_roll.pos": 0.0,
+    "gripper.pos": 0.0
+  }
+}

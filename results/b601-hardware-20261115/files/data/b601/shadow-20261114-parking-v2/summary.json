@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "mode": "predict_only",
+  "error": null,
+  "predictions": 74,
+  "rejected_stale_pairs": [
+    {
+      "frame_ids": [
+        0,
+        1
+      ],
+      "pair_gap_ms": 77.86,
+      "source_age_ms": 13.1676,
+      "bridge_roundtrip_ms": 1196.600851
+    }
+  ],
+  "bridge_stop": {
+    "kind": "stopped",
+    "captured_frames": 574,
+    "motion_commands_sent": 0,
+    "enable_commands_sent": 0,
+    "disable_commands_sent": 0,
+    "calibration_commands_sent": 0
+  },
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "checkpoint_unchanged": true,
+  "inference_ms": {
+    "count": 74,
+    "median": 138.76856249999997,
+    "p95": 236.67346499999996,
+    "max": 288.966812
+  },
+  "bridge_roundtrip_ms": {
+    "count": 74,
+    "median": 7.473616,
+    "p95": 9.2758679,
+    "max": 10.239787
+  },
+  "source_age_at_snapshot_ms": {
+    "count": 74,
+    "median": 67.92525,
+    "p95": 113.077015,
+    "max": 118.6083
+  },
+  "camera_receive_to_prediction_estimate_ms": {
+    "count": 74,
+    "median": 222.33255641406248,
+    "p95": 307.79672658046866,
+    "max": 352.8269879453125
+  },
+  "pair_gap_ms": {
+    "count": 74,
+    "median": 96.56895,
+    "p95": 108.340445,
+    "max": 110.3021
+  },
+  "max_first_action_delta_motor_degrees": 86.61894905567169,
+  "out_of_training_range_counts": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 74,
+    "elbow_flex": 74,
+    "wrist_flex": 74,
+    "wrist_yaw": 74,
+    "wrist_roll": 0,
+    "gripper": 74
+  },
+  "execution_readiness_verified": false,
+  "motion_commands_sent": 0,
+  "limitations": [
+    "Current parked pose/zero correspondence and camera viewpoint are not yet aligned to demonstrations.",
+    "SDK cached motor states lack per-motor reception timestamps; fresh response for each request is not proven.",
+    "Camera timestamps are receive times, not exposure times; end-to-end estimates include clock uncertainty.",
+    "No actuator commands, live execution, task success or measured workspace verification."
+  ]
+}

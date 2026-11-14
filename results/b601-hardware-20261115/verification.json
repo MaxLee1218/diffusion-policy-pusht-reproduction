@@ -1,0 +1,11 @@
+{
+  "all_inventory_entries_valid": true,
+  "source_files_indexed": 10966,
+  "exported_files_verified": 3235,
+  "original_and_exported_sha256_verified": true,
+  "gzip_decompression_matches_original": true,
+  "new_files_within_5_mib": true,
+  "credential_pattern_scan": "no matches",
+  "full_suite": "85 passed",
+  "hardware_motion_performed": false
+}

@@ -1,0 +1,6 @@
+{
+  "linux_launcher_pid": 126845,
+  "replaced_windows_pid": 7500,
+  "restart_mode": "sequential_exit_verified",
+  "mode": "live_preview_and_continuous_policy"
+}

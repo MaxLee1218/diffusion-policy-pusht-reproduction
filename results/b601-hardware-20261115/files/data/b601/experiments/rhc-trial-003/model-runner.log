@@ -1,0 +1,19 @@
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' insteDiffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"alignment_step": 1, "remaining_deg": 14.993902205246258}
+{"alignment_step": 11, "remaining_deg": 11.103371812493634}
+{"alignment_step": 21, "remaining_deg": 7.147216962195529}
+{"alignment_step": 31, "remaining_deg": 3.212973358754816}
+ior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 216, in <module>
+    main()
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 165, in main
+    run_rhc(args, trial, model, policy, result, low, high, save)
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/b601_rhc_loop.py", line 59, in run_rhc
+    plan_id, accepted = trial.request("execute_sequence", actions=scheduled.tolist(),
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mingx/projects/diffusion-policy-pusht-reproduction/scripts/run_b601_model_trial.py", line 62, in request
+    raise RuntimeError(response.get("error", "Controller rejected request"))
+RuntimeError: 序列观测已过期

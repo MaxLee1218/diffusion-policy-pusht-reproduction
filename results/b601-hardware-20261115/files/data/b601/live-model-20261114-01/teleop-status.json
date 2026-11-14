@@ -1,0 +1,71 @@
+{
+  "state": "paused",
+  "pid": 25920,
+  "connected": true,
+  "busy": false,
+  "message": "已暂停，保持当前位置",
+  "current_motor_degrees": [
+    -6.895868269071594,
+    -83.81040994653175,
+    -42.806817264464236,
+    48.13988360992355,
+    -4.753866303842234,
+    -23.46344832742132,
+    -85.9524119117611
+  ],
+  "target_motor_degrees": [
+    -6.874011663727552,
+    -83.81040994653175,
+    -42.806817264464236,
+    48.16174021526759,
+    -4.753866303842234,
+    -23.46344832742132,
+    -85.9524119117611
+  ],
+  "xyz_m": [
+    0.21174608147564739,
+    -0.010309412941116643,
+    0.02315849881795931
+  ],
+  "target_xyz_m": [
+    0.2116511192407457,
+    -0.010216685134414694,
+    0.023157982420785206
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 163247132264700,
+  "bounded_trajectory_commands": 61,
+  "model_trajectory_commands": 61,
+  "model_control_enabled": true,
+  "control_generation": 3,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -85.9524119117611,
+  "control_version": 4,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": false,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "model_process_running": false,
+  "preview_frames_rendered": 7579,
+  "preview_frame_id": 14389,
+  "preview_age_ms": 16.2374,
+  "preview_elapsed_seconds": 481.49606569999014
+}

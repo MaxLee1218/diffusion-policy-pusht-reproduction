@@ -1,0 +1,30 @@
+{
+  "verified_unix": 1794675747.8259907,
+  "run_id": "e67b0e36ab9244eeaa755d45eed3838d",
+  "recording_id": "20261114T170203-c6f9c2fc",
+  "reset_result": "reset-result.json",
+  "model_status": "running",
+  "completed_inferences": 33,
+  "sequence_actions_sent": 188,
+  "xyz_m": [
+    0.2659065648135418,
+    0.06147878652137899,
+    0.029178383417251236
+  ],
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-005\\recordings\\20261114T170203-c6f9c2fc",
+    "accepting": true,
+    "error": null,
+    "finalized": false,
+    "rgb_depth_frames_submitted": 741,
+    "rgb_depth_frames_written": 735,
+    "control_cycles_submitted": 1209,
+    "control_cycles_written": 1209,
+    "depth_chunks_written": 48
+  },
+  "native_controller_pid": 23468,
+  "running_in_background": true,
+  "model_and_sampling_seed_unchanged": true,
+  "post_alignment_warmup_fix": "repeat no-actuation GPU warmup after any alignment commands; retain observation age threshold",
+  "targeted_tests": "26 passed"
+}

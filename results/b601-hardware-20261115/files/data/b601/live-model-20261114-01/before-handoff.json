@@ -1,0 +1,65 @@
+{
+  "state": "paused",
+  "pid": 7500,
+  "connected": true,
+  "busy": false,
+  "message": "\u5df2\u6682\u505c\uff0c\u4fdd\u6301\u5f53\u524d\u4f4d\u7f6e",
+  "current_motor_degrees": [
+    -3.376900167167664,
+    -92.88106508884876,
+    -53.4074347808641,
+    49.320194940015114,
+    -4.710153093154153,
+    -20.010050041549515,
+    -87.35123465377971
+  ],
+  "target_motor_degrees": [
+    -3.376900167167664,
+    -92.85920848350472,
+    -53.38557817552006,
+    49.342051545359155,
+    -4.710153093154153,
+    -19.988193436205474,
+    -87.35123465377971
+  ],
+  "xyz_m": [
+    0.258301557467395,
+    -0.00016101139964271906,
+    0.030242096228274562
+  ],
+  "target_xyz_m": [
+    0.25810172849891616,
+    -0.00014922020406324225,
+    0.030246014655461978
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 0,
+  "updated_ns": 162745488745100,
+  "bounded_trajectory_commands": 10,
+  "model_trajectory_commands": 10,
+  "model_control_enabled": true,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -87.35123465377971,
+  "control_version": 3,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 \u63a7\u5236 | 6 mm \u00b7 \u6a21\u578b\u5355\u6b65\u8054\u8c03"
+}

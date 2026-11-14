@@ -1,0 +1,36 @@
+{
+  "full_resolution_preprocessing_checks": [
+    {
+      "episode": 8,
+      "validation_index": 9,
+      "exact": true
+    },
+    {
+      "episode": 20,
+      "validation_index": 620,
+      "exact": true
+    },
+    {
+      "episode": 27,
+      "validation_index": 1175,
+      "exact": true
+    },
+    {
+      "episode": 30,
+      "validation_index": 1714,
+      "exact": true
+    }
+  ],
+  "archived_ddim_prediction_reproduction": {
+    "max_motor_degree_difference": 0.0,
+    "max_normalized_coordinate_difference": 0.0,
+    "current_normalized_mse": 0.001678121043369174,
+    "previous_normalized_mse": 0.001678121043369174,
+    "relative_mse_difference": 0.0,
+    "limits": {
+      "motor_degrees": 0.01,
+      "normalized_coordinate": 0.001,
+      "relative_mse_difference": 0.01
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "source_epoch": 2,
+  "next_epoch": 3,
+  "global_step": 153,
+  "optimizer_updates": 150,
+  "ema_initial_optimization_step": 150
+}

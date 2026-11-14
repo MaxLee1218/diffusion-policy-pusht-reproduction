@@ -1,0 +1,7 @@
+{
+  "source_snapshot/real_robot/manual_control.py": "202a3561536b3e6ff5391512a13cba555576a22e928041fb5082719383182e13",
+  "source_snapshot/real_robot/model_control.py": "552675b76615396578868f2bd4b66340e8d4766c74cebb3e4d121ac8e3cb8b1b",
+  "source_snapshot/scripts/b601_manual_control.py": "acb312bf2b13be2f9c4c4b805f648163a23d4d9fb0b24e2b4b63279acca2ac15",
+  "source_snapshot/scripts/b601_model_camera.py": "3ddf3ae66a95bf11c2eae31e6ba487781019b8cefd050312653fc387d22feda6",
+  "source_snapshot/scripts/run_b601_model_trial.py": "c0a76a5f4168bf59118549c41240b8c2b140f696a398b13f1c0d0214c7d6166f"
+}

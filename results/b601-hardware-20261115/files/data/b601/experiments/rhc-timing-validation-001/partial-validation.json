@@ -1,0 +1,36 @@
+{
+  "validation_status": "operator_interrupted_before_60_seconds",
+  "wsl_elapsed_seconds": 45.012574626998685,
+  "actions": 424,
+  "action_interval_median_ms": 101.7469,
+  "action_interval_p95_ms": 105.05948,
+  "max_dispatch_lateness_ms": 37.5829,
+  "cycle_interval_median_ms": 20.30025,
+  "cycle_interval_p95_ms": 21.2198,
+  "cycle_interval_max_ms": 35.4499,
+  "decision_stage_p95_ms": 3.8620599999999996,
+  "feedback_stage_p95_ms": 14.01232,
+  "fixed_target_range_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "measured_joint_range_deg": [
+    0.0,
+    0.021856605344041213,
+    0.0,
+    0.021856605344041213,
+    0.021856605344040325,
+    0.021856605344039437,
+    0.021856605344041213
+  ],
+  "recording_complete": true,
+  "recording_id": "20261114T161755-63143d2e",
+  "timing_faults": 0,
+  "task_motion_test": false,
+  "ready_for_task_test": false
+}

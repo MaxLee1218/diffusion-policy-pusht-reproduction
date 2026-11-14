@@ -1,0 +1,166 @@
+"""Run a short receding-horizon model trial through the sole operator controller."""
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import sys
+import time
+import uuid
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path[:0] = [str(ROOT), str(ROOT/"upstream/diffusion_policy")]
+
+import dill
+import hydra
+import numpy as np
+import torch
+
+from real_robot.manual_control import JogModel
+from real_robot.model_control import bounded_target
+from real_robot.shadow import preprocess_pair
+
+
+def read_json(path):
+    for _ in range(20):
+        try:
+            return json.loads(path.read_text())
+        except (OSError, ValueError):
+            time.sleep(.02)
+    raise RuntimeError(f"Cannot read {path}")
+
+
+class Trial:
+    def __init__(self, session):
+        self.session = session
+        status = read_json(session/"teleop-status.json")
+        if not status.get("model_control_enabled") or not status.get("connected"):
+            raise RuntimeError("Model controller is not connected")
+        self.pid = status["pid"]
+
+    def request(self, command, **values):
+        identifier = uuid.uuid4().hex
+        status = read_json(self.session/"teleop-status.json")
+        if status.get("pid") != self.pid:
+            raise RuntimeError("Controller changed during trial")
+        request = {"id": identifier, "command": command, "controller_pid": self.pid,
+                   "controller_lease_ns": status["updated_ns"], "issued_unix": time.time(), **values}
+        (self.session/"model-request.json").write_text(json.dumps(request, allow_nan=False))
+        path = self.session/(identifier+".response.json")
+        deadline = time.perf_counter()+20
+        while time.perf_counter() < deadline:
+            if path.exists():
+                response = read_json(path)
+                if not response.get("ok"):
+                    raise RuntimeError(response.get("error", "Controller rejected request"))
+                return identifier, response
+            time.sleep(.02)
+        raise TimeoutError(f"Controller response timed out: {command}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--session", type=Path, required=True)
+    parser.add_argument("--steps", type=int, default=10)
+    parser.add_argument("--duration", type=float, default=30.)
+    args = parser.parse_args()
+    if not 1 <= args.steps <= 30 or not 0 < args.duration <= 60:
+        raise ValueError("Initial trial limited to 30 steps and 60 seconds")
+    candidate = read_json(ROOT/"results/b601-seed42/sampler-benchmark/candidate.json")
+    checkpoint = ROOT/candidate["checkpoint"]
+    with checkpoint.open("rb") as stream:
+        if hashlib.file_digest(stream, "sha256").hexdigest() != candidate["checkpoint_sha256"]:
+            raise ValueError("Checkpoint hash mismatch")
+    result = {"status": "loading", "completed_steps": 0, "checkpoint_sha256": candidate["checkpoint_sha256"],
+              "max_arm_step_degrees": .5, "max_gripper_step_degrees": 2., "success_evaluated": False}
+
+    def save():
+        (args.session/"model-trial.json").write_text(json.dumps(result, indent=2))
+    save()
+    try:
+        trial = Trial(args.session)
+        model = JogModel(read_json(args.session/"setup.json"))
+        payload = torch.load(checkpoint, map_location="cpu", pickle_module=dill, weights_only=False)
+        policy = hydra.utils.instantiate(payload["cfg"].policy)
+        policy.load_state_dict(payload["state_dicts"][candidate["weights_key"]])
+        del payload
+        scheduler = hydra.utils.instantiate(candidate["noise_scheduler"])
+        torch.testing.assert_close(scheduler.betas, policy.noise_scheduler.betas, rtol=0, atol=0)
+        policy.noise_scheduler = scheduler
+        policy.num_inference_steps = candidate["num_inference_steps"]
+        policy.kwargs = candidate["step_kwargs"]
+        policy.to("cuda").eval()
+        stats = policy.normalizer.get_input_stats()["joint_pos"]
+        low, high = [stats[key].cpu().numpy() for key in ("min", "max")]
+        with torch.inference_mode():
+            # Warm GPU before selecting any live observations.
+            policy.predict_action({"image": torch.zeros((1, 2, 3, 240, 320), device="cuda"),
+                                   "joint_pos": torch.from_numpy(((low+high)/2)[None, None].repeat(2, axis=1)).to("cuda")})
+            torch.cuda.synchronize()
+            result["status"] = "aligning_reference"
+            save()
+            reference = read_json(ROOT/"data/b601/references/b601-start-pose-20261112-180049.json")
+            reference = np.array(list(reference["observation.state"].values()))
+            alignment_started = time.perf_counter()
+            for alignment_step in range(100):
+                # Allow the 10 Hz camera pair to refresh after the prior motion.
+                time.sleep(.25)
+                identifier, sample = trial.request("sample")
+                q = np.asarray(sample["observed_q"])
+                reference[6] = q[6]
+                if np.max(np.abs(reference[:6]-q[:6])) < .15:
+                    break
+                if time.perf_counter()-alignment_started > 120:
+                    raise TimeoutError("Reference alignment did not converge")
+                target = bounded_target(model, q, reference)
+                _, aligned = trial.request("execute", observed_q=sample["observed_q"],
+                    observed_ns=sample["observed_ns"], target=target.tolist())
+                result.update(alignment_steps=alignment_step+1,
+                    alignment_error_deg=float(np.max(np.abs(reference[:6]-np.asarray(aligned["actual_motor_degrees"])[:6]))))
+                save()
+                if alignment_step % 10 == 0:
+                    print(json.dumps({"alignment_step": alignment_step+1,
+                                      "remaining_deg": result["alignment_error_deg"]}), flush=True)
+            else:
+                raise TimeoutError("Reference alignment exhausted its step limit")
+            result["aligned_motor_degrees"] = q.tolist()
+            result["status"] = "running"
+            save()
+            began = time.perf_counter()
+            with (args.session/"model-trial-events.jsonl").open("a") as log:
+                for index in range(args.steps):
+                    if time.perf_counter()-began >= args.duration:
+                        break
+                    time.sleep(.25)
+                    identifier, sample = trial.request("sample")
+                    with np.load(args.session/(identifier+".npz")) as data:
+                        rgb, q = data["rgb"], data["q"]
+                    if np.any(q[-1] < low-.05) or np.any(q[-1] > high+.05):
+                        raise ValueError("Live pose is outside training range; holding")
+                    obs, resized = preprocess_pair(rgb, q.astype(np.float32))
+                    torch.manual_seed(101+index)
+                    start = time.perf_counter()
+                    prediction = policy.predict_action({key: torch.from_numpy(value[None]).to("cuda")
+                                                        for key, value in obs.items()})["action"][0].cpu().numpy()
+                    target = bounded_target(model, q[-1], prediction[0])
+                    _, completed = trial.request("execute", observed_q=sample["observed_q"],
+                        observed_ns=sample["observed_ns"], target=target.tolist())
+                    row = {"step": index+1, "sample_id": identifier, "observed_motor_degrees": q[-1].tolist(),
+                           "raw_model_target": prediction[0].tolist(), "bounded_target": target.tolist(),
+                           "actual_motor_degrees": completed["actual_motor_degrees"],
+                           "inference_and_execute_seconds": time.perf_counter()-start}
+                    log.write(json.dumps(row)+"\n")
+                    log.flush()
+                    result.update(completed_steps=index+1, latest=row)
+                    save()
+                    print(json.dumps({"step": index+1, "actual": completed["actual_motor_degrees"]}), flush=True)
+            result["status"] = "complete_holding"
+    except BaseException as error:
+        result.update(status="stopped", error=repr(error))
+        raise
+    finally:
+        save()
+
+
+if __name__ == "__main__":
+    main()

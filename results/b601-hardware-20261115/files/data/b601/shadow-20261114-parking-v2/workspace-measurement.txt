@@ -1,0 +1,13 @@
+现场工作区待测量
+坐标系：机械臂底座坐标系；单位：米。
+请先确认坐标轴方向和模型 end_link 参考点，再测量允许其活动的范围。
+六项顺序：[XMIN, XMAX, YMIN, YMAX, ZMIN, ZMAX]
+XMIN = 待测
+XMAX = 待测
+YMIN = 待测
+YMAX = 待测
+ZMIN = 待测
+ZMAX = 待测
+需要给夹指、棋子、桌面和其他物体保留余量。
+示例文件仅供格式参考；当前未创建或启用现场 workspace-bounds.local.json。
+完成后可保存为 collection/b601/workspace-bounds.local.json，再核对现场姿态与零位。

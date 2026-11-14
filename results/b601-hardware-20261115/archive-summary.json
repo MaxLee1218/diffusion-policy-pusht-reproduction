@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-14T17:11:43.162665+00:00",
+  "max_new_file_bytes": 5242880,
+  "source_file_count": 10966,
+  "source_bytes": 31999858845,
+  "exported_file_count": 3235,
+  "exported_bytes": 85055832,
+  "already_versioned_file_count": 77,
+  "local_only_file_count": 7654,
+  "local_only_bytes": 31843554212,
+  "all_source_files_retained": true,
+  "hardware_access_or_motion": false,
+  "snapshot_note": "Live status files are captured snapshots; their source paths may update after capture.",
+  "bulk_policy": "Video, depth arrays, repeated model input snapshots, checkpoints, raw demonstration arrays/images and bulk dataset review media remain local as complete datasets, even where an individual chunk is small.",
+  "elapsed_seconds": 51.05164564400184
+}

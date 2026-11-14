@@ -1,0 +1,502 @@
+{
+  "source": "vla-chess-robot/data/b601",
+  "source_snapshot": "2026-11-12T18:26:40+01:00",
+  "folders": [
+    {
+      "folder": "pick-place-20261112-150315-971444",
+      "episodes": 0,
+      "frames": 0,
+      "file_count": 137,
+      "bytes": 58733954,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-150734-260371",
+      "episodes": 1,
+      "frames": 421,
+      "file_count": 6,
+      "bytes": 159137871,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-151502-882983",
+      "episodes": 0,
+      "frames": 0,
+      "file_count": 1038,
+      "bytes": 394741919,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-151833-486329",
+      "episodes": 0,
+      "frames": 0,
+      "file_count": 634,
+      "bytes": 242589428,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-152200-630539",
+      "episodes": 1,
+      "frames": 337,
+      "file_count": 6,
+      "bytes": 127623833,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-152443-222804",
+      "episodes": 0,
+      "frames": 0,
+      "file_count": 16,
+      "bytes": 5877040,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-152515-929544",
+      "episodes": 1,
+      "frames": 180,
+      "file_count": 6,
+      "bytes": 67673836,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-155254-902845",
+      "episodes": 1,
+      "frames": 153,
+      "file_count": 6,
+      "bytes": 59944505,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-155607-067741",
+      "episodes": 1,
+      "frames": 170,
+      "file_count": 6,
+      "bytes": 66731300,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-155627-572405",
+      "episodes": 1,
+      "frames": 211,
+      "file_count": 6,
+      "bytes": 82716785,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-155939-395404",
+      "episodes": 1,
+      "frames": 232,
+      "file_count": 6,
+      "bytes": 91642206,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-162014-461043",
+      "episodes": 1,
+      "frames": 416,
+      "file_count": 6,
+      "bytes": 158037581,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-162347-799614",
+      "episodes": 1,
+      "frames": 619,
+      "file_count": 6,
+      "bytes": 234946564,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164119-012579",
+      "episodes": 1,
+      "frames": 573,
+      "file_count": 6,
+      "bytes": 217577913,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164300-608790",
+      "episodes": 1,
+      "frames": 615,
+      "file_count": 6,
+      "bytes": 230158773,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164412-817061",
+      "episodes": 1,
+      "frames": 770,
+      "file_count": 6,
+      "bytes": 287457396,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164541-345421",
+      "episodes": 1,
+      "frames": 593,
+      "file_count": 6,
+      "bytes": 223216892,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164650-756797",
+      "episodes": 1,
+      "frames": 665,
+      "file_count": 6,
+      "bytes": 250100189,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164825-208538",
+      "episodes": 1,
+      "frames": 431,
+      "file_count": 6,
+      "bytes": 160986245,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-164924-756487",
+      "episodes": 1,
+      "frames": 391,
+      "file_count": 6,
+      "bytes": 146177175,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-165606-540210",
+      "episodes": 1,
+      "frames": 525,
+      "file_count": 6,
+      "bytes": 199186915,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-165724-172659",
+      "episodes": 1,
+      "frames": 791,
+      "file_count": 6,
+      "bytes": 296142869,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-165859-032859",
+      "episodes": 1,
+      "frames": 607,
+      "file_count": 6,
+      "bytes": 227549296,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-170016-824946",
+      "episodes": 1,
+      "frames": 554,
+      "file_count": 6,
+      "bytes": 209235992,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-170722-633234",
+      "episodes": 1,
+      "frames": 562,
+      "file_count": 6,
+      "bytes": 212055831,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-170834-113277",
+      "episodes": 1,
+      "frames": 612,
+      "file_count": 6,
+      "bytes": 229976357,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-170952-307171",
+      "episodes": 1,
+      "frames": 496,
+      "file_count": 6,
+      "bytes": 185704095,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-171050-741023",
+      "episodes": 1,
+      "frames": 532,
+      "file_count": 6,
+      "bytes": 201608418,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-171333-680457",
+      "episodes": 1,
+      "frames": 492,
+      "file_count": 6,
+      "bytes": 186110349,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-171432-013596",
+      "episodes": 1,
+      "frames": 568,
+      "file_count": 6,
+      "bytes": 213524577,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-171540-442097",
+      "episodes": 1,
+      "frames": 576,
+      "file_count": 6,
+      "bytes": 214671871,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-171647-095967",
+      "episodes": 1,
+      "frames": 544,
+      "file_count": 6,
+      "bytes": 205608318,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-172143-408058",
+      "episodes": 1,
+      "frames": 567,
+      "file_count": 6,
+      "bytes": 214767708,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-172307-081515",
+      "episodes": 1,
+      "frames": 534,
+      "file_count": 6,
+      "bytes": 201182433,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-172409-546779",
+      "episodes": 1,
+      "frames": 650,
+      "file_count": 6,
+      "bytes": 244381008,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-172535-754978",
+      "episodes": 1,
+      "frames": 592,
+      "file_count": 6,
+      "bytes": 224798445,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-173619-522116",
+      "episodes": 1,
+      "frames": 529,
+      "file_count": 6,
+      "bytes": 199390712,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-173724-044570",
+      "episodes": 1,
+      "frames": 599,
+      "file_count": 6,
+      "bytes": 224731566,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-173837-263759",
+      "episodes": 1,
+      "frames": 650,
+      "file_count": 6,
+      "bytes": 244138432,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-173953-274894",
+      "episodes": 1,
+      "frames": 604,
+      "file_count": 6,
+      "bytes": 228864395,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-174853-894950",
+      "episodes": 1,
+      "frames": 603,
+      "file_count": 6,
+      "bytes": 229517521,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-175002-709925",
+      "episodes": 1,
+      "frames": 705,
+      "file_count": 6,
+      "bytes": 264928374,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-175123-190704",
+      "episodes": 1,
+      "frames": 476,
+      "file_count": 6,
+      "bytes": 177171174,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-175224-608271",
+      "episodes": 1,
+      "frames": 596,
+      "file_count": 6,
+      "bytes": 225416296,
+      "type": "recording"
+    },
+    {
+      "folder": "pick-place-20261112-180049-031641",
+      "episodes": 1,
+      "frames": 26,
+      "file_count": 6,
+      "bytes": 9933463,
+      "type": "stationary-pose-reference"
+    },
+    {
+      "folder": "pick-place-pilot-20261112-141755",
+      "episodes": 0,
+      "frames": 0,
+      "file_count": 649,
+      "bytes": 280951566,
+      "type": "pilot"
+    },
+    {
+      "folder": "pick-place-pilot-20261112-143328",
+      "episodes": 0,
+      "frames": 0,
+      "file_count": 136,
+      "bytes": 56921356,
+      "type": "pilot"
+    },
+    {
+      "folder": "pick-place-pilot-20261112-144729",
+      "episodes": 1,
+      "frames": 1437,
+      "file_count": 6,
+      "bytes": 639462172,
+      "type": "pilot"
+    },
+    {
+      "folder": "pick-place-pilot-20261112-145415",
+      "episodes": 1,
+      "frames": 241,
+      "file_count": 6,
+      "bytes": 102821336,
+      "type": "pilot"
+    },
+    {
+      "folder": "pick-place-pilot-20261112-145601",
+      "episodes": 1,
+      "frames": 135,
+      "file_count": 6,
+      "bytes": 58241764,
+      "type": "pilot"
+    }
+  ],
+  "volumes": [
+    {
+      "name": "b601-20261112-part-01.tar",
+      "bytes": 1753907200,
+      "sha256": "ba2b45657dd2ba63e6be39321fe7cfa032f746b75cf40509fd60460709c1cb2f",
+      "folders": [
+        "pick-place-20261112-150315-971444",
+        "pick-place-20261112-150734-260371",
+        "pick-place-20261112-151502-882983",
+        "pick-place-20261112-151833-486329",
+        "pick-place-20261112-152200-630539",
+        "pick-place-20261112-152443-222804",
+        "pick-place-20261112-152515-929544",
+        "pick-place-20261112-155254-902845",
+        "pick-place-20261112-155607-067741",
+        "pick-place-20261112-155627-572405",
+        "pick-place-20261112-155939-395404",
+        "pick-place-20261112-162014-461043",
+        "pick-place-20261112-162347-799614"
+      ]
+    },
+    {
+      "name": "b601-20261112-part-02.tar",
+      "bytes": 1715046400,
+      "sha256": "1addbb757da0bc3d1d475421824de4b5378ed99f37cb367c0d1c2b3c8d087d37",
+      "folders": [
+        "pick-place-20261112-164119-012579",
+        "pick-place-20261112-164300-608790",
+        "pick-place-20261112-164412-817061",
+        "pick-place-20261112-164541-345421",
+        "pick-place-20261112-164650-756797",
+        "pick-place-20261112-164825-208538",
+        "pick-place-20261112-164924-756487",
+        "pick-place-20261112-165606-540210"
+      ]
+    },
+    {
+      "name": "b601-20261112-part-03.tar",
+      "bytes": 1748572160,
+      "sha256": "386a98892a2cf3e778f8dc8757162808c80c0727bc7c8bdcf498d5c7dd1ea4ae",
+      "folders": [
+        "pick-place-20261112-165724-172659",
+        "pick-place-20261112-165859-032859",
+        "pick-place-20261112-170016-824946",
+        "pick-place-20261112-170722-633234",
+        "pick-place-20261112-170834-113277",
+        "pick-place-20261112-170952-307171",
+        "pick-place-20261112-171050-741023",
+        "pick-place-20261112-171333-680457"
+      ]
+    },
+    {
+      "name": "b601-20261112-part-04.tar",
+      "bytes": 1718517760,
+      "sha256": "0d6102f635c46aa7dc159a0cde10f96df0f706deb8470ce8f39ce0ca6c98f2f6",
+      "folders": [
+        "pick-place-20261112-171432-013596",
+        "pick-place-20261112-171540-442097",
+        "pick-place-20261112-171647-095967",
+        "pick-place-20261112-172143-408058",
+        "pick-place-20261112-172307-081515",
+        "pick-place-20261112-172409-546779",
+        "pick-place-20261112-172535-754978",
+        "pick-place-20261112-173619-522116"
+      ]
+    },
+    {
+      "name": "b601-20261112-part-05.tar",
+      "bytes": 1604894720,
+      "sha256": "83f388d233a1a1df7dc5f6cd9da4ef82c168b613c69d58eb9f9f45b16f7a8c5c",
+      "folders": [
+        "pick-place-20261112-173724-044570",
+        "pick-place-20261112-173837-263759",
+        "pick-place-20261112-173953-274894",
+        "pick-place-20261112-174853-894950",
+        "pick-place-20261112-175002-709925",
+        "pick-place-20261112-175123-190704",
+        "pick-place-20261112-175224-608271",
+        "pick-place-20261112-180049-031641"
+      ]
+    },
+    {
+      "name": "b601-20261112-part-06.tar",
+      "bytes": 1139896320,
+      "sha256": "a5cd536bb56ab404dacba6f9b21998519e35a9e637716447519dabc887da2ec9",
+      "folders": [
+        "pick-place-pilot-20261112-141755",
+        "pick-place-pilot-20261112-143328",
+        "pick-place-pilot-20261112-144729",
+        "pick-place-pilot-20261112-145415",
+        "pick-place-pilot-20261112-145601"
+      ]
+    }
+  ],
+  "pose_reference": "references/b601-start-pose-20261112-180049.json",
+  "restore": "Extract every tar file into the same directory. Each volume contains whole recording folders."
+}

@@ -1,0 +1,10 @@
+{
+  "rgb_video_frames_decoded": 188,
+  "depth_frames_read": 188,
+  "camera_metadata_rows": 188,
+  "control_cycle_rows": 124,
+  "camera_frame_gaps": [],
+  "static_test": true,
+  "motion_commands_sent": 0,
+  "cycle_log_hz": 19.864925932816142
+}

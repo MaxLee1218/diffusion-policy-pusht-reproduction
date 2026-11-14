@@ -1,0 +1,82 @@
+{
+  "state": "paused",
+  "pid": 16616,
+  "connected": true,
+  "busy": false,
+  "message": "\u5df2\u6682\u505c\uff0c\u4fdd\u6301\u5f53\u524d\u4f4d\u7f6e",
+  "current_motor_degrees": [
+    -0.9070491217776934,
+    -105.57991671827654,
+    -66.91503544953476,
+    49.40762136139128,
+    -4.819436119874357,
+    -17.802478260288034,
+    -93.29634059038553
+  ],
+  "target_motor_degrees": [
+    -0.8851925164336525,
+    -105.57991671827654,
+    -66.91503544953476,
+    49.42947796673532,
+    -4.841292725218398,
+    -17.780621654943992,
+    -93.29634059038553
+  ],
+  "xyz_m": [
+    0.3205544729685325,
+    0.010333248409167307,
+    0.02410204282620676
+  ],
+  "target_xyz_m": [
+    0.3204518388035501,
+    0.010526806739962225,
+    0.024105552801590352
+  ],
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "accepted_keys": 31,
+  "updated_ns": 164296308553500,
+  "bounded_trajectory_commands": 50,
+  "model_trajectory_commands": 50,
+  "model_control_enabled": true,
+  "control_generation": 23,
+  "camera_ready": true,
+  "camera_error": null,
+  "last_fault": null,
+  "gripper_target_motor_degrees": -93.29634059038553,
+  "control_version": 5,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "window_visible": true,
+  "window_title": "B601 \u63a7\u5236 | \u5b9e\u65f6\u76f8\u673a \u00b7 \u6a21\u578b\u8fd0\u884c",
+  "model_process_running": false,
+  "preview_frames_rendered": 13233,
+  "preview_frame_id": 24859,
+  "preview_age_ms": 6.1348,
+  "preview_elapsed_seconds": 830.6579268000205,
+  "recording": {
+    "directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\live-model-recorded-20261114-01\\recordings\\20261114T153946-328dcf5c",
+    "accepting": false,
+    "error": null,
+    "finalized": true,
+    "rgb_depth_frames_submitted": 2253,
+    "rgb_depth_frames_written": 2253,
+    "control_cycles_submitted": 1447,
+    "control_cycles_written": 1447,
+    "depth_chunks_written": 151
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "window_pid": 25920,
+  "window_title": "B601 控制 | 实时相机 · 模型运行",
+  "preview_frames_rendered": 1395,
+  "preview_frame_id": 2647,
+  "preview_age_ms": 12.4234,
+  "model_process_running": true,
+  "model_status": "running",
+  "completed_model_steps": 27,
+  "continuous": true,
+  "duration_limit_seconds": 300.0,
+  "motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "last_fault": null,
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "tests_passed": 71,
+  "recording_scope": [
+    "sampled_two_rgb_frames",
+    "sampled_joint_inputs",
+    "first_predicted_action",
+    "bounded_and_accepted_target",
+    "arrival_feedback",
+    "command_and_fault_events",
+    "runtime_logs"
+  ],
+  "not_recorded": [
+    "continuous_video",
+    "depth_frames",
+    "full_control_cycle_feedback_history",
+    "complete_predicted_action_trajectory"
+  ]
+}

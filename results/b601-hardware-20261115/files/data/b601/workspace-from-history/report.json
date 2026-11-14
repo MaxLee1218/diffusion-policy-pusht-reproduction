@@ -1,0 +1,183 @@
+{
+  "created_at": "2026-11-14T14:34:00.940363+00:00",
+  "source": "all complete formal episodes in the merged demonstration replay",
+  "source_replay": "/home/mingx/projects/diffusion-policy-pusht-reproduction/data/b601/merged/demonstrations.zarr",
+  "position_source": "measured state, not command targets",
+  "episodes": 40,
+  "frames": 20741,
+  "frame": "robot base",
+  "point": "end_link",
+  "units": "meters",
+  "observed_min_xyz": [
+    0.20204062708122286,
+    -0.08060585730105166,
+    0.009389702243127074
+  ],
+  "observed_max_xyz": [
+    0.36895785477188914,
+    0.10271197219555675,
+    0.14101363938512543
+  ],
+  "lower_padding_xyz": [
+    0.01,
+    0.01,
+    0.005
+  ],
+  "upper_padding_xyz": [
+    0.01,
+    0.01,
+    0.01
+  ],
+  "bound_order": [
+    "xmin",
+    "xmax",
+    "ymin",
+    "ymax",
+    "zmin",
+    "zmax"
+  ],
+  "bounds": [
+    0.19204062708122285,
+    0.37895785477188915,
+    -0.09060585730105165,
+    0.11271197219555674,
+    0.004389702243127074,
+    0.15101363938512544
+  ],
+  "output": "/home/mingx/projects/diffusion-policy-pusht-reproduction/collection/b601/workspace-bounds.local.json",
+  "urdf_sha256": "bce0d4740ec97a27e30d521e890416231c6d0117093fa997d1ae7ac95204ffb6",
+  "measured_states_sha256": "f483fc34a6873f228adacb4e5c0d86011c274ec6e710100dd3c498cc0b23bd5e",
+  "extrema": {
+    "x_min": {
+      "global_frame": 1510,
+      "episode_index": 6,
+      "local_frame": 38,
+      "xyz": [
+        0.20204062708122286,
+        0.007632483282268178,
+        0.027411551269214685
+      ],
+      "joint_motor_degrees": [
+        -2.087360382080078,
+        -81.51546478271484,
+        -41.97626495361328,
+        50.107032775878906,
+        -4.688296318054199,
+        -18.63302993774414,
+        -46.56620788574219
+      ]
+    },
+    "x_max": {
+      "global_frame": 1887,
+      "episode_index": 7,
+      "local_frame": 183,
+      "xyz": [
+        0.36895785477188914,
+        0.01499143927800355,
+        0.027210731568890784
+      ],
+      "joint_motor_degrees": [
+        0.03278490900993347,
+        -115.26255798339844,
+        -81.31875610351562,
+        54.434696197509766,
+        -4.6227264404296875,
+        -16.49108123779297,
+        -54.565834045410156
+      ]
+    },
+    "y_min": {
+      "global_frame": 4106,
+      "episode_index": 11,
+      "local_frame": 179,
+      "xyz": [
+        0.2661796351464108,
+        -0.08060585730105166,
+        0.03877223419077083
+      ],
+      "joint_motor_degrees": [
+        -20.031906127929688,
+        -97.6895751953125,
+        -60.90435791015625,
+        53.60414505004883,
+        -4.841292858123779,
+        -36.29343795776367,
+        -81.18761444091797
+      ]
+    },
+    "y_max": {
+      "global_frame": 5598,
+      "episode_index": 13,
+      "local_frame": 308,
+      "xyz": [
+        0.29414647667876437,
+        0.10271197219555675,
+        0.0315095837002628
+      ],
+      "joint_motor_degrees": [
+        16.88450050354004,
+        -101.64567565917969,
+        -63.76763153076172,
+        48.64263916015625,
+        -4.010741710662842,
+        0.4043472111225128,
+        -84.61915588378906
+      ]
+    },
+    "z_min": {
+      "global_frame": 18464,
+      "episode_index": 36,
+      "local_frame": 103,
+      "xyz": [
+        0.29559447165407204,
+        0.0024187349161670854,
+        0.009389702243127074
+      ],
+      "joint_motor_degrees": [
+        -2.437066078186035,
+        -103.11012268066406,
+        -59.877098083496094,
+        45.866798400878906,
+        -4.688296318054199,
+        -18.960878372192383,
+        -95.15420532226562
+      ]
+    },
+    "z_max": {
+      "global_frame": 740,
+      "episode_index": 1,
+      "local_frame": 319,
+      "xyz": [
+        0.2742020704435049,
+        0.027250755444146978,
+        0.14101363938512543
+      ],
+      "joint_motor_degrees": [
+        13.431102752685547,
+        -29.233646392822266,
+        -11.092391014099121,
+        5.059858798980713,
+        11.704376220703125,
+        -4.294877529144287,
+        -56.008426666259766
+      ]
+    }
+  },
+  "all_recorded_positions_enclosed": true,
+  "provenance": "User requested 1 cm outward expansion, except 0.5 cm downward.",
+  "limitations": [
+    "This is a history-derived envelope, not a measured obstacle-free workspace.",
+    "Box interiors and corners are not proven reachable or collision-free.",
+    "Coordinates depend on the recording zero convention and the URDF.",
+    "Parked-pose integration traces and commanded targets were not included."
+  ],
+  "reference_start_xyz": [
+    0.2854058016600481,
+    0.012726700632953409,
+    0.02467284454340793
+  ],
+  "reference_start_inside_bounds": true,
+  "configuration_sha256": "9c207d4cd9887a370559e109cf70abe26f007de2276b3cb0285c25ae68974e66",
+  "script_sha256": "5dc17da9ab6515eadf17462d9133c193598db565b75cef166bf4e3dfd8ec8d59",
+  "supersedes_manual_boundary_sampling_plan": true
+}

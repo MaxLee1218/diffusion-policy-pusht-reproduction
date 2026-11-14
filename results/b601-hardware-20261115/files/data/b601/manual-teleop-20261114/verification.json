@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-11-14T14:54:23.381542+00:00",
+  "window_visible": true,
+  "window_title": "B601 末端手动控制 | 单次 6 mm",
+  "windows_pid": 9988,
+  "motors_enabled": 7,
+  "manual_steps_are_operator_triggered": true,
+  "cartesian_step_m": 0.006,
+  "gripper_step_motor_degrees": 8,
+  "key_repeat_suppressed": true,
+  "motion_queue": false,
+  "startup_paused": true,
+  "pause_key": "Escape",
+  "all_repository_tests_passed": 62,
+  "dependency_warnings": 11,
+  "status_at_verification": {
+    "state": "paused",
+    "pid": 9988,
+    "connected": true,
+    "busy": false,
+    "message": "当前已暂停，请点“开始键盘控制”",
+    "current_motor_degrees": [
+      2.5463491640941136,
+      -105.47063369155634,
+      -74.73980944572808,
+      59.15583126937356,
+      3.049051087007052,
+      -4.950575751938602,
+      -5.4970455270529825
+    ],
+    "target_motor_degrees": [
+      2.5682057694381544,
+      -105.47063369155634,
+      -74.73980944572808,
+      59.1776878747176,
+      3.049051087007052,
+      -4.9287191465945615,
+      -5.4970455270529825
+    ],
+    "xyz_m": [
+      0.3246788358241258,
+      0.004677486153569506,
+      0.0556311768034663
+    ],
+    "target_xyz_m": [
+      0.3245773926288772,
+      0.004796904055849467,
+      0.055631951970681326
+    ],
+    "motor_status_codes": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "accepted_keys": 18,
+    "updated_ns": 160851912716100,
+    "model_trajectory_commands": 0,
+    "window_visible": true,
+    "window_title": "B601 末端手动控制 | 单次 6 mm"
+  },
+  "files_sha256": {
+    "source_snapshot/manual_control.py": "c01fbe9ce82e556224d67c7726e315ff7c53dea891784a6e007d6ee2830d9008",
+    "source_snapshot/test_b601_manual_control.py": "36c0b7c023a0f1027cece97ebbc89a64d9fc6580bfd94369bf8d81589fb01af4",
+    "source_snapshot/b601_manual_control.py": "a1da6cb90e2af1dc4afb66372072a51249c4b5f11a17964fc456ec72c77b57aa"
+  }
+}

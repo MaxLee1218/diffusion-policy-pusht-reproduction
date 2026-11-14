@@ -1,0 +1,9 @@
+{
+  "session": "data/b601/experiments/rhc-trial-005",
+  "windows_pid": 23468,
+  "status_file": "data/b601/experiments/rhc-trial-005/teleop-status.json",
+  "port": "COM5",
+  "full_recording_enabled": true,
+  "execution_mode": "receding_horizon",
+  "start_policy": "explicit_user_requested_reset_then_policy"
+}

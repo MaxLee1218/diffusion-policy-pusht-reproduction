@@ -1,0 +1,5 @@
+{
+  "linux_launcher_pid": 35979,
+  "mode": "hold_current_only",
+  "reason": "Avoid transient Windows/WSL status-file rename conflict; retain already-enabled motor modes."
+}

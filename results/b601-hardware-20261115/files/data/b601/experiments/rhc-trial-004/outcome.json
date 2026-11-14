@@ -1,0 +1,29 @@
+{
+  "trial": "rhc-trial-004",
+  "operator_trial_number": 2,
+  "retry_of": "rhc-trial-003",
+  "run_id": "ea147d1406774fe1b11bde5e0380dcaa",
+  "recording_id": "20261114T165023-f632d216",
+  "outcome": "assistant_stopped_wrong_approach_direction",
+  "task_success": false,
+  "success_evaluated": false,
+  "termination_initiator": "assistant_monitor",
+  "reason": "Observed motion inconsistent with operator stated piece location in +X; proactively paused via UI command",
+  "elapsed_seconds": 54.66692519799835,
+  "inferences": 91,
+  "sequence_actions": 517,
+  "reference_alignment_actions": 0,
+  "current_start_saved": "start-pose.json",
+  "automatic_reference_alignment": false,
+  "recording_finalized": true,
+  "recording_readback": {
+    "video_frames_decoded": 1749,
+    "depth_frames_decompressed": 1749,
+    "depth_record_indices_contiguous": true,
+    "frame_records": 1749,
+    "control_records": 2852,
+    "color_source_frame_gaps": 0,
+    "depth_source_frame_gaps": 0
+  },
+  "next_step": "Compare frozen real inputs against training observations and expert actions offline before further task motion. Retain native absolute-motor mapping; do not flip signs without evidence."
+}

@@ -8,3 +8,5 @@ results/horizons-test/*.csv -text whitespace=cr-at-eol
 results/b601-*/** -text
 results/b601-*/**/*.csv whitespace=cr-at-eol
 results/b601-*/**/*.log -whitespace
+# Retain hardware evidence bytes, including original historical source snapshots.
+results/b601-hardware-20261115/** -text -whitespace

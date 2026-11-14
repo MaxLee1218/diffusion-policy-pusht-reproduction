@@ -1,0 +1,14 @@
+{
+  "linux_launcher_pid": 68168,
+  "replaced_windows_pid": 16996,
+  "restart_mode": "sequential_exit_verified",
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ]
+}

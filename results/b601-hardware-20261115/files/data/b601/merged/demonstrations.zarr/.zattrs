@@ -1,0 +1,20 @@
+{
+    "action_semantics": "unchanged source action; seven joint position features",
+    "fps": 10,
+    "image_color": "RGB",
+    "image_size": [
+        320,
+        240
+    ],
+    "joint_names": [
+        "shoulder_pan.pos",
+        "shoulder_lift.pos",
+        "elbow_flex.pos",
+        "wrist_flex.pos",
+        "wrist_yaw.pos",
+        "wrist_roll.pos",
+        "gripper.pos"
+    ],
+    "source": "vla-chess-robot/data/b601",
+    "source_snapshot": "2026-11-12T18:26:40+01:00"
+}

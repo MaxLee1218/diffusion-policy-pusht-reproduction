@@ -1,0 +1,6 @@
+{
+  "linux_launcher_pid": 43919,
+  "replaced_windows_pid": 9988,
+  "restart_mode": "old_process_absent_and_no_other_controller_verified",
+  "initially_paused": true
+}

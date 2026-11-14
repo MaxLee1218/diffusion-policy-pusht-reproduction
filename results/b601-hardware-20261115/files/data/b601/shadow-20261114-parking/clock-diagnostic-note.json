@@ -1,0 +1,5 @@
+{
+  "validation_outcome": "needs_clock_alignment_fix",
+  "fixed_offset_cross_clock_age_estimates_validated": false,
+  "note": "Constant remote/local offset led to increasing apparent input age. Original records retained. Next run uses same-clock source age plus local RPC RTT for rejection, and periodic clock points with interpolation for cross-clock reporting."
+}

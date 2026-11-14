@@ -1,0 +1,18 @@
+{
+  "requested_by": "operator",
+  "request": "先复位然后再跑一次",
+  "reset_target": "previously operator-selected rhc-trial-004/start-pose.json, copied unchanged here; not the older static reference",
+  "reference_alignment_authorized": true,
+  "experiment": "rhc-trial-005",
+  "retry_of": "rhc-trial-004",
+  "execution_mode": "receding_horizon",
+  "action_hz": 10,
+  "steps_per_inference": 6,
+  "future_targets": 15,
+  "duration_limit_seconds": 300,
+  "full_recording_includes_reset": true,
+  "policy_checkpoint_unchanged": true,
+  "sampling_seed_start": 101,
+  "no_motor_sign_or_coordinate_change": true,
+  "created_unix": 1794675554.816349
+}

@@ -1,0 +1,6 @@
+{
+  "linux_launcher_pid": 49104,
+  "replaced_windows_pid": 24696,
+  "restart_mode": "sequential_exit_verified_no_other_controller",
+  "model_control": true
+}

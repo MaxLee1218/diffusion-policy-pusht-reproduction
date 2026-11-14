@@ -1,0 +1,9 @@
+{
+  "status": "stopped",
+  "completed_steps": 0,
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "max_arm_step_degrees": 0.5,
+  "max_gripper_step_degrees": 2.0,
+  "success_evaluated": false,
+  "error": "RuntimeError('\u673a\u68b0\u81c2\u5173\u8282 3 \u8ddf\u8e2a\u8bef\u5dee 2.01\u00b0\uff0c\u5df2\u4fdd\u6301\u5f53\u524d\u4f4d\u7f6e')"
+}

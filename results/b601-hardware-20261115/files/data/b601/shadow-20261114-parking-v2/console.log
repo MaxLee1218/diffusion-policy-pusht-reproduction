@@ -1,0 +1,22 @@
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/mingx/projects/diffusion-policy-pusht-reproduction/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['joint_pos']
+using obs modality: rgb with keys: ['image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Diffusion params: 1.734158e+07
+Vision params: 1.119709e+07
+{"predictions": 1, "inference_ms": 286.540184, "camera_to_prediction_ms": 320.265221, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 79.94526588916779}
+{"predictions": 10, "inference_ms": 106.731507, "camera_to_prediction_ms": 186.361659, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 80.11262428760529}
+{"predictions": 20, "inference_ms": 105.972204, "camera_to_prediction_ms": 161.804443, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 81.38219368457794}
+{"predictions": 30, "inference_ms": 103.751299, "camera_to_prediction_ms": 176.787703, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 79.94940865039825}
+{"predictions": 40, "inference_ms": 111.782703, "camera_to_prediction_ms": 170.956417, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 83.75078499317169}
+{"predictions": 50, "inference_ms": 104.208034, "camera_to_prediction_ms": 146.30127, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 80.20191872119904}
+{"predictions": 60, "inference_ms": 117.35786, "camera_to_prediction_ms": 226.409348, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 79.94526588916779}
+{"predictions": 70, "inference_ms": 138.373111, "camera_to_prediction_ms": 167.961513, "ood_joints": ["shoulder_lift", "elbow_flex", "wrist_flex", "wrist_yaw", "gripper"], "max_first_action_delta_deg": 79.94526588916779}
+{"status": "complete", "mode": "predict_only", "error": null, "predictions": 74, "rejected_stale_pairs": [{"frame_ids": [0, 1], "pair_gap_ms": 77.86, "source_age_ms": 13.1676, "bridge_roundtrip_ms": 1196.600851}], "bridge_stop": {"kind": "stopped", "captured_frames": 574, "motion_commands_sent": 0, "enable_commands_sent": 0, "disable_commands_sent": 0, "calibration_commands_sent": 0}, "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6", "checkpoint_unchanged": true, "inference_ms": {"count": 74, "median": 138.76856249999997, "p95": 236.67346499999996, "max": 288.966812}, "bridge_roundtrip_ms": {"count": 74, "median": 7.473616, "p95": 9.2758679, "max": 10.239787}, "source_age_at_snapshot_ms": {"count": 74, "median": 67.92525, "p95": 113.077015, "max": 118.6083}, "camera_receive_to_prediction_estimate_ms": {"count": 74, "median": 222.33255641406248, "p95": 307.79672658046866, "max": 352.8269879453125}, "pair_gap_ms": {"count": 74, "median": 96.56895, "p95": 108.340445, "max": 110.3021}, "max_first_action_delta_motor_degrees": 86.61894905567169, "out_of_training_range_counts": {"shoulder_pan": 0, "shoulder_lift": 74, "elbow_flex": 74, "wrist_flex": 74, "wrist_yaw": 74, "wrist_roll": 0, "gripper": 74}, "execution_readiness_verified": false, "motion_commands_sent": 0, "limitations": ["Current parked pose/zero correspondence and camera viewpoint are not yet aligned to demonstrations.", "SDK cached motor states lack per-motor reception timestamps; fresh response for each request is not proven.", "Camera timestamps are receive times, not exposure times; end-to-end estimates include clock uncertainty.", "No actuator commands, live execution, task success or measured workspace verification."]}

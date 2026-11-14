@@ -1,0 +1,71 @@
+{
+  "trial_id": "rhc-trial-004",
+  "task": "B601 chess pick and place into blue target",
+  "evaluation": "first complete-task pilot",
+  "weights": "final EMA",
+  "sampler": "DDIM 10",
+  "action_frequency_hz": 10,
+  "replan_every_actions": 6,
+  "future_action_horizon": 15,
+  "execution": "timestamped absolute motor targets; discard past actions; no per-action arrival wait; no target scaling",
+  "max_duration_seconds": 300,
+  "joint_velocity_deg_s": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    12.0
+  ],
+  "arm_following_guard_deg": 2,
+  "per_action_guard_deg": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    8
+  ],
+  "reference_includes_gripper": true,
+  "full_recording": true,
+  "success_definition": "unassisted lift, transport, release, upright with base center in blue target for 3 seconds",
+  "success_evaluated": false,
+  "upstream_reference": "upstream/diffusion_policy/eval_real_robot.py",
+  "modified_from_upstream": "B601 motor-angle controller, DDIM 10 instead of upstream eval DDIM 16; source hardware and safety constraints retained",
+  "driver_relative_target_clipping_deg": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    8
+  ],
+  "preflight": "First absolute gripper proposal 8.62 degrees was rejected before dispatch; corrected to match original driver relative target clipping, not increase limits.",
+  "purpose": "user selected current pose as start; no automatic reference motion",
+  "predecessor": "rhc-trial-002",
+  "feedback_loop_hz": 50,
+  "validation_session": "rhc-timing-validation-001",
+  "safety_thresholds_changed": false,
+  "execution_thread": "motor feedback, guards, memory-queue dispatch and send only",
+  "operator_trial_number": 2,
+  "model_and_controller_parameters_changed": false,
+  "start_pose": "same saved seven-dimensional reference as previous task trial",
+  "inference_seed_schedule": "101 + inference_index (unchanged)",
+  "path_min_xyz_m": [
+    0.2854058016600481,
+    0.008370020952075853,
+    0.02467284454340793
+  ],
+  "path_max_xyz_m": [
+    0.33244868465937316,
+    0.012726700632953409,
+    0.049105083473979017
+  ],
+  "retry_of": "rhc-trial-003",
+  "start_pose_file": "start-pose.json",
+  "align_reference_on_start": false,
+  "initialization_policy_changed_by_user": true
+}

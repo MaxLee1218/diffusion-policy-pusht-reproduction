@@ -1,0 +1,12 @@
+{
+  "source_checkpoint": "experiments/b601-short-seed42/checkpoints/latest.ckpt",
+  "sha256": "baf0f9ffd5fcb8ea4ad0df65f23c1bf5e91bfa97abb546ab8cda308c8a2661a6",
+  "restore": [
+    "model",
+    "ema_model",
+    "optimizer"
+  ],
+  "ema_step_source": "restored optimizer update count",
+  "historical_counters": "continue at the next epoch; source short run used capped epochs",
+  "lr_schedule": "cosine over the full training budget; no second warmup"
+}

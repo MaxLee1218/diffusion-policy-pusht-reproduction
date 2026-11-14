@@ -1,0 +1,63 @@
+{
+  "trial_id": "rhc-trial-002",
+  "run_id": "3cb86e30597a4e4bb5b528e4c97848f4",
+  "outcome": "failed_approach_no_contact",
+  "task_completed": false,
+  "contact_with_piece": false,
+  "ground_truth_source": "operator",
+  "operator_observation": "根本就没有碰到棋子",
+  "elapsed_seconds": 171.72817461399973,
+  "completed_inferences": 286,
+  "actions_dispatched": 1638,
+  "termination": "input_state_training_range_guard",
+  "outside_training_state": [
+    {
+      "joint": "wrist_flex",
+      "observed_degrees": 57.42910480568097,
+      "training_min_degrees": 44.75205612182617,
+      "training_max_degrees": 57.319820404052734,
+      "guard_margin_degrees": 0.05
+    }
+  ],
+  "actual_point_xyz_m": [
+    0.34852057021386185,
+    0.030756052004617236,
+    0.049253658269014206
+  ],
+  "physical_joint_and_workspace_checks_passed": true,
+  "scheduling_faults": 0,
+  "rpc_errors": 0,
+  "event_log_errors": 0,
+  "timing": {
+    "actions": 1638,
+    "interval_median_ms": 101.5915,
+    "interval_p95_ms": 104.61917999999999,
+    "max_lateness_ms": 44.9732,
+    "cycle_p95_ms": 20.96071,
+    "cycle_max_ms": 75.0371,
+    "recording_finalized": true,
+    "control_cycles": 9656,
+    "depth_chunks": 396,
+    "rgb_depth_frames": 5935,
+    "max_motor_mos_temp_c": 40.0
+  },
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "recording_id": "20261114T162345-bb048a05",
+  "rgb_video_frames_decoded": 5935,
+  "depth_frames_read": 5935,
+  "full_prediction_records": 286,
+  "camera_source_frame_gaps": [],
+  "recording_complete": true,
+  "final_state": "paused_holding",
+  "final_motor_status_codes": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "tests_passed": 85,
+  "next_step": "Compare scene and all seven starting-state values to an actual retained demonstration, and inspect approach-target drift before another task trial; no success claimed."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "reset_complete",
+  "reference": "start-pose.json",
+  "actual_motor_degrees": [
+    -0.44806040955283644,
+    -99.0010238682069,
+    -58.915353969075746,
+    48.336593058019915,
+    -4.6882964878101125,
+    -17.10306688927873,
+    -104.57451287245067
+  ],
+  "max_joint_error_degrees": 0.04371321068808243,
+  "xyz_m": [
+    0.2864831890745586,
+    0.012748871275191222,
+    0.024983318413970446
+  ],
+  "reset_recording": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\experiments\\rhc-trial-005\\recordings\\20261114T165931-2678e880",
+  "reset_commands": 43,
+  "model_sequence_actions_sent": 0,
+  "first_plan_rejected": "observation older than 500 ms; no threshold change",
+  "startup_attempt_archive": "data/b601/experiments/rhc-trial-005/attempts/reset-complete-first-plan-expired",
+  "next_launch": "fresh model load/warmup and current reference check; no further reset required"
+}

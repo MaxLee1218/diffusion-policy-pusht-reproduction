@@ -1,0 +1,10 @@
+[
+  {
+    "source": "\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\live-model-recorded-20261114-01\\recordings\\20261114T153442-e836d172\\rgb-00001.mkv",
+    "target": "recordings/20261114T153442-e836d172/rgb-00001.mkv"
+  },
+  {
+    "source": "\\home\\mingx\\projects\\diffusion-policy-pusht-reproduction\\data\\b601\\live-model-recorded-20261114-01\\recordings\\20261114T153442-e836d172\\rgb-00000.mkv",
+    "target": "recordings/20261114T153442-e836d172/rgb-00000.mkv"
+  }
+]

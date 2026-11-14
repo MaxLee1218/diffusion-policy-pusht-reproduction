@@ -1,0 +1,81 @@
+{
+  "status": "stopped",
+  "completed_steps": 129,
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "max_arm_step_degrees": 2.0,
+  "max_gripper_step_degrees": 8.0,
+  "success_evaluated": false,
+  "continuous": true,
+  "duration_limit_seconds": 300.0,
+  "runner_pid": 454555,
+  "control_generation": 1,
+  "recording_id": "20261114T160144-6674831b",
+  "run_id": "723cd81c30c341fc92d971d8662cad10",
+  "trial_type": "first_full_task_rhc",
+  "alignment_steps": 4,
+  "alignment_error_deg": 0.10928075838766205,
+  "aligned_motor_degrees": [
+    -0.42620380420879567,
+    -99.02288047355094,
+    -58.84978415304362,
+    48.4022175155654,
+    -4.644583277122031,
+    -16.993783862558526,
+    -104.53079966176259
+  ],
+  "execution_mode": "receding_horizon",
+  "action_frequency_hz": 10,
+  "steps_per_inference": 6,
+  "future_actions_per_prediction": 15,
+  "completed_inferences": 23,
+  "wait_for_each_action_arrival": false,
+  "elapsed_seconds": 14.099748298998747,
+  "latest_plan_id": "ad3f10568c654a3788ce53c146c65cc7",
+  "last_inference_ms": 138.576694,
+  "hardware_fault": {
+    "type": "fault",
+    "id": 0,
+    "reason": "\u52a8\u4f5c\u8c03\u5ea6\u8fdf\u5230\u8d85\u8fc7 75 ms\uff0c\u5df2\u4fdd\u6301",
+    "trajectory_key": null,
+    "current_motor_degrees": [
+      0.9726189378098158,
+      -103.4161127892165,
+      -65.97514677822764,
+      51.00315355150626,
+      -4.6008700664339495,
+      -15.50748005765039,
+      -89.09981772281634
+    ],
+    "last_sent_motor_degrees": [
+      1.155197262763977,
+      -103.83206939697266,
+      -66.3834228515625,
+      51.007755279541016,
+      -4.590314865112305,
+      -15.405345916748047,
+      -89.10784149169922
+    ],
+    "joint_tracking_errors_deg": [
+      0.18257832495416126,
+      0.41595660775615784,
+      0.4082760733348607,
+      0.004601728034757002,
+      0.01055520132164478,
+      0.10213414090234352,
+      0.008023768882878812
+    ],
+    "endpoint_motor_degrees": [
+      1.155197262763977,
+      -103.83206939697266,
+      -66.3834228515625,
+      51.007755279541016,
+      -4.590314865112305,
+      -15.405345916748047,
+      -89.10784149169922
+    ],
+    "time_ns": 164916901290800
+  },
+  "termination": "hardware_or_timing_protection",
+  "error": "\u52a8\u4f5c\u8c03\u5ea6\u8fdf\u5230\u8d85\u8fc7 75 ms\uff0c\u5df2\u4fdd\u6301",
+  "caught_exception": "RuntimeError('\u64cd\u4f5c\u5458\u5df2\u6682\u505c\u6216\u63a5\u7ba1\uff0c\u6a21\u578b\u8fd0\u884c\u5df2\u53d6\u6d88')"
+}

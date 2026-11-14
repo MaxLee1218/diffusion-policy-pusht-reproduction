@@ -1,0 +1,13 @@
+{
+  "trial_id": "rhc-trial-003",
+  "operator_trial_number": 2,
+  "outcome": "aborted_before_policy_execution",
+  "task_completed": false,
+  "policy_sequence_actions_sent": 0,
+  "reference_alignment_moves": 39,
+  "reference_source_is_training_demonstration": false,
+  "model_rejection": "sequence observation expired",
+  "operator_concern": "moving opposite to intended approach",
+  "final_state": "paused_holding",
+  "investigation": "See motion-direction-investigation.json and reference-direction-audit.json. No sign inversion applied; no test motion issued."
+}

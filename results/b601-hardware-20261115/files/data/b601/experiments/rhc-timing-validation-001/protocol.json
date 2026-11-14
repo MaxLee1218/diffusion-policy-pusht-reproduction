@@ -1,0 +1,13 @@
+{
+  "type": "fixed_pose_timing_load_validation",
+  "duration_seconds": 60,
+  "full_model_inference": true,
+  "camera_recording": "RGB/depth 30 Hz lossless",
+  "feedback_loop_hz": 50,
+  "action_schedule_hz": 10,
+  "replan_interval_seconds": 0.6,
+  "scheduled_targets": "constant first measured pose; no intentional task motion",
+  "dispatch_lateness_protection_ms": 75,
+  "existing_joint_speed_torque_workspace_guards": "unchanged",
+  "prior_trial": "rhc-trial-001"
+}

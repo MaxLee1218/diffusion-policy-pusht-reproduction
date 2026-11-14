@@ -1,0 +1,17 @@
+{
+  "status": "stopped",
+  "completed_steps": 0,
+  "checkpoint_sha256": "5e19327cf1178586f360feecda4b832caddeb4ef32677104c46467c78a00c9f6",
+  "max_arm_step_degrees": 2.0,
+  "max_gripper_step_degrees": 8.0,
+  "success_evaluated": false,
+  "continuous": true,
+  "duration_limit_seconds": 300.0,
+  "runner_pid": 430671,
+  "control_generation": 1,
+  "recording_id": "20261114T155921-6400bb70",
+  "run_id": "1bf60397af184955b68618a680d460dd",
+  "trial_type": "first_full_task_rhc",
+  "error": "RuntimeError('\u5b9e\u9a8c\u8bb0\u5f55\u672a\u5f00\u542f\uff0c\u6a21\u578b\u4e0d\u4f1a\u7ee7\u7eed\u6267\u884c')",
+  "caught_exception": "RuntimeError('\u5b9e\u9a8c\u8bb0\u5f55\u672a\u5f00\u542f\uff0c\u6a21\u578b\u4e0d\u4f1a\u7ee7\u7eed\u6267\u884c')"
+}

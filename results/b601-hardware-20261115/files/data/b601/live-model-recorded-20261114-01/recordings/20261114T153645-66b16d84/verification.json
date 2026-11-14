@@ -1,0 +1,19 @@
+{
+  "static_verification": true,
+  "no_model_motion_commands_sent": true,
+  "rgb_video_frames_decoded": 45,
+  "depth_frames_read": 45,
+  "matched_model_input_rgb_frames_losslessly": 2,
+  "control_cycles_read": 30,
+  "prediction_shape": [
+    16,
+    7
+  ],
+  "executable_shape": [
+    8,
+    7
+  ],
+  "camera_gaps": [],
+  "manifest_complete": true,
+  "tests_passed": 74
+}

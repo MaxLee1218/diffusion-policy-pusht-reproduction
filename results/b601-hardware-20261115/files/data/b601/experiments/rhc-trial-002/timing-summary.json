@@ -1,0 +1,13 @@
+{
+  "actions": 1638,
+  "interval_median_ms": 101.5915,
+  "interval_p95_ms": 104.61917999999999,
+  "max_lateness_ms": 44.9732,
+  "cycle_p95_ms": 20.96071,
+  "cycle_max_ms": 75.0371,
+  "recording_finalized": true,
+  "control_cycles": 9656,
+  "depth_chunks": 396,
+  "rgb_depth_frames": 5935,
+  "max_motor_mos_temp_c": 40.0
+}

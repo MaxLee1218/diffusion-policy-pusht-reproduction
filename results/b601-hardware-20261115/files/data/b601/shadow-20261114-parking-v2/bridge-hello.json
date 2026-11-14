@@ -1,0 +1,103 @@
+{
+  "kind": "hello",
+  "protocol": 1,
+  "mode": "predict_only",
+  "port": "COM5",
+  "camera": {
+    "name": "RealSense D405",
+    "serial": "260322279327",
+    "format": "RGB8",
+    "size": [
+      640,
+      480
+    ]
+  },
+  "joint_names": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_yaw",
+    "wrist_roll",
+    "gripper"
+  ],
+  "driver_config": {
+    "motor_can_ids": {
+      "shoulder_pan": [
+        1,
+        17
+      ],
+      "shoulder_lift": [
+        2,
+        18
+      ],
+      "elbow_flex": [
+        3,
+        19
+      ],
+      "wrist_flex": [
+        4,
+        20
+      ],
+      "wrist_yaw": [
+        5,
+        21
+      ],
+      "wrist_roll": [
+        6,
+        22
+      ],
+      "gripper": [
+        7,
+        23
+      ]
+    },
+    "joint_limits": {
+      "shoulder_pan": [
+        -145.0,
+        145.0
+      ],
+      "shoulder_lift": [
+        -170.0,
+        0.0
+      ],
+      "elbow_flex": [
+        -200.0,
+        0.0
+      ],
+      "wrist_flex": [
+        -80.0,
+        90.0
+      ],
+      "wrist_yaw": [
+        -90.0,
+        90.0
+      ],
+      "wrist_roll": [
+        -130.0,
+        130.0
+      ],
+      "gripper": [
+        -270.0,
+        0.0
+      ]
+    },
+    "joint_directions": {
+      "shoulder_pan": -1.0,
+      "shoulder_lift": -1.0,
+      "elbow_flex": 1.0,
+      "wrist_flex": 1.0,
+      "wrist_yaw": 1.0,
+      "wrist_roll": -1.0,
+      "gripper": -6.0
+    }
+  },
+  "driver_source_sha256": "de7f5642adc6d677c3e306c6c93c183de671a0257b8ae16bca08737e7fc68690",
+  "allowed_requests": [
+    "ping",
+    "sample",
+    "stop"
+  ],
+  "motion_commands_sent": 0,
+  "enable_commands_sent": 0
+}
